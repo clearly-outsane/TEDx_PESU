@@ -95,12 +95,17 @@ const Landing = () => {
               "Speaker Name",
             ].map((name) => {
               return (
-                <Grid item className={clsx(classes.marginLeftRight32)}>
+                <Grid
+                  item
+                  className={clsx(
+                    classes.marginLeftRight32,
+                    classes.marginBottom18
+                  )}
+                >
                   <Typography
                     variant="body1"
                     className={clsx(
                       classes.whiteText,
-                      classes.marginBottom18,
 
                       classes.boldText
                     )}
