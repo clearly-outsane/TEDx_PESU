@@ -15,7 +15,7 @@ const AboutStyles = makeStyles((theme) => ({
 		padding: "0 4rem 4rem 4rem",
 		display: "block",
 		[theme.breakpoints.down("md")]: {
-			padding: "0 2rem"
+			padding: "0 2rem 4rem 2rem"
 		}
 	},
 	smallText: {
