@@ -25,7 +25,7 @@ const Landing = () => {
             alignItems="center"
             style={{ height: "100%" }}
           >
-            <Grid container item xs={6}>
+            <Grid container item xs={12} sm={6}>
               <Typography
                 variant="body1"
                 className={clsx(classes.whiteText, classes.boldText)}
@@ -45,19 +45,22 @@ const Landing = () => {
                 display="inline"
                 style={{
                   fontWeight: 400,
-                  marginBottom: 48,
+                  marginBottom: 36,
                   fontSize: "2.5rem",
                 }}
               >
                 Help change climate change. <br />
                 Join us on a countdown to a zero carbon world
               </Typography>
-              <PrimaryButton>Register</PrimaryButton>
+              <PrimaryButton style={{ marginBottom: 8 }}>
+                Register
+              </PrimaryButton>
             </Grid>
             <Grid
               container
               item
-              xs={6}
+              xs={12}
+              sm={6}
               alignItems="flex-start"
               justify="flex-end"
               style={{ marginBottom: 18 }}
