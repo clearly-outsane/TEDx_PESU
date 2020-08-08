@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <Grid container style={{ height: 84 }}>
+      <Grid container className={classes.navBar}>
         <Grid container item xs alignItems="center">
           <Grid
             justify="flex-start"
