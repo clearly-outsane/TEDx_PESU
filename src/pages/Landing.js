@@ -27,13 +27,19 @@ const Landing = () => {
           >
             <Grid container item xs>
               <Typography
-                variant="body1"
+                variant="h4"
                 className={clsx(classes.whiteText, classes.boldText)}
                 display="inline"
+                style={{
+                  fontWeight: 400,
+                  marginBottom: 48,
+                  fontSize: "2.5rem",
+                }}
               >
                 Help change climate change. <br />
                 Join us on a countdown to a zero carbon world
               </Typography>
+              <PrimaryButton>Register</PrimaryButton>
             </Grid>
             <Grid
               container
