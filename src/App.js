@@ -8,7 +8,6 @@ import "./App.css";
 const App = () => {
   return (
     <>
-      {" "}
       <CssBaseline />
       <Router>
         <div>

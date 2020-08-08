@@ -12,10 +12,12 @@ const landingStyles = makeStyles((theme) => ({
   whiteText: { color: "white" },
   marginBottom1: { marginBottom: 8 },
   marginBottom18: { marginBottom: 18 },
+  marginBottom36: { marginBottom: 36 },
   marginRight1: { marginRight: 8 },
   marginLeftRight32: { marginRight: 32, marginLeft: 32 },
   marginTop4: { marginTop: 36 },
   boldText: { fontWeight: "600" },
+  gif: { height: "100%", width: "100% " },
 }));
 
 export { landingStyles };
