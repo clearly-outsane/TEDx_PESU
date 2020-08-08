@@ -25,7 +25,20 @@ const Landing = () => {
             alignItems="center"
             style={{ height: "100%" }}
           >
-            <Grid container item xs>
+            <Grid container item xs={6}>
+              <Typography
+                variant="body1"
+                className={clsx(classes.whiteText, classes.boldText)}
+                display="inline"
+                gutterBottom
+                style={{
+                  fontWeight: 200,
+                  marginBottom: 18,
+                  fontSize: "1.25rem",
+                }}
+              >
+                10.10.2020 10pm IST
+              </Typography>
               <Typography
                 variant="h4"
                 className={clsx(classes.whiteText, classes.boldText)}
@@ -46,6 +59,7 @@ const Landing = () => {
               item
               xs={6}
               alignItems="flex-start"
+              justify="flex-end"
               style={{ marginBottom: 18 }}
             >
               <img src={earth} alt="Earth globe gif" className={classes.gif} />
