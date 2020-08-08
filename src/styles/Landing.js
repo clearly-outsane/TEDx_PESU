@@ -11,9 +11,14 @@ const landingStyles = makeStyles((theme) => ({
     gridTemplateRows: "auto 1fr auto",
     height: "100vh",
   },
+	homeContent: {
+		padding: "0 3rem",
+		[theme.breakpoints.down("md")]: {
+			padding: "0 1rem",
+			height: "75vh" // don't know what's going on here
+		}
+	},
 	registerContainer: {
-    display: "grid",
-    gridTemplateRows: "auto 1fr auto",
     height: "100vh",
 		[theme.breakpoints.down("md")]: {
 			height: "50vh",
@@ -35,7 +40,7 @@ const landingStyles = makeStyles((theme) => ({
     marginBottom: 18,
     fontSize: "1.25rem",
 		[theme.breakpoints.down('md')]: {
-			fontSize: "0.75rem"
+			fontSize: "1rem"
 		}
 	},
 	bigText: {
@@ -56,7 +61,35 @@ const landingStyles = makeStyles((theme) => ({
   boldText: { fontWeight: "600" },
   gif: { height: "100%", width: "100%", padding: "10%" },
 
+	content: {
+		margin: "25vh 3rem",
+		[theme.breakpoints.down("md")]: {
+			margin: "12.5vh 2rem"
+		}
+	},
 
+	contentImageContainer: {
+		width: "100%",
+		height: "100%",
+		background: "none",
+	},
+
+	contentImageDefault: {
+			position: "absolute",
+			top: 800,
+  		clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
+			[theme.breakpoints.down("md")]: {
+				// mobile default position
+			}
+	},
+	contentImageSticky: {
+		position: "fixed",
+		top: 100,
+  	clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
+		[theme.breakpoints.down("md")]: {
+			// mobile sticky position
+		}
+	},
 }));
 
 export { landingStyles };

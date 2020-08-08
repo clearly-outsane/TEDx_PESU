@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
@@ -11,10 +11,54 @@ import { Typography } from "@material-ui/core";
 import { spacing } from '@material-ui/system';
 import { ContrastTextField, PrimaryButton } from "../styles/theme";
 import earth from "../assets/gifs/earth.gif";
-import earthCropped from "../assets/gifs/earth-cropped.gif";
+import energy from "../assets/images/energy-placeholder.jpg";
+import transport from "../assets/images/transport-placeholder.jpg";
+import nature from "../assets/images/nature-placeholder.jpg";
+import materials from "../assets/images/materials-placeholder.jpg";
+import food from "../assets/images/food-placeholder.jpg";
 
 const Landing = () => {
+
+	const images = [energy, transport, nature, materials, food];
+
+	const [currentImage, setCurrentImage] = React.useState(energy);
+
+
   const classes = landingStyles();
+
+
+	useEffect(() => {
+		const image = document.getElementById("contentImage");
+		const energy = document.getElementById("energy");
+		const transport = document.getElementById("transport");
+		const materials = document.getElementById("materials");
+		const food = document.getElementById("food");
+		const nature = document.getElementById("nature");
+    const sticky = image.offsetTop;
+    const scrollCallBack = window.addEventListener("scroll", () => {
+      if ((window.pageYOffset > sticky) && (window.pageYOffset < (sticky + 2800))) {
+				image.classList.add(classes.contentImageSticky);
+				image.classList.remove(classes.contentImageDefault);
+      } else {
+				if (window.pageYOffset < sticky) {
+					image.classList.add(classes.contentImageDefault);
+					image.classList.remove(classes.contentImageSticky);
+				} else {
+					image.classList.add(classes.contentImageDefault);
+					image.style.top = "";
+					image.style.bottom = "3000px";
+					image.classList.remove(classes.contentImageSticky);
+
+				}
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll", scrollCallBack);
+    };
+  }, []);
+
+
+
   return (
     <div className={classes.blackBackground}>
       <Container maxWidth="lg" className={classes.homeContainer}>
@@ -26,9 +70,9 @@ const Landing = () => {
             container
             justify="center"
             alignItems="center"
-            style={{ height: "100%" }}
+						className={classes.homeContent}
           >
-            <Grid container item xs={12} sm={6} style={{padding: "3rem"}}>
+            <Grid container item xs={12} sm={6}>
               <Typography
                 variant="body1"
                 className={clsx(classes.whiteText, classes.boldText, classes.smallText)}
@@ -108,7 +152,7 @@ const Landing = () => {
 
 
 
-			<div id="aboutCountdown"> 
+			<div id="content"> 
 			<Container maxWidth="lg">
 				<Grid
             container
@@ -116,42 +160,124 @@ const Landing = () => {
             alignItems="center"
           >
 						<Grid
-              container
               item
               xs={12}
               sm={6}
               alignItems="flex-start"
-              justify="flex-end"
-              style={{ marginBottom: 18 }}
+              justify="flex-start"
+							id="contentImageX"
+							className={classes.contentImageContainer}
             >
+							
 							{/* this div will contain the x and the changing background image 
 									position of the x is fixed.
 									the background images will scroll?
 									overflow is hidden? no that won't work
 									add scrollhandlder? change images when window.pageyoffset > something? yes ok */}
-							<div> 
-              {/* <img src={earth} alt="Earth globe gif" className={classes.x} /> */}
-							</div>
+									<img id="contentImage" src={currentImage} alt="Energy" className={classes.contentImageDefault}/>
+						
             </Grid>
-            <Grid container item xs={12} sm={6} style={{padding: "3rem"}}>
-              <Typography
-                variant="h4"
-                className={clsx(classes.whiteText, classes.bigText)}
-                display="inline"
-                
-              >
-                About Countdown
-              </Typography>
+            <Grid container item xs={12} sm={6}>
+            	<Grid container item xs={12} alignItems="space-around" className={classes.content}>
+							
 							<Typography
+								id="aboutCountdown"
                 variant="body1"
                 className={clsx(classes.whiteText, classes.smallText)}
                 display="inline"
-                
               >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									About Countdown<br/>
+								</span>
+                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
+								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
+								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+								<br/><span className={classes.boldText}> Countdown seeks to answer five fundamental, interconnected questions 
+								that help inform a blueprint for a cleaner future:</span>
+              </Typography>
+							</Grid>
+
+            	<Grid container item xs={12} className={classes.content}>
+							<Typography
+								id="energy"
+                variant="body1"
+                className={clsx(classes.whiteText, classes.smallText)}
+                display="inline"
+              >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									Energy<br/>
+								</span>
                 Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
 								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
 								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
               </Typography>
+							</Grid>
+
+            	<Grid container item xs={12} className={classes.content}>
+							<Typography
+								id="transport"
+                variant="body1"
+                className={clsx(classes.whiteText, classes.smallText)}
+                display="inline"
+              >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									Transport<br/><br/>
+								</span>
+                <span className={clsx(classes.whiteText), classes.boldText}>How can we upgrade the way we 
+								move people and things?</span><br/>Ride your cycle, or walk! It's better for you, and better
+								for the planet. Electric cars are quite in vogue too.
+              </Typography>
+							</Grid>
+
+            	<Grid container item xs={12} className={classes.content}>
+
+
+							<Typography
+								id="materials"
+                variant="body1"
+                className={clsx(classes.whiteText, classes.smallText)}
+                display="inline"
+              >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									Materials<br/>
+								</span>
+                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
+								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
+								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+              </Typography>
+							</Grid>
+
+            	<Grid container item xs={12} className={classes.content}>
+								<Typography
+								id="food"
+                variant="body1"
+                className={clsx(classes.whiteText, classes.smallText)}
+                display="inline"
+              >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									Food<br/>
+								</span>
+                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
+								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
+								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+              </Typography>
+							</Grid>
+
+            	<Grid container item xs={12} className={classes.content}>
+							<Typography
+								id="nature"
+                variant="body1"
+                className={clsx(classes.whiteText, classes.smallText)}
+                display="inline"
+              >
+              	<span className={clsx(classes.whiteText, classes.bigText)}> 
+									Nature<br/>
+								</span>
+                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
+								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
+								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+              </Typography>
+							</Grid>
             </Grid>
             
           </Grid>
@@ -161,22 +287,15 @@ const Landing = () => {
 			<div id="register">
 			<Container maxWidth="lg" className={classes.registerContainer}>
 
-				{/* fix css ask vinay how grids work  */}
-				<Grid
-            container
-            justify="center"
-            alignItems="center"
-            style={{ height: "100%", display: "block" }}
-          >
+{/* fix css ask vinay how grids work  */}
 						<Typography
                 variant="h4"
                 className={clsx(classes.whiteText, classes.bigText)}
-                display="inline" 
 							>
 								#JoinTheCountdown
 						</Typography>
 						
-						{/* mailchimp material ui?? ask vinay */}
+{/* mailchimp material ui?? ask vinay */}
 						<Mailchimp
 							action='https://tedxpesu.us17.list-manage.com/subscribe/post?u=ba7804f5c0145f0050fc88bd4&amp;id=f7a8682e3a'
 							className={classes.register}
@@ -194,11 +313,11 @@ const Landing = () => {
 							}
         			]}
        			 />
-					</Grid>
 			</Container>
 			</div>
     </div>
   );
 };
+
 
 export default Landing;

@@ -5,7 +5,8 @@ const navbarStyles = makeStyles((theme) => ({
 		padding: "2rem",
 		height: "84",
 		[theme.breakpoints.down('md')]: {
-			padding: "1rem"
+			padding: "1rem",
+// sticky header for mobile gives issues!
 		}
 	},
 	
