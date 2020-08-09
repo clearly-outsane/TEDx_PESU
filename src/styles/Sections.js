@@ -18,4 +18,15 @@ const aboutSection = makeStyles((theme) => ({
   blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
 }));
 
-export { aboutSection };
+const mailchimpFormSection = makeStyles((theme) => ({
+  container: {
+    display: "grid",
+    placeItems: "center",
+    height: "100vh",
+  },
+
+  whiteText: { color: "white" },
+  blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
+}));
+
+export { aboutSection, mailchimpFormSection };
