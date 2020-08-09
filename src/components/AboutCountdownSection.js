@@ -42,7 +42,6 @@ const AboutSection = () => {
                 variant="h6"
                 gutterBottom
                 className={clsx(classes.whiteText)}
-                style={{ fontSize: "1.5rem" }}
               >
                 Countdown is a global initiative to champion and accelerate
                 solutions to the climate crisis, turning ideas into action. The
@@ -55,7 +54,6 @@ const AboutSection = () => {
                 variant="h6"
                 gutterBottom
                 className={clsx(classes.whiteText)}
-                style={{ fontSize: "1.5rem" }}
               >
                 We believe that change begins with each of us – that’s why
                 TEDxPESU has launched its own chapter of Countdown. We will

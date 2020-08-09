@@ -15,7 +15,7 @@ const aboutSection = makeStyles((theme) => ({
     margin: 0,
   },
   whiteText: { color: "white" },
-  blackBackground: { backgroundColor: "rgba(0,0,0,0.75)" },
+  blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
 }));
 
 export { aboutSection };
