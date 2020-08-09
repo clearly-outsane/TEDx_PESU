@@ -78,11 +78,11 @@ const Landing = () => {
             className={classes.marginBottom36}
           >
             {[
-              "Bob Dylan",
-              "Vinay Sateesh",
-              "Not Prateek",
-              "Nim zim",
-              "Just Kidding",
+              "Speaker Names",
+              "To be",
+              "Announced Soon",
+              "Stay tuned",
+              "Much wow",
             ].map((name) => {
               return (
                 <Grid item className={clsx(classes.marginLeftRight32)}>
