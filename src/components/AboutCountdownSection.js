@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import clsx from "clsx";
 
 import { aboutSection } from "../styles/Sections";
-import { ReactComponent as AboutSvg } from "../assets/svg/About.svg";
+import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
 
 const AboutSection = () => {
   const classes = aboutSection();
@@ -38,11 +38,7 @@ const AboutSection = () => {
               alignItems="flex-start"
               style={{ marginTop: 48 }}
             >
-              <Typography
-                variant="h6"
-                gutterBottom
-                className={clsx(classes.whiteText)}
-              >
+              <Typography variant="h6" className={clsx(classes.whiteText)}>
                 Countdown is a global initiative to champion and accelerate
                 solutions to the climate crisis, turning ideas into action. The
                 goal: To build a better future by cutting greenhouse gas
@@ -50,11 +46,7 @@ const AboutSection = () => {
                 world that is safer, cleaner and fairer for everyone.
               </Typography>
 
-              <Typography
-                variant="h6"
-                gutterBottom
-                className={clsx(classes.whiteText)}
-              >
+              <Typography variant="h6" className={clsx(classes.whiteText)}>
                 We believe that change begins with each of us – that’s why
                 TEDxPESU has launched its own chapter of Countdown. We will
                 showcase the work and ideas of local thinkers and doers to spark
@@ -70,7 +62,7 @@ const AboutSection = () => {
             style={{
               width: "100%",
               transform: "translate(0,4vw)",
-              height: "22vw",
+              height: "14vw",
             }}
             fill="white"
           />

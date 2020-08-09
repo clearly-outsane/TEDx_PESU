@@ -46,9 +46,7 @@ const Landing = () => {
                 className={clsx(classes.whiteText, classes.boldText)}
                 display="inline"
                 style={{
-                  fontWeight: 400,
                   marginBottom: 36,
-                  fontSize: "2.75rem",
                 }}
               >
                 Help change climate change. <br />
