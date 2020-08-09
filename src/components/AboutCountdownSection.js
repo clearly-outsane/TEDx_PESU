@@ -1,0 +1,85 @@
+import React from "react";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import clsx from "clsx";
+
+import { aboutSection } from "../styles/Sections";
+import { ReactComponent as AboutSvg } from "../assets/svg/About.svg";
+
+const AboutSection = () => {
+  const classes = aboutSection();
+  return (
+    <>
+      <div className={clsx(classes.container, classes.blackBackground)}>
+        <Container maxWidth="lg">
+          <Grid
+            container
+            justify="flex-start"
+            alignItems="center"
+            style={{ marginTop: 124 }}
+          >
+            <Typography
+              variant="h2"
+              className={clsx(classes.whiteText)}
+              gutterBottom
+            >
+              And what is countdown ?
+            </Typography>
+          </Grid>
+        </Container>
+        <Container maxWidth="lg">
+          <Grid container justify="center" style={{ height: "100%" }}>
+            <Grid
+              container
+              item
+              xs={12}
+              sm={7}
+              alignItems="flex-start"
+              style={{ marginTop: 48 }}
+            >
+              <Typography
+                variant="h6"
+                gutterBottom
+                className={clsx(classes.whiteText)}
+                style={{ fontSize: "1.5rem" }}
+              >
+                Countdown is a global initiative to champion and accelerate
+                solutions to the climate crisis, turning ideas into action. The
+                goal: To build a better future by cutting greenhouse gas
+                emissions in half by 2030 in the race to a zero-carbon world – a
+                world that is safer, cleaner and fairer for everyone.
+              </Typography>
+              <br />
+              <Typography
+                variant="h6"
+                gutterBottom
+                className={clsx(classes.whiteText)}
+                style={{ fontSize: "1.5rem" }}
+              >
+                We believe that change begins with each of us – that’s why
+                TEDxPESU has launched its own chapter of Countdown. We will
+                showcase the work and ideas of local thinkers and doers to spark
+                a discussion, and help you understand how you can make a
+                difference.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Container>
+
+        <div className={classes.backgroundText}>
+          <AboutSvg
+            style={{
+              width: "100%",
+              transform: "translate(0,4vw)",
+              height: "22vw",
+            }}
+            fill="white"
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AboutSection;

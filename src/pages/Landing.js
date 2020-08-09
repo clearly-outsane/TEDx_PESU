@@ -10,6 +10,7 @@ import { Typography } from "@material-ui/core";
 import { ContrastTextField, PrimaryButton } from "../styles/theme";
 import earth from "../assets/gifs/earth.gif";
 import AboutTedxSection from "../components/AboutTedxSection";
+import AboutCountdownSection from "../components/AboutCountdownSection";
 
 const Landing = () => {
   const classes = landingStyles();
@@ -110,6 +111,7 @@ const Landing = () => {
       </Container>
 
       <AboutTedxSection />
+      <AboutCountdownSection />
     </div>
   );
 };
