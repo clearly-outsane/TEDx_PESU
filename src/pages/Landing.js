@@ -9,6 +9,7 @@ import { landingStyles } from "../styles/Landing";
 import { Typography } from "@material-ui/core";
 import { ContrastTextField, PrimaryButton } from "../styles/theme";
 import earth from "../assets/gifs/earth.gif";
+import AboutTedxSection from "../components/AboutTedxSection";
 
 const Landing = () => {
   const classes = landingStyles();
@@ -56,6 +57,7 @@ const Landing = () => {
                 Register
               </PrimaryButton>
             </Grid>
+
             <Grid
               container
               item
@@ -70,7 +72,12 @@ const Landing = () => {
           </Grid>
         </div>
         <div>
-          <Grid container justify="center" alignItems="center">
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+            className={classes.marginBottom36}
+          >
             {[
               "Bob Dylan",
               "Vinay Sateesh",
@@ -79,13 +86,7 @@ const Landing = () => {
               "Just Kidding",
             ].map((name) => {
               return (
-                <Grid
-                  item
-                  className={clsx(
-                    classes.marginLeftRight32,
-                    classes.marginBottom36
-                  )}
-                >
+                <Grid item className={clsx(classes.marginLeftRight32)}>
                   <Typography
                     variant="body1"
                     className={clsx(classes.whiteText, classes.boldText)}
@@ -107,6 +108,8 @@ const Landing = () => {
           </Grid>
         </div>
       </Container>
+
+      <AboutTedxSection />
     </div>
   );
 };
