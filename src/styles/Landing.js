@@ -24,16 +24,21 @@ const landingStyles = makeStyles((theme) => ({
 			height: "50vh",
 		}
   },
+
 	register: {
-		// SEND HELP
 		"& input": {
 			// input form styles		
 		},
 		"& button": {
-			// how do we make this the same as the register button?!
-			// https://github.com/gndx/react-mailchimp-form/blob/master/src/index.js
-			// ^^ check 
-		}
+				// fontFamily: 
+				color: "white",
+  		  backgroundColor: theme.palette.primary.main,
+    		width: 124,
+    		"&:hover": {
+     			boxShadow: "0 0  24px rgba(230, 43, 30,0.48)",
+      		backgroundColor: theme.palette.primary.main,
+				},
+    },
 	},
 	smallText: {
     fontWeight: 200,
@@ -75,16 +80,28 @@ const landingStyles = makeStyles((theme) => ({
 	},
 
 	contentImageDefault: {
-			position: "absolute",
-			top: 800,
-  		clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
-			[theme.breakpoints.down("md")]: {
-				// mobile default position
-			}
+		position: "absolute",
+		top: "125%",
+  	clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
+		// transition: "all 0.3s",
+		[theme.breakpoints.down("md")]: {
+			// mobile default position
+		}
 	},
+	contentImageBottom: {
+		position: "absolute",
+		top: "500%",
+  	clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
+		// transition: "all 0.3s",
+		[theme.breakpoints.down("md")]: {
+			// mobile default position
+		}
+	},
+
 	contentImageSticky: {
 		position: "fixed",
-		top: 100,
+		top: "20%",
+		// transition: "all 0.3s",
   	clip: "rect(50px, 400px, 400px, 50px)", // svg something? 
 		[theme.breakpoints.down("md")]: {
 			// mobile sticky position

@@ -11,45 +11,55 @@ import { Typography } from "@material-ui/core";
 import { spacing } from '@material-ui/system';
 import { ContrastTextField, PrimaryButton } from "../styles/theme";
 import earth from "../assets/gifs/earth.gif";
-import energy from "../assets/images/energy-placeholder.jpg";
-import transport from "../assets/images/transport-placeholder.jpg";
-import nature from "../assets/images/nature-placeholder.jpg";
-import materials from "../assets/images/materials-placeholder.jpg";
-import food from "../assets/images/food-placeholder.jpg";
+import energyImg from "../assets/images/energy-placeholder.jpg";
+import transportImg from "../assets/images/transport-placeholder.jpg";
+import natureImg from "../assets/images/nature-placeholder.jpg";
+import materialsImg from "../assets/images/materials-placeholder.jpg";
+import foodImg from "../assets/images/food-placeholder.jpg";
 
 const Landing = () => {
 
-	const images = [energy, transport, nature, materials, food];
-
-	const [currentImage, setCurrentImage] = React.useState(energy);
-
-
+	const currentImage = energyImg;
   const classes = landingStyles();
 
-
+	// scroll effect
+	// not working :/
 	useEffect(() => {
 		const image = document.getElementById("contentImage");
-		const energy = document.getElementById("energy");
-		const transport = document.getElementById("transport");
-		const materials = document.getElementById("materials");
-		const food = document.getElementById("food");
-		const nature = document.getElementById("nature");
+		const energyEle = document.getElementById("energy");
+		const transportEle = document.getElementById("transport");
+		const materialsEle = document.getElementById("materials");
+		const foodEle = document.getElementById("food");
+		const natureEle = document.getElementById("nature");
     const sticky = image.offsetTop;
     const scrollCallBack = window.addEventListener("scroll", () => {
-      if ((window.pageYOffset > sticky) && (window.pageYOffset < (sticky + 2800))) {
+      if ((window.pageYOffset > window.innerHeight)) {
 				image.classList.add(classes.contentImageSticky);
 				image.classList.remove(classes.contentImageDefault);
-      } else {
-				if (window.pageYOffset < sticky) {
-					image.classList.add(classes.contentImageDefault);
-					image.classList.remove(classes.contentImageSticky);
-				} else {
-					image.classList.add(classes.contentImageDefault);
-					image.style.top = "";
-					image.style.bottom = "3000px";
-					image.classList.remove(classes.contentImageSticky);
 
+				switch (true) {
+					case window.pageYOffset > energyEle.offsetTop && window.pageYOffset < transportEle.offsetTop : 
+						image.src = energyImg;
+						break;
+					case window.pageYOffset > transportEle.offsetTop && window.pageYOffset < materialsEle.offsetTop : 
+						image.src = transportImg;
+						break;
+					case window.pageYOffset > materialsEle.offsetTop && window.pageYOffset < foodEle.offsetTop : 
+						image.src = materialsImg;
+						break;
+					case window.pageYOffset > foodEle.offsetTop && window.pageYOffset < natureEle.offsetTop : 
+						image.src = foodImg;
+						break;
+					case window.pageYOffset > natureEle.offsetTop :
+						image.src = natureImg;
+						break;
+						
 				}
+
+
+      } else {
+					image.classList.add(classes.contentImageDefault);
+					image.classList.remove(classes.contentImageSticky);
       }
     });
     return () => {
@@ -189,11 +199,16 @@ const Landing = () => {
               	<span className={clsx(classes.whiteText, classes.bigText)}> 
 									About Countdown<br/>
 								</span>
-                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
-								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
-								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
-								<br/><span className={classes.boldText}> Countdown seeks to answer five fundamental, interconnected questions 
-								that help inform a blueprint for a cleaner future:</span>
+                Countdown is a global TED initiative that aims to bring together leaders and activists in various fields, from
+scientists and farmers to entrepreneurs and artists, to battle the ongoing climate crisis. It seeks to provide a
+platform to educate the population, identify promising ideas, and bring about sweeping change. The ultimate
+goal? To create a zero-carbon world. It is vital that we recognize our dependence on nature, and take
+affirmative action to bring about a cleaner, fairer, more sustainable future. We believe that change begins with
+each of us – that’s why TEDxPESU has launched its own chapter of Countdown. We will showcase the work and
+ideas of local thinkers and doers to spark a discussion, and help you understand how you can make a
+difference.
+The plan starts with cutting greenhouse gas emissions in half by 2030, by exploring sustainability in five
+fundamental, interconnected areas: energy, transport, materials, food, and nature.
               </Typography>
 							</Grid>
 
@@ -207,9 +222,10 @@ const Landing = () => {
               	<span className={clsx(classes.whiteText, classes.bigText)}> 
 									Energy<br/>
 								</span>
-                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
-								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
-								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+                 <span className={clsx(classes.whiteText), classes.boldText}>How rapidly can we switch to 100% clean power?</span><br/>
+Yes, fossil fuels are readily available and portable, but they also release huge amounts of carbon dioxide on
+consumption, which make global temperatures rise and cause severe health issues. It’s a terrible price to pay
+for a couple of decades of easy energy. Eventually, we will run out.
               </Typography>
 							</Grid>
 
@@ -224,8 +240,10 @@ const Landing = () => {
 									Transport<br/><br/>
 								</span>
                 <span className={clsx(classes.whiteText), classes.boldText}>How can we upgrade the way we 
-								move people and things?</span><br/>Ride your cycle, or walk! It's better for you, and better
-								for the planet. Electric cars are quite in vogue too.
+								move people and things?</span><br/>
+What is the future of transportation? What can we do that makes travelling long distances just as pollution-
+free as walking or cycling? Driving electric vehicles minimizes fuel demand. Carpooling and using public transit
+are also great ways to reduce carbon emissions. How can we make these resources accessible to all?
               </Typography>
 							</Grid>
 
@@ -241,9 +259,10 @@ const Landing = () => {
               	<span className={clsx(classes.whiteText, classes.bigText)}> 
 									Materials<br/>
 								</span>
-                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
-								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
-								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+                <span className={clsx(classes.whiteText), classes.boldText}>How can we re-imagine 
+								and re-make the stuff around us?</span><br/>
+								What can we use in place of the ubiquitous plastics? How can we reduce the amount of waste we generate?
+								What product choices are best, ecologically speaking?
               </Typography>
 							</Grid>
 
@@ -257,9 +276,10 @@ const Landing = () => {
               	<span className={clsx(classes.whiteText, classes.bigText)}> 
 									Food<br/>
 								</span>
-                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
-								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
-								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+                <span className={clsx(classes.whiteText), classes.boldText}>How can we spark a worldwide shift to healthier food systems?</span><br/>
+How does eating meat affect the environment? Is it even necessary? Will switching to a plant-based diet help
+us lead healthier, more eco-friendly lives? How can we reduce our carbon footprint by sourcing organic, local
+food?
               </Typography>
 							</Grid>
 
@@ -273,9 +293,10 @@ const Landing = () => {
               	<span className={clsx(classes.whiteText, classes.bigText)}> 
 									Nature<br/>
 								</span>
-                Countdown is a global initiative to champion and accelerate solutions to the climate crisis, turning 
-								ideas into action. The goal: To build a better future by cutting greenhouse gas emissions 
-								in half by 2030 in the race to a zero-carbon world – a world that is safer, cleaner and fairer for everyone.
+                <span className={clsx(classes.whiteText), classes.boldText}>How do we better protect and re-green the earth?</span><br/>
+Nature takes care of itself. All we have to do is protect its tools. Can we make the oceans blue again, teeming
+with the life that produces a significant portion of our oxygen? How do we turn our concrete jungles into areas
+where verdant vegetation can flourish alongside us?
               </Typography>
 							</Grid>
             </Grid>
@@ -312,6 +333,14 @@ const Landing = () => {
 								required: true
 							}
         			]}
+							messages={{
+ 								sending: "Sending...",
+ 								success: "Thank you for registering! Make sure you check your email for updates (sometimes we end up in spam, so check that too!)",
+ 								error: "An unexpected internal error has occurred.",
+ 								empty: "You must write an e-mail.",
+ 								duplicate: "Too many subscribe attempts for this email address",
+ 								button: "Register"
+							}}
        			 />
 			</Container>
 			</div>
