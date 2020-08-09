@@ -48,7 +48,7 @@ const Landing = () => {
                 style={{
                   fontWeight: 400,
                   marginBottom: 36,
-                  fontSize: "2.5rem",
+                  fontSize: "2.75rem",
                 }}
               >
                 Help change climate change. <br />

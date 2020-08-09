@@ -2,11 +2,12 @@ import {
   createMuiTheme,
   makeStyles,
   withStyles,
+  responsiveFontSizes,
 } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
-const theme = createMuiTheme({
+let theme = createMuiTheme({
   palette: {
     primary: {
       main: "#E62B1E",
@@ -30,6 +31,7 @@ const theme = createMuiTheme({
     ].join(","),
   },
 });
+theme = responsiveFontSizes(theme);
 
 export const ContrastTextField = withStyles({
   root: {
