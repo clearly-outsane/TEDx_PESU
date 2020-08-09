@@ -49,7 +49,7 @@ const AboutSection = () => {
                 emissions in half by 2030 in the race to a zero-carbon world – a
                 world that is safer, cleaner and fairer for everyone.
               </Typography>
-              <br />
+
               <Typography
                 variant="h6"
                 gutterBottom
