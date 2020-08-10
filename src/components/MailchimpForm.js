@@ -24,7 +24,7 @@ const MailchimpForm = () => {
           gutterBottom
           align="center"
         >
-          Join the countdown
+          #JoinTheCountdown
         </Typography>
         <Typography
           variant="body1"
