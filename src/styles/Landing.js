@@ -18,6 +18,7 @@ const landingStyles = makeStyles((theme) => ({
   marginTop4: { marginTop: 36 },
   boldText: { fontWeight: "600" },
   gif: { height: "auto", width: "100% " },
+  noScroll: { overflow: "hidden" },
 }));
 
 export { landingStyles };

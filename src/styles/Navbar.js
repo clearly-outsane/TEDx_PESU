@@ -19,6 +19,7 @@ const navbarStyles = makeStyles((theme) => ({
     transition: "0.5s",
     backgroundColor: "black",
   },
+  whiteText: { color: "white" },
   closeOverlay: {},
 }));
 
