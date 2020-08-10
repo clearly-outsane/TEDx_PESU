@@ -47,20 +47,21 @@ const Landing = () => {
                 className={clsx(classes.whiteText, classes.boldText)}
                 display="inline"
                 style={{
-                  marginBottom: 36,
+                  marginBottom: 24,
                 }}
               >
                 Help change climate change. <br />
                 Join us on a countdown to a zero carbon world
               </Typography>
-              <PrimaryButton style={{ marginBottom: 8 }}>
-                <a
-                  style={{ textDecoration: "none", color: "white" }}
-                  href="https://tedxpesu.us17.list-manage.com/subscribe/post?u=ba7804f5c0145f0050fc88bd4&amp;id=f7a8682e3a"
-                >
+
+              <a
+                style={{ textDecoration: "none", color: "white" }}
+                href="https://tedxpesu.us17.list-manage.com/subscribe/post?u=ba7804f5c0145f0050fc88bd4&amp;id=f7a8682e3a"
+              >
+                <PrimaryButton style={{ marginBottom: 8 }} size="large">
                   Register
-                </a>
-              </PrimaryButton>
+                </PrimaryButton>
+              </a>
             </Grid>
 
             <Grid

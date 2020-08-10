@@ -7,6 +7,19 @@ const navbarStyles = makeStyles((theme) => ({
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
   },
+  overlay: {
+    height: "100vh",
+    // width: "100vw",
+    position: "fixed",
+    zIndex: 1,
+    top: 0,
+    left: 0,
+    right: 0,
+    overflowY: "hidden",
+    transition: "0.5s",
+    backgroundColor: "black",
+  },
+  closeOverlay: {},
 }));
 
 export { navbarStyles };

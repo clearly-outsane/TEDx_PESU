@@ -31,7 +31,7 @@ let theme = createMuiTheme({
     ].join(","),
     h4: {
       fontWeight: 400,
-      fontSize: "2.7rem",
+      fontSize: "2.5rem",
     },
   },
 });
