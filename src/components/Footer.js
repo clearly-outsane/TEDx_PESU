@@ -12,9 +12,9 @@ const Footer = () => {
           container
           justify="flex-start"
           alignItems="center"
-          style={{ height: stylingConstants.NAVBAR_HEIGHT }}
+          style={{ height: stylingConstants.NAVBAR_HEIGHT * 2 }}
         >
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={2}>
             <Typography
               variant="body2"
               style={{ color: "white" }}
@@ -23,9 +23,16 @@ const Footer = () => {
               Made with ❤
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={4} container justify="center">
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            container
+            justify="center"
+            direction="column"
+          >
             <Typography
-              variant="caption"
+              variant="body2"
               style={{ color: "white" }}
               align="center"
             >
@@ -37,9 +44,10 @@ const Footer = () => {
               style={{ color: "white" }}
               align="center"
             >
-              Designed by Vinay Sateesh and Nimisha Vijay
+              Website designed by Vinay Sateesh and Nimisha Vijay
             </Typography>
           </Grid>
+          <Grid item xs={12} sm={2}></Grid>
         </Grid>
       </Container>
     </div>
