@@ -60,6 +60,29 @@ export const ContrastTextField = withStyles({
   },
 })(TextField);
 
+export const PrimaryTextField = withStyles((theme) => ({
+  root: {
+    "& label.Mui-focused": {
+      color: "black",
+      fontWeight: 700,
+    },
+
+    "& .MuiOutlinedInput-root": {
+      "& fieldset": {
+        borderColor: "black",
+      },
+      "&:hover fieldset": {
+        boxShadow: "0 0  18px rgba(0, 0, 0,0.1)",
+        borderColor: "black",
+      },
+      "&.Mui-focused fieldset": {
+        borderColor: "black",
+      },
+    },
+    borderColor: "black",
+  },
+}))(TextField);
+
 export const PrimaryButton = withStyles((theme) => ({
   root: {
     color: "white",
@@ -69,6 +92,7 @@ export const PrimaryButton = withStyles((theme) => ({
       backgroundColor: theme.palette.primary.main,
     },
     width: 124,
+    height: "100%",
   },
 }))(Button);
 

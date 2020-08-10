@@ -52,7 +52,7 @@ const Navbar = () => {
       {!!open && (
         <div className={classes.overlay}>
           <Container maxWidth="lg">
-            <Grid container direction="column">
+            <Grid container direction="column" className={classes.container}>
               <Grid container item>
                 <Grid item xs></Grid>
                 <Grid
@@ -81,6 +81,15 @@ const Navbar = () => {
                   gutterBottom
                 >
                   Home
+                </Typography>
+              </Grid>
+              <Grid container item xs justify="center" alignItems="center">
+                <Typography
+                  variant="body1"
+                  className={clsx(classes.whiteText)}
+                  gutterBottom
+                >
+                  Brought to you by TEDxPESU
                 </Typography>
               </Grid>
             </Grid>

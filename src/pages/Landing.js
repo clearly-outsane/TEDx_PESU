@@ -117,7 +117,7 @@ const Landing = () => {
 
       <AboutTedxSection />
       <AboutCountdownSection />
-      {/* <MailchimpForm /> */}
+      <MailchimpForm />
     </div>
   );
 };

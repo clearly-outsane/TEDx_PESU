@@ -19,6 +19,11 @@ const navbarStyles = makeStyles((theme) => ({
     transition: "0.5s",
     backgroundColor: "black",
   },
+  container: {
+    display: "grid",
+    gridTemplateRows: "auto 1fr auto",
+    height: "100vh",
+  },
   whiteText: { color: "white" },
   closeOverlay: {},
 }));
