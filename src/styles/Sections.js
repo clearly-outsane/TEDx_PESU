@@ -28,6 +28,7 @@ const mailchimpFormSection = makeStyles((theme) => ({
   whiteText: { color: "white" },
   blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
   topBotMargin: { marginTop: 18, marginBottom: 18 },
+
 }));
 
 export { aboutSection, mailchimpFormSection };
