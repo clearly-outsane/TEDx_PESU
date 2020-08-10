@@ -14,9 +14,28 @@ const Footer = () => {
           alignItems="center"
           style={{ height: stylingConstants.NAVBAR_HEIGHT }}
         >
-          <Typography ariant="caption" style={{ color: "white" }}>
-            Made with ❤
-          </Typography>
+          <Grid item xs={12} sm={4}>
+            <Typography variant="body2" style={{ color: "white" }}>
+              Made with ❤
+            </Typography>
+          </Grid>
+          <Grid item xs={12} sm={4} container justify="center">
+            <Typography
+              variant="caption"
+              style={{ color: "white" }}
+              align="center"
+            >
+              This independent TEDx event is operated under license from TED.
+            </Typography>
+            <br />
+            <Typography
+              variant="caption"
+              style={{ color: "white" }}
+              align="center"
+            >
+              Designed by Vinay Sateesh and Nimisha Vijay
+            </Typography>
+          </Grid>
         </Grid>
       </Container>
     </div>
