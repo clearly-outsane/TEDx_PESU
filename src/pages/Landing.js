@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
@@ -13,8 +13,11 @@ import AboutTedxSection from "../components/AboutTedxSection";
 import AboutCountdownSection from "../components/AboutCountdownSection";
 import MailchimpForm from "../components/MailchimpForm";
 
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
 const Landing = () => {
   const classes = landingStyles();
+  const formRef = useRef(null);
   return (
     <div className={classes.blackBackground}>
       <Container maxWidth="lg" className={classes.container}>
@@ -54,14 +57,13 @@ const Landing = () => {
                 Join us on a countdown to a zero carbon world
               </Typography>
 
-              <a
-                style={{ textDecoration: "none", color: "white" }}
-                href="https://tedxpesu.us17.list-manage.com/subscribe/post?u=ba7804f5c0145f0050fc88bd4&amp;id=f7a8682e3a"
+              <PrimaryButton
+                style={{ marginBottom: 8 }}
+                size="large"
+                onClick={() => scrollToRef(formRef)}
               >
-                <PrimaryButton style={{ marginBottom: 8 }} size="large">
-                  Register
-                </PrimaryButton>
-              </a>
+                Register
+              </PrimaryButton>
             </Grid>
 
             <Grid
@@ -119,7 +121,9 @@ const Landing = () => {
 
       <AboutTedxSection />
       <AboutCountdownSection />
-      <MailchimpForm />
+      <div ref={formRef}>
+        <MailchimpForm />
+      </div>
     </div>
   );
 };
