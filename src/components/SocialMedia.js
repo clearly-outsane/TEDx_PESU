@@ -9,12 +9,12 @@ const SocialMedia = () => {
 	return (
 		<Grid 
 			container item
-			// spacing={12} // what is spacing how to increase
-			justify="center"
+			spacing={12} // what is spacing how to increase
+			justify="space-around"
 			alignItems="center">
-			<Grid xs={4}><a href="https://www.instagram.com/tedxpesu/" target="_blank"><InstagramIcon /></a></Grid>
-			<Grid xs={4}><a href="https://www.facebook.com/tedxpesu" target="_blank"><FacebookIcon /></a></Grid>
-			<Grid xs={4}><a href="https://www.linkedin.com/company/tedxpesu/" target="_blank"><LinkedInIcon /></a></Grid>
+			<Grid xs={4}><a href="https://www.instagram.com/tedxpesu/" target="_blank"><InstagramIcon color="primary" /></a></Grid>
+			<Grid xs={4}><a href="https://www.facebook.com/tedxpesu" target="_blank"><FacebookIcon color="primary"/></a></Grid>
+			<Grid xs={4}><a href="https://www.linkedin.com/company/tedxpesu/" target="_blank"><LinkedInIcon color="primary"/></a></Grid>
 		</Grid>
 	);
 
