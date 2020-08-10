@@ -5,6 +5,7 @@ import clsx from "clsx";
 
 import { PrimaryTextField, PrimaryButton } from "../styles/theme";
 import { mailchimpFormSection } from "../styles/Sections";
+import SocialMedia from "./SocialMedia";
 
 const MailchimpForm = () => {
   const classes = mailchimpFormSection();
@@ -107,6 +108,9 @@ const MailchimpForm = () => {
           </Grid>
         </form>
       </div>
+			<div>
+				<SocialMedia />
+			</div>
       <div>
         <Grid container alignItems="flex-end">
           <Typography variant="caption" gutterBottom style={{ margin: 18 }}>
