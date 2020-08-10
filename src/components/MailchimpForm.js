@@ -107,10 +107,11 @@ const MailchimpForm = () => {
             </div>
           </Grid>
         </form>
+        <div style={{ marginTop: " 50%" }}>
+          <SocialMedia />
+        </div>
       </div>
-			<div>
-				<SocialMedia />
-			</div>
+
       <div>
         <Grid container alignItems="flex-end">
           <Typography variant="caption" gutterBottom style={{ margin: 18 }}>

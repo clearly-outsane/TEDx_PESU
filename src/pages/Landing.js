@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
 import TextField from "@material-ui/core/TextField";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import Navbar from "../components/Navbar";
 import { landingStyles } from "../styles/Landing";
@@ -57,14 +58,17 @@ const Landing = () => {
                 Help change climate change. <br />
                 Join us on a countdown to a zero carbon world
               </Typography>
-
-              <PrimaryButton
-                style={{ marginBottom: 8 }}
-                size="large"
-                onClick={() => scrollToRef(formRef)}
+              <Link
+                activeClass="active"
+                to="mailchimpForm"
+                spy={true}
+                smooth={true}
+                duration={500}
               >
-                Register
-              </PrimaryButton>
+                <PrimaryButton style={{ marginBottom: 8 }} size="large">
+                  Register
+                </PrimaryButton>
+              </Link>
             </Grid>
 
             <Grid
@@ -122,7 +126,7 @@ const Landing = () => {
 
       <AboutTedxSection />
       <AboutCountdownSection />
-      <div ref={formRef}>
+      <div ref={formRef} id="mailchimpForm">
         <MailchimpForm />
       </div>
       <Footer />
