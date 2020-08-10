@@ -93,6 +93,7 @@ const Landing = () => {
             ].map((name) => {
               return (
                 <Grid item className={clsx(classes.marginLeftRight32)}>
+                  {/* 
                   <Typography
                     variant="body1"
                     className={clsx(classes.whiteText, classes.boldText)}
@@ -100,14 +101,15 @@ const Landing = () => {
                   >
                     {name.split(" ")[0]}
                   </Typography>
-                  {/* Don't forget the space in between */}` `
+                  ` `
                   <Typography
                     variant="body1"
                     className={clsx(classes.whiteText, classes.marginBottom18)}
                     display="inline"
                   >
                     {name.split(" ")[1]}
-                  </Typography>
+                  </Typography> 
+                  */}
                 </Grid>
               );
             })}
