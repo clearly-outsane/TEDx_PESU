@@ -111,7 +111,7 @@ const MailchimpForm = () => {
         <Grid container alignItems="flex-end">
           <Typography variant="caption" gutterBottom style={{ margin: 18 }}>
             We promise not to spam your inbox. You will only receive relevant
-            emails and content detailing about our events.
+            emails and content about our events.
           </Typography>
         </Grid>
       </div>

@@ -12,6 +12,7 @@ import earth from "../assets/gifs/earth.gif";
 import AboutTedxSection from "../components/AboutTedxSection";
 import AboutCountdownSection from "../components/AboutCountdownSection";
 import MailchimpForm from "../components/MailchimpForm";
+import Footer from "../components/Footer";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
@@ -124,6 +125,7 @@ const Landing = () => {
       <div ref={formRef}>
         <MailchimpForm />
       </div>
+      <Footer />
     </div>
   );
 };
