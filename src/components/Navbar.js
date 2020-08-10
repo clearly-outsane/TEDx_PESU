@@ -74,13 +74,27 @@ const Navbar = () => {
                   </IconButton>
                 </Grid>
               </Grid>
-              <Grid container item xs justify="center" alignItems="center">
+              <Grid
+                container
+                item
+                xs
+                justify="center"
+                alignItems="center"
+                direction="column"
+              >
                 <Typography
                   variant="h3"
                   className={clsx(classes.whiteText)}
                   gutterBottom
                 >
                   Home
+                </Typography>
+                <Typography
+                  variant="h6"
+                  className={clsx(classes.whiteText)}
+                  gutterBottom
+                >
+                  More pages coming soon!
                 </Typography>
               </Grid>
               <Grid container item xs justify="center" alignItems="center">

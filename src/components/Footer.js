@@ -15,7 +15,11 @@ const Footer = () => {
           style={{ height: stylingConstants.NAVBAR_HEIGHT }}
         >
           <Grid item xs={12} sm={4}>
-            <Typography variant="body2" style={{ color: "white" }}>
+            <Typography
+              variant="body2"
+              style={{ color: "white" }}
+              align="center"
+            >
               Made with ❤
             </Typography>
           </Grid>
