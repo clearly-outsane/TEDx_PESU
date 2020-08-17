@@ -24,7 +24,7 @@ const AboutTED = () => {
             container
             justify="flex-start"
             alignItems="center"
-            style={{ marginTop: 150 }}
+            style={{ marginTop: 200 }}
           >
             <Typography
               variant="h2"

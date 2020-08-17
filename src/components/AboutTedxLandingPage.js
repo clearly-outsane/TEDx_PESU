@@ -21,7 +21,6 @@ const AboutSection = () => {
           >
             <Typography
               variant="h2"
-              className={clsx(classes.boldText)}
               gutterBottom
             >
               About TEDx
