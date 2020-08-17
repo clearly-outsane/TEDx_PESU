@@ -24,6 +24,20 @@ const navbarStyles = makeStyles((theme) => ({
     gridTemplateRows: "auto 1fr auto",
     height: "100vh",
   },
+	link: {
+		default: {
+			color: "white",
+			textDecoration: "none",
+			"&:visited": {
+				color: "white",
+				textDecoration: "none"
+			}
+		},
+		active: {
+			color: theme.palette.primary.main,
+			textDecoration: "none"
+		}
+	},
   whiteText: { color: "white" },
   closeOverlay: {},
 }));

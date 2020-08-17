@@ -15,11 +15,13 @@ const aboutSection = makeStyles((theme) => ({
     margin: 0,
   },
   whiteText: { color: "white" },
+  boldText: { fontWeight: "600" },
   blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
 }));
 
 const mailchimpFormSection = makeStyles((theme) => ({
   container: {
+		padding: "5vh 0",
     display: "grid",
     placeItems: "center",
     height: "100vh",

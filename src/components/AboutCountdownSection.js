@@ -25,7 +25,7 @@ const AboutSection = () => {
               className={clsx(classes.whiteText)}
               gutterBottom
             >
-              What is Countdown ?
+              What is Countdown?
             </Typography>
           </Grid>
         </Container>
