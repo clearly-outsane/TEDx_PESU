@@ -2,10 +2,13 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const navbarStyles = makeStyles((theme) => ({
   logo: {
-    height: "56%", //not sure what height to keep this - 100% is too large
-    width: "100%",
+		/* DID JUGAAD WILL FIX PROPERLY LATER */
+		objectFit: "contain",
+    // width: "100%",
+    height: "8vh", //not sure what height to keep this - 100% is too large
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
+		padding: "1vh",
   },
   overlay: {
     height: "100vh",

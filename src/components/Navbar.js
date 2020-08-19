@@ -33,9 +33,12 @@ const Navbar = () => {
             container
             item
             xs
-            className={classes.logo}
-            style={{ backgroundImage: `url(${logo})` }}
-          ></Grid>
+            // style={{ backgroundImage: `url(${logo})` }}
+          >
+						<a href="/">
+							<img src={logo} alt="TEDxPESU" className={classes.logo} />		
+						</a>
+					</Grid>
         </Grid>
         <Grid container item xs>
           <Grid container justify="flex-end" alignItems="center">
