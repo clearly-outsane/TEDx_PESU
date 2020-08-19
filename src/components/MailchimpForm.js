@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { PrimaryTextField, PrimaryButton } from "../styles/theme";
 import { mailchimpFormSection } from "../styles/Sections";
 import SocialMedia from "./SocialMedia";
+import CallToAction from "../components/JoinTheCountdown";
 
 const MailchimpForm = () => {
   const classes = mailchimpFormSection();
@@ -15,7 +16,7 @@ const MailchimpForm = () => {
   return (
     <div className={classes.container}>
       <Container maxWidth="lg">
-        <Typography
+        {/* <Typography
           variant="h2"
           gutterBottom
           align="center"
@@ -32,7 +33,8 @@ const MailchimpForm = () => {
         >
           What are you waiting for? Join us on our journey to make an impact. Be
           the change.
-        </Typography>
+        </Typography> */}
+        <CallToAction />
       </Container>
       <div>
         <form

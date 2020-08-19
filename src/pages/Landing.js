@@ -132,6 +132,7 @@ const Landing = () => {
       <div>
         <AboutTedxSection />
         <AboutCountdownSection />
+
         <div ref={formRef} id="mailchimpForm">
           <MailchimpForm />
         </div>
