@@ -6,6 +6,7 @@ import clsx from "clsx";
 
 import { aboutSection } from "../styles/Sections";
 import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
+import theme from "../styles/theme";
 
 const AboutSection = () => {
   const classes = aboutSection();
@@ -24,7 +25,7 @@ const AboutSection = () => {
               className={clsx(classes.whiteText)}
               gutterBottom
             >
-              What is Countdown ?
+              What is Countdown?
             </Typography>
           </Grid>
         </Container>
@@ -39,7 +40,12 @@ const AboutSection = () => {
               style={{ marginTop: 48 }}
             >
               <Typography variant="h6" className={clsx(classes.whiteText)}>
-                Countdown is a global initiative to champion and accelerate
+                <a 
+									href="https://countdown.ted.com/" 
+									target="_blank" rel="noopener noreferrer"
+									style={{color: theme.palette.secondary.main, textDecoration: "none"}}
+								>	Countdown </a> 
+								is a global initiative to champion and accelerate
                 solutions to the climate crisis, turning ideas into action. The
                 goal: To build a better future by cutting greenhouse gas
                 emissions in half by 2030 in the race to a zero-carbon world – a

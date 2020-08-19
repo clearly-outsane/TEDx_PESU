@@ -9,7 +9,7 @@ const SocialMedia = () => {
     <Grid
       container
       // spacing={12} // what is spacing how to increase
-      justify="space-between"
+      justify="center"
       alignItems="center"
     >
       <Grid item xs>

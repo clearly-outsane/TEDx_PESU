@@ -4,7 +4,8 @@ const aboutSection = makeStyles((theme) => ({
   container: {
     display: "grid",
     gridTemplateRows: "auto 1fr auto",
-    height: "100vh",
+    minHeight: "100vh",
+		maxHeight: "100%"
   },
   backgroundText: {
     zIndex: 0,
@@ -15,11 +16,34 @@ const aboutSection = makeStyles((theme) => ({
     margin: 0,
   },
   whiteText: { color: "white" },
+  boldText: { fontWeight: "600" },
   blackBackground: { backgroundColor: "rgba(0,0,0,0.84)" },
+}));
+
+const aboutPageStyles = makeStyles((theme) => ({
+	container: {
+    display: "grid",
+    gridTemplateRows: "auto 1fr auto",
+    minHeight: "100vh",
+		maxHeight: "100%",
+  },
+  backgroundText: {
+    zIndex: 0,
+    display: "block",
+    overflowY: "hidden",
+    overflowX: "hidden",
+
+    margin: 0,
+  },
+  whiteText: { color: "white" },
+  boldText: { fontWeight: "600" },
+  blackBackground: { backgroundColor: "black" },
+	whiteBackground: { backgroundColor: "white" }
 }));
 
 const mailchimpFormSection = makeStyles((theme) => ({
   container: {
+		padding: "5vh 0",
     display: "grid",
     placeItems: "center",
     height: "100vh",
@@ -31,4 +55,4 @@ const mailchimpFormSection = makeStyles((theme) => ({
 
 }));
 
-export { aboutSection, mailchimpFormSection };
+export { aboutSection, aboutPageStyles, mailchimpFormSection };

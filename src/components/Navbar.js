@@ -10,6 +10,8 @@ import Typography from "@material-ui/core/Typography";
 import logo from "../assets/images/tedxLogo.png";
 import { navbarStyles } from "../styles/Navbar";
 import { stylingConstants } from "../constants";
+import { Link } from "@material-ui/core";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const classes = navbarStyles();
@@ -84,10 +86,19 @@ const Navbar = () => {
               >
                 <Typography
                   variant="h3"
-                  className={clsx(classes.whiteText)}
                   gutterBottom
                 >
-                  Home
+                  <Link href="/" className={classes.whiteText}> 
+										Home
+									</Link>
+                </Typography>
+								<Typography
+                  variant="h3"
+                  gutterBottom
+                >
+                  <Link href="/about" className={classes.whiteText}> 
+										About
+									</Link>
                 </Typography>
                 <Typography
                   variant="h6"
