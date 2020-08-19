@@ -4,14 +4,14 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import clsx from "clsx";
 
-import { aboutSection } from "../styles/Sections";
+import { aboutSection, aboutPageStyles } from "../styles/Sections";
 import { ReactComponent as AboutSvg } from "../assets/svg/About.svg";
 
 const AboutTED = () => {
-  const classes = aboutSection();
+  const classes = aboutPageStyles();
   return (
 		<>
-        <Container maxWidth="lg">
+      <div className={clsx(classes.container, classes.whiteBackground)}>
           <AboutSvg
             style={{
 							position: "absolute",
@@ -20,11 +20,12 @@ const AboutTED = () => {
 							opacity: 0.4
             }}
           />
+					<Container maxWidth="lg">
           <Grid
             container
             justify="flex-start"
             alignItems="center"
-            style={{ marginTop: 200 }}
+            style={{ marginTop: 50 }}
           >
             <Typography
               variant="h2"
@@ -35,14 +36,14 @@ const AboutTED = () => {
           </Grid>
         </Container>
         <Container maxWidth="lg">
-          <Grid container justify="center" style={{ height: "100%" }}>
+          <Grid container justify="center" >
             <Grid
               container
               item
               xs={12}
               sm={7}
               alignItems="flex-start"
-              style={{ marginBottom: 50 }}
+              style={{ margin: "50 0" }}
             >
               <Typography variant="h6" gutterBottom>
                 TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day 
@@ -65,6 +66,7 @@ const AboutTED = () => {
             </Grid>
           </Grid>
         </Container>
+				</div>
 		</>
   );
 };

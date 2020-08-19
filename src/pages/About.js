@@ -12,19 +12,21 @@ import MailchimpForm from "../components/MailchimpForm";
 import Footer from "../components/Footer";
 import AboutTEDxAboutPage from "../components/AboutTEDxAboutPage";
 import AboutTED from "../components/AboutTED";
+import { aboutPageStyles } from "../styles/Sections";
 
 const About = () => {
-  const classes = landingStyles();
+  const classes = aboutPageStyles();
   const formRef = useRef(null);
   return (
     <div className={classes.blackBackground}>
+		{/* // <div> */}
       <Container maxWidth="lg">
         <div>
           <Navbar />
         </div>
+      </Container>
 				<AboutTEDxAboutPage />
 				<AboutTED />
-      </Container>
       {/* should we keep this or nah
 			<div ref={formRef} id="mailchimpForm">
         <MailchimpForm />

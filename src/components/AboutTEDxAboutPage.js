@@ -4,25 +4,26 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import clsx from "clsx";
 
-import { aboutSection } from "../styles/Sections";
+import { aboutPageStyles } from "../styles/Sections";
 import { ReactComponent as AboutSvg } from "../assets/svg/AboutWhite.svg";
 import theme from "../styles/theme";
 
 const AboutTEDxAboutPage = () => {
-  const classes = aboutSection();
+  const classes = aboutPageStyles();
   return (
 		<>
-      <Container maxWidth="lg">
+      <div className={clsx(classes.container, classes.blackBackground)}>
           <AboutSvg
             style={{
 							position: "absolute",
               width: "90%",
               height: "22vw",
-							opacity: 0.3
+							opacity: 0.3,
+							overflow: "hidden"
             }}
             fill="white"
           />
-        {/* <Container maxWidth="lg" > */}
+        <Container maxWidth="lg">
           <Grid
             container
             justify="flex-start"
@@ -44,7 +45,7 @@ const AboutTEDxAboutPage = () => {
             </Typography>
           </Grid>
         </Container>
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" className={classes.container}>
           <Grid container justify="center" style={{ height: "100%" }}>
             <Grid
               container
@@ -52,7 +53,7 @@ const AboutTEDxAboutPage = () => {
               xs={12}
               sm={7}
               alignItems="flex-start"
-              style={{ marginTop: 48 }}
+							style={{ marginTop: 50 }}
             >
               <Typography variant="h6" className={clsx(classes.whiteText)}>
                 In the spirit of ideas worth spreading, TEDx is a program of local, self-organized 
@@ -64,9 +65,10 @@ const AboutTEDxAboutPage = () => {
               </Typography>
             </Grid>
           </Grid>
-        {/* </Container> */}
+        </Container>
+				</div>
 
-      </Container>
+      {/* </Container> */}
 			</>
   );
 };
