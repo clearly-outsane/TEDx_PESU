@@ -3,11 +3,11 @@ import { makeStyles } from "@material-ui/core/styles";
 //Donot remove as we need these import for some styles to take effect
 
 const landingStyles = makeStyles((theme) => ({
-  blackBackground: { backgroundColor: "black", height: "100vh" },
+  blackBackground: { backgroundColor: "black", minHeight: "100vh" },
   container: {
     display: "grid",
     gridTemplateRows: "auto 1fr auto",
-    height: "100vh",
+    minHeight: "100vh",
   },
   whiteText: { color: "white" },
   marginBottom1: { marginBottom: 8 },
