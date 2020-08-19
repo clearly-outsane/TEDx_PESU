@@ -21,86 +21,91 @@ const Landing = () => {
   const classes = landingStyles();
   const formRef = useRef(null);
   return (
-    <div className={classes.blackBackground}>
-      <Container maxWidth="lg" className={classes.container}>
-        <div>
-          <Navbar />
-        </div>
-        <div>
-          <Grid
-            container
-            justify="center"
-            alignItems="center"
-            style={{ height: "100%" }}
-          >
-            <Grid container item xs={12} sm={6}>
-              <Typography
-                variant="body1"
-                className={clsx(classes.whiteText, classes.boldText)}
-                display="inline"
-                gutterBottom
-                style={{
-                  fontWeight: 200,
-                  marginBottom: 18,
-                  fontSize: "1.25rem",
-                }}
-              >
-                10.10.2020 10pm IST
-              </Typography>
-              <Typography
-                variant="h4"
-                className={clsx(classes.whiteText, classes.boldText)}
-                display="inline"
-                style={{
-                  marginBottom: 24,
-                }}
-              >
-                Help change climate change. <br />
-                Join us on a countdown to a zero carbon world
-              </Typography>
-              <Link
-                activeClass="active"
-                to="mailchimpForm"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                <PrimaryButton style={{ marginBottom: 8 }} size="large">
-                  Register
-                </PrimaryButton>
-              </Link>
-            </Grid>
-
+    <>
+      <div className={classes.blackBackground}>
+        <Container maxWidth="lg" className={classes.container}>
+          <div>
+            <Navbar />
+          </div>
+          <div>
             <Grid
               container
-              item
-              xs={12}
-              sm={6}
-              alignItems="flex-start"
-              justify="flex-end"
-              style={{ marginBottom: 18 }}
+              justify="center"
+              alignItems="center"
+              style={{ height: "100%" }}
             >
-              <img src={earth} alt="Earth globe gif" className={classes.gif} />
+              <Grid container item xs={12} sm={6}>
+                <Typography
+                  variant="body1"
+                  className={clsx(classes.whiteText, classes.boldText)}
+                  display="inline"
+                  gutterBottom
+                  style={{
+                    fontWeight: 200,
+                    marginBottom: 18,
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  10.10.2020 10pm IST
+                </Typography>
+                <Typography
+                  variant="h4"
+                  className={clsx(classes.whiteText, classes.boldText)}
+                  display="inline"
+                  style={{
+                    marginBottom: 24,
+                  }}
+                >
+                  Help change climate change. <br />
+                  Join us on a countdown to a zero carbon world
+                </Typography>
+                <Link
+                  activeClass="active"
+                  to="mailchimpForm"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  <PrimaryButton style={{ marginBottom: 8 }} size="large">
+                    Register
+                  </PrimaryButton>
+                </Link>
+              </Grid>
+
+              <Grid
+                container
+                item
+                xs={12}
+                sm={6}
+                alignItems="flex-start"
+                justify="flex-end"
+                style={{ marginBottom: 18 }}
+              >
+                <img
+                  src={earth}
+                  alt="Earth globe gif"
+                  className={classes.gif}
+                />
+              </Grid>
             </Grid>
-          </Grid>
-        </div>
-        <div>
-          <Grid
-            container
-            justify="center"
-            alignItems="center"
-            className={classes.marginBottom36}
-          >
-            {[
-              "Speaker Names",
-              "To be",
-              "Announced Soon",
-              "Stay tuned",
-              "Much wow",
-            ].map((name) => {
-              return (
-                <Grid item className={clsx(classes.marginLeftRight32)}>
-                  {/* 
+          </div>
+          <div>
+            <Grid
+              container
+              justify="center"
+              alignItems="center"
+              className={classes.marginBottom36}
+            >
+              {[
+                "Speaker Names",
+                "To be",
+                "Announced Soon",
+                "Stay tuned",
+                "Much wow",
+              ].map((name) => {
+                return (
+                  <Grid item className={clsx(classes.marginLeftRight32)}>
+                    {/* 
                   <Typography
                     variant="body1"
                     className={clsx(classes.whiteText, classes.boldText)}
@@ -117,20 +122,23 @@ const Landing = () => {
                     {name.split(" ")[1]}
                   </Typography> 
                   */}
-                </Grid>
-              );
-            })}
-          </Grid>
-        </div>
-      </Container>
-
-      <AboutTedxSection />
-      <AboutCountdownSection />
-      <div ref={formRef} id="mailchimpForm">
-        <MailchimpForm />
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </div>
+        </Container>
       </div>
-      <Footer />
-    </div>
+      <div>
+        <AboutTedxSection />
+        <AboutCountdownSection />
+
+        <div ref={formRef} id="mailchimpForm">
+          <MailchimpForm />
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

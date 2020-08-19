@@ -1,11 +1,13 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
 import clsx from "clsx";
 
 import { PrimaryTextField, PrimaryButton } from "../styles/theme";
 import { mailchimpFormSection } from "../styles/Sections";
 import SocialMedia from "./SocialMedia";
+import CallToAction from "../components/JoinTheCountdown";
 
 const MailchimpForm = () => {
   const classes = mailchimpFormSection();
@@ -13,18 +15,14 @@ const MailchimpForm = () => {
 
   return (
     <div className={classes.container}>
-      {/* PUT IN YOUR FORM HERE and style that form 
-      
-      
-      */}
-      <div>
-        <Typography
+      <Container maxWidth="lg">
+        {/* <Typography
           variant="h2"
-          className={clsx(classes.boldText)}
           gutterBottom
           align="center"
+          className={classes.wordWrap}
         >
-          #JoinTheCountdown
+          Join the Countdown
         </Typography>
         <Typography
           variant="body1"
@@ -35,8 +33,9 @@ const MailchimpForm = () => {
         >
           What are you waiting for? Join us on our journey to make an impact. Be
           the change.
-        </Typography>
-      </div>
+        </Typography> */}
+        <CallToAction />
+      </Container>
       <div>
         <form
           action="https://tedxpesu.us17.list-manage.com/subscribe/post?u=ba7804f5c0145f0050fc88bd4&amp;id=f7a8682e3a"

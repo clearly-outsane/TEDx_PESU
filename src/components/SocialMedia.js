@@ -6,12 +6,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const SocialMedia = () => {
   return (
-    <Grid
-      container
-      // spacing={12} // what is spacing how to increase
-      justify="center"
-      alignItems="center"
-    >
+    <Grid container justify="center" alignItems="center">
       <Grid item xs>
         <a
           href="https://www.instagram.com/tedxpesu/"
@@ -41,6 +36,7 @@ const SocialMedia = () => {
           href="https://www.linkedin.com/company/tedxpesu/"
           target="_blank"
           rel="noopener noreferrer"
+          style={{ padding: 0 }}
         >
           <LinkedInIcon
             color="primary"
