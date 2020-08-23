@@ -129,9 +129,8 @@ export const LargePrimaryButton = withStyles((theme) => ({
       boxShadow: "0 0  24px rgba(230, 43, 30,0.48)",
       backgroundColor: theme.palette.primary.main,
     },
-    width: 240,
-    height: 64,
-    fontSize: "1rem",
+    width: 224,
+    height: 48,
   },
 }))(Button);
 

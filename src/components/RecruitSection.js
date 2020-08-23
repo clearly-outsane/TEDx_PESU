@@ -23,36 +23,45 @@ const Quote = () => {
           style={{ height: "100%" }}
         >
           <Grid item xs={12}>
-            <Typography
-              variant="h1"
-              align="left"
-              gutterBottom
-              style={{ fontWeight: 600 }}
-            >
-              Here's your chance to work with us!
-            </Typography>
-            <Grid container item xs>
-              <Grid
-                item
-                xs={12}
-                lg={2}
-                md={2}
-                container
-                justify="center"
-                style={{ marginTop: 18, marginBottom: 18 }}
-              >
-                <LargePrimaryButton>Join the team</LargePrimaryButton>
+            <Grid container>
+              <Grid item container xs>
+                <Typography
+                  variant="h3"
+                  align="left"
+                  gutterBottom
+                  style={{ fontWeight: 600 }}
+                >
+                  Here's your chance to work with us!
+                </Typography>
+                <Typography
+                  variant="body1"
+                  align="left"
+                  gutterBottom
+                  style={{ fontWeight: 400 }}
+                >
+                  Whether you are a developer or a content creator, show us your
+                  valuable skills.
+                </Typography>
               </Grid>
-              <Grid
-                item
-                xs={12}
-                lg={5}
-                md={5}
-                container
-                justify="center"
-                style={{ marginTop: 18, marginBottom: 18 }}
-              >
-                <LargePrimaryButton>Perform on the show</LargePrimaryButton>
+              <Grid container item xs direction="column" alignItems="center">
+                <Grid
+                  item
+                  xs={12}
+                  container
+                  justify="center"
+                  style={{ marginTop: 18, marginBottom: 18 }}
+                >
+                  <LargePrimaryButton>Join the team</LargePrimaryButton>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  container
+                  justify="center"
+                  style={{ marginTop: 18, marginBottom: 18 }}
+                >
+                  <LargePrimaryButton>Perform on the show</LargePrimaryButton>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>
