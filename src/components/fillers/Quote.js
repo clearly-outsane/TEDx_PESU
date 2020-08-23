@@ -7,6 +7,7 @@ const Quote = () => {
     <div
       style={{
         minHeight: "50vh",
+				padding: "10vh 0",
         backgroundColor: "black",
         display: "grid",
         placeItems: "center",

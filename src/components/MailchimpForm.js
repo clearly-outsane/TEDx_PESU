@@ -88,7 +88,7 @@ const MailchimpForm = () => {
                 type="submit"
                 size="large"
               >
-                Subscribe
+                Register
               </PrimaryButton>
             </Grid>
 

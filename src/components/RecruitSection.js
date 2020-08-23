@@ -51,7 +51,9 @@ const Quote = () => {
                   justify="center"
                   style={{ marginTop: 18, marginBottom: 18 }}
                 >
-                  <a href="https://forms.gle/aNPffu6HLJoKftCF7" target="_blank">
+                  <a  href="https://forms.gle/aNPffu6HLJoKftCF7" 
+											target="_blank"
+											style={{ textDecoration: "none" }}>
 										<LargePrimaryButton>Join the team</LargePrimaryButton>
 									</a>
                 </Grid>
@@ -62,7 +64,9 @@ const Quote = () => {
                   justify="center"
                   style={{ marginTop: 18, marginBottom: 18 }}
                 >
-                  <a href="https://forms.gle/j7mVCHbk7DaQbb846" target="_blank">
+                  <a  href="https://forms.gle/j7mVCHbk7DaQbb846"
+											target="_blank"
+											style={{ textDecoration: "none" }}>
 										<LargePrimaryButton>Perform on the show</LargePrimaryButton>
 									</a>
                 </Grid>
