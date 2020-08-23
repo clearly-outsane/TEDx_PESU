@@ -46,7 +46,7 @@ let theme = createMuiTheme({
       '"Segoe UI Symbol"',
     ].join(","),
     h4: {
-      fontSize: "2.75rem",
+      fontSize: "2.5rem",
       fontWeight: 400,
     },
     h6: { fontWeight: 400 },

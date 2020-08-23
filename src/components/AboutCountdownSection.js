@@ -51,7 +51,7 @@ const AboutSection = () => {
                     }}
                   >
                     Countdown
-                  </a>
+                  </a>{" "}
                   is a global initiative to champion and accelerate solutions to
                   the climate crisis, turning ideas into action. The goal: To
                   build a better future by cutting greenhouse gas emissions in

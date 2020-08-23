@@ -51,14 +51,13 @@ const Landing = () => {
                   10.10.2020 10pm IST
                 </Typography>
                 <Typography
-                  variant="h4"
+                  variant="h3"
                   className={clsx(classes.whiteText)}
                   display="inline"
                   style={{
                     marginBottom: 24,
                   }}
                 >
-                  Help change climate change. <br />
                   Join us on a countdown to a zero carbon world
                 </Typography>
                 <Link
