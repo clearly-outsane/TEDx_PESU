@@ -19,10 +19,7 @@ const AboutSection = () => {
             alignItems="center"
             style={{ marginTop: 124 }}
           >
-            <Typography
-              variant="h2"
-              gutterBottom
-            >
+            <Typography variant="h2" gutterBottom>
               About TEDx
             </Typography>
           </Grid>
@@ -35,7 +32,7 @@ const AboutSection = () => {
               xs={12}
               sm={7}
               alignItems="flex-start"
-              style={{ marginTop: 48 }}
+              style={{ marginTop: 48, fontWeight: 400 }}
             >
               <Typography variant="h6" gutterBottom>
                 In the spirit of ideas worth spreading, TED has created a

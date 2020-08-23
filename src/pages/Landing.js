@@ -14,6 +14,8 @@ import AboutTedxSection from "../components/AboutTedxLandingPage";
 import AboutCountdownSection from "../components/AboutCountdownSection";
 import MailchimpForm from "../components/MailchimpForm";
 import Footer from "../components/Footer";
+import Quote from "../components/fillers/Quote";
+import RecruitSection from "../components/RecruitSection";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
@@ -50,7 +52,7 @@ const Landing = () => {
                 </Typography>
                 <Typography
                   variant="h4"
-                  className={clsx(classes.whiteText, classes.boldText)}
+                  className={clsx(classes.whiteText)}
                   display="inline"
                   style={{
                     marginBottom: 24,
@@ -136,6 +138,8 @@ const Landing = () => {
         <div ref={formRef} id="mailchimpForm">
           <MailchimpForm />
         </div>
+        <Quote />
+        <RecruitSection />
         <Footer />
       </div>
     </>

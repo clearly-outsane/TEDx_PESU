@@ -14,16 +14,11 @@ const JoinTheCountdown = () => {
       }}
     >
       <Grid container justify="center" alignItems="center" direction="column">
-        <Typography
-          variant="h2"
-          gutterBottom
-          align="center"
-          style={{ fontWeight: 700 }}
-        >
-          We need your help
-        </Typography>
-        <Typography variant="h4" align="center">
+        <Typography variant="body1" align="center">
           #JoinTheCountdown
+        </Typography>
+        <Typography variant="h2" gutterBottom align="center">
+          Sign up for our next event
         </Typography>
       </Grid>
     </div>

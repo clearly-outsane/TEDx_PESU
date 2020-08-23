@@ -39,26 +39,34 @@ const AboutSection = () => {
               alignItems="flex-start"
               style={{ marginTop: 48 }}
             >
-              <Typography variant="h6" className={clsx(classes.whiteText)}>
-                <a 
-									href="https://countdown.ted.com/" 
-									target="_blank" rel="noopener noreferrer"
-									style={{color: theme.palette.secondary.main, textDecoration: "none"}}
-								>	Countdown </a> 
-								is a global initiative to champion and accelerate
-                solutions to the climate crisis, turning ideas into action. The
-                goal: To build a better future by cutting greenhouse gas
-                emissions in half by 2030 in the race to a zero-carbon world – a
-                world that is safer, cleaner and fairer for everyone.
-              </Typography>
-
-              <Typography variant="h6" className={clsx(classes.whiteText)}>
-                We believe that change begins with each of us – that’s why
-                TEDxPESU has launched its own chapter of Countdown. We will
-                showcase the work and ideas of local thinkers and doers to spark
-                a discussion, and help you understand how you can make a
-                difference.
-              </Typography>
+              <Grid item xs={12}>
+                <Typography variant="h6" className={clsx(classes.whiteText)}>
+                  <a
+                    href="https://countdown.ted.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: theme.palette.secondary.main,
+                      textDecoration: "none",
+                    }}
+                  >
+                    Countdown
+                  </a>
+                  is a global initiative to champion and accelerate solutions to
+                  the climate crisis, turning ideas into action. The goal: To
+                  build a better future by cutting greenhouse gas emissions in
+                  half by 2030 in the race to a zero-carbon world – a world that
+                  is safer, cleaner and fairer for everyone.
+                </Typography>
+                <br />
+                <Typography variant="h6" className={clsx(classes.whiteText)}>
+                  We believe that change begins with each of us – that’s why
+                  TEDxPESU has launched its own chapter of Countdown. We will
+                  showcase the work and ideas of local thinkers and doers to
+                  spark a discussion, and help you understand how you can make a
+                  difference.
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
         </Container>
