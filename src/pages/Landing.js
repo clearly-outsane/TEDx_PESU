@@ -134,11 +134,11 @@ const Landing = () => {
         <AboutTedxSection />
         <AboutCountdownSection />
 
+        <RecruitSection />
+        <Quote />
         <div ref={formRef} id="mailchimpForm">
           <MailchimpForm />
         </div>
-        <Quote />
-        <RecruitSection />
         <Footer />
       </div>
     </>
