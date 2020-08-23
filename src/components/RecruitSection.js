@@ -22,57 +22,66 @@ const Quote = () => {
           alignItems="center"
           style={{ height: "100%" }}
         >
-          <Grid item xs={12}>
-            <Grid container>
-              <Grid item container xs>
-                <Typography
-                  variant="h2"
-                  align="left"
-                  gutterBottom
-                  style={{ fontWeight: 600 }}
+          <Grid item xs={12} container>
+            <Grid item container xs={12} lg={6} md={6}>
+              <Typography
+                variant="h2"
+                align="left"
+                gutterBottom
+                style={{ fontWeight: 600 }}
+              >
+                Here's your chance to work with us!
+              </Typography>
+              <Typography
+                variant="body1"
+                align="left"
+                gutterBottom
+                style={{ fontWeight: 400 }}
+              >
+                Whether you are a developer or a content creator, show us your
+                valuable skills.
+              </Typography>
+            </Grid>
+            <Grid
+              container
+              item
+              xs={12}
+              md={6}
+              lg={6}
+              direction="column"
+              alignItems="center"
+            >
+              <Grid
+                item
+                xs
+                container
+                justify="center"
+                style={{ marginTop: 18, marginBottom: 18 }}
+              >
+                <a
+                  href="https://forms.gle/aNPffu6HLJoKftCF7"
+                  style={{ textDecoration: "none" }}
                 >
-                  Here's your chance to work with us!
-                </Typography>
-                <Typography
-                  variant="body1"
-                  align="left"
-                  gutterBottom
-                  style={{ fontWeight: 400 }}
-                >
-                  Whether you are a developer or a content creator, show us your
-                  valuable skills.
-                </Typography>
+                  <LargePrimaryButton>Join the team</LargePrimaryButton>
+                </a>
               </Grid>
-              <Grid container item xs direction="column" alignItems="center">
-                <Grid
-                  item
-                  xs
-                  container
-                  justify="center"
-                  style={{ marginTop: 18, marginBottom: 18 }}
+              <Grid
+                item
+                xs
+                container
+                justify="center"
+                style={{ marginTop: 18, marginBottom: 18 }}
+              >
+                <a
+                  href="https://forms.gle/j7mVCHbk7DaQbb846"
+                  style={{ textDecoration: "none" }}
                 >
-                  <a  href="https://forms.gle/aNPffu6HLJoKftCF7" 
-											target="_blank"
-											style={{ textDecoration: "none" }}>
-										<LargePrimaryButton>Join the team</LargePrimaryButton>
-									</a>
-                </Grid>
-                <Grid
-                  item
-                  xs
-                  container
-                  justify="center"
-                  style={{ marginTop: 18, marginBottom: 18 }}
-                >
-                  <a  href="https://forms.gle/j7mVCHbk7DaQbb846"
-											target="_blank"
-											style={{ textDecoration: "none" }}>
-										<LargePrimaryButton>Perform on the show</LargePrimaryButton>
-									</a>
-                </Grid>
+                  <LargePrimaryButton>Perform on the show</LargePrimaryButton>
+                </a>
               </Grid>
             </Grid>
           </Grid>
+
           <Grid item xs={12}>
             <Typography variant="h4" align="left" gutterBottom>
               Contact us at:
