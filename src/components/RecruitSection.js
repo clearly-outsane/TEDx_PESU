@@ -26,7 +26,7 @@ const Quote = () => {
             <Grid container>
               <Grid item container xs>
                 <Typography
-                  variant="h3"
+                  variant="h2"
                   align="left"
                   gutterBottom
                   style={{ fontWeight: 600 }}
@@ -46,7 +46,7 @@ const Quote = () => {
               <Grid container item xs direction="column" alignItems="center">
                 <Grid
                   item
-                  xs={12}
+                  xs
                   container
                   justify="center"
                   style={{ marginTop: 18, marginBottom: 18 }}
@@ -55,7 +55,7 @@ const Quote = () => {
                 </Grid>
                 <Grid
                   item
-                  xs={12}
+                  xs
                   container
                   justify="center"
                   style={{ marginTop: 18, marginBottom: 18 }}
