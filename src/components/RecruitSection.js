@@ -81,7 +81,7 @@ const Quote = () => {
               </Grid>
             </Grid>
           </Grid>
-
+{/* 
           <Grid item xs={12}>
             <Typography variant="h4" align="left" gutterBottom>
               Contact us at:
@@ -94,7 +94,7 @@ const Quote = () => {
             >
               contact @tedxpesu.com
             </Typography>
-          </Grid>
+        	</Grid> */}
         </Grid>
       </Container>
     </div>
