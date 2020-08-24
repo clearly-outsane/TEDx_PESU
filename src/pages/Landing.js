@@ -47,7 +47,7 @@ const Landing = () => {
                     fontSize: "1.25rem",
                   }}
                 >
-                  10.10.2020 10pm IST
+                  10.10.2020
                 </Typography>
                 <Typography
                   variant="h3"
@@ -59,12 +59,7 @@ const Landing = () => {
                 >
                   Join us on a countdown to a zero carbon world
                 </Typography>
-                <Link
-                  activeClass="active"
-                  smooth
-                  to="/#register"
-                  style={{ textDecoration: "none" }}
-                >
+                <Link smooth to="/#register" style={{ textDecoration: "none" }}>
                   <PrimaryButton style={{ marginBottom: 8 }} size="large">
                     Register
                   </PrimaryButton>
