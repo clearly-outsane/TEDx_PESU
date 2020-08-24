@@ -64,14 +64,7 @@ const MailchimpForm = () => {
                 fullWidth
               />
             </Grid>
-            <Grid
-              container
-              alignItems="center"
-              justify="center"
-              item
-              xs
-              className={classes.topBotMargin}
-            >
+            <Grid item xs className={classes.topBotMargin}>
               <PrimaryTextField
                 fullWidth
                 type="name"

@@ -3,7 +3,8 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
 import TextField from "@material-ui/core/TextField";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
+import { HashLink as Link } from "react-router-hash-link";
 
 import Navbar from "../components/Navbar";
 import { landingStyles } from "../styles/Landing";
@@ -16,8 +17,6 @@ import MailchimpForm from "../components/MailchimpForm";
 import Footer from "../components/Footer";
 import Quote from "../components/fillers/Quote";
 import RecruitSection from "../components/RecruitSection";
-
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
 const Landing = () => {
   const classes = landingStyles();
@@ -48,7 +47,7 @@ const Landing = () => {
                     fontSize: "1.25rem",
                   }}
                 >
-                  10.10.2020 10pm IST
+                  10.10.2020
                 </Typography>
                 <Typography
                   variant="h3"
@@ -60,13 +59,7 @@ const Landing = () => {
                 >
                   Join us on a countdown to a zero carbon world
                 </Typography>
-                <Link
-                  activeClass="active"
-                  to="mailchimpForm"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
+                <Link smooth to="/#register" style={{ textDecoration: "none" }}>
                   <PrimaryButton style={{ marginBottom: 8 }} size="large">
                     Register
                   </PrimaryButton>
@@ -133,9 +126,11 @@ const Landing = () => {
       <div>
         <AboutTedxSection />
         <AboutCountdownSection />
-				<div id="join"><RecruitSection /></div>
+        <div id="join">
+          <RecruitSection />
+        </div>
         <Quote />
-        <div ref={formRef} id="mailchimpForm">
+        <div ref={formRef} id="register">
           <MailchimpForm />
         </div>
         <Footer />
