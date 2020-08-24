@@ -7,6 +7,9 @@ const Quote = () => {
     <div
       style={{
         minHeight: "50vh",
+        // minHeight: "100vh",
+				padding: "10vh 0",
+// >>>>>>> Stashed changes
         backgroundColor: "black",
         display: "grid",
         placeItems: "center",

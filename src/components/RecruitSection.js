@@ -10,7 +10,7 @@ const Quote = () => {
     <div
       style={{
         minHeight: "100vh",
-
+				backgroundColor: "white",
         display: "grid",
         placeItems: "center",
       }}
@@ -69,7 +69,7 @@ const Quote = () => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Typography variant="h4" align="left" gutterBottom>
               Contact us at:
             </Typography>
@@ -81,7 +81,7 @@ const Quote = () => {
             >
               contact @tedxpesu.com
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
     </div>
