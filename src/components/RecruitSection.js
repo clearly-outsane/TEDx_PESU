@@ -39,8 +39,8 @@ const Quote = () => {
                   gutterBottom
                   style={{ fontWeight: 400 }}
                 >
-                  Whether you are a developer or a content creator, show us your
-                  valuable skills.
+                  Whether you want to work behind the scenes or take centre stage,
+									there's a role for you.
                 </Typography>
               </Grid>
               <Grid container item xs direction="column" alignItems="center">
