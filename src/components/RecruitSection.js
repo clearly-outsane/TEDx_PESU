@@ -10,7 +10,7 @@ const Quote = () => {
     <div
       style={{
         minHeight: "100vh",
-
+				backgroundColor: "white",
         display: "grid",
         placeItems: "center",
       }}
@@ -38,8 +38,8 @@ const Quote = () => {
                 gutterBottom
                 style={{ fontWeight: 400 }}
               >
-                Whether you are a developer or a content creator, show us your
-                valuable skills.
+								Whether you want to work behind the scenes or take centre stage,
+								there's a role for you.
               </Typography>
             </Grid>
             <Grid
@@ -83,6 +83,7 @@ const Quote = () => {
           </Grid>
 {/* 
           <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Typography variant="h4" align="left" gutterBottom>
               Contact us at:
             </Typography>
