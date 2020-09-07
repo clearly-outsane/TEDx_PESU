@@ -18,7 +18,7 @@ const JoinTheCountdown = () => {
           #JoinTheCountdown
         </Typography>
         <Typography variant="h2" gutterBottom align="center">
-          Sign up for our next event
+          Register for the online event for free!
         </Typography>
       </Grid>
     </div>
