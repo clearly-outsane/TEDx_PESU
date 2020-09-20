@@ -15,25 +15,25 @@ import AboutTED from "../components/AboutTED";
 import { aboutPageStyles } from "../styles/Sections";
 
 const About = () => {
-  const classes = aboutPageStyles();
-  const formRef = useRef(null);
-  return (
-    <div className={classes.blackBackground}>
-		{/* // <div> */}
-      <Container maxWidth="lg">
-        <div>
-          <Navbar />
-        </div>
-      </Container>
-				<AboutTEDxAboutPage />
-				<AboutTED />
-      {/* should we keep this or nah
+    const classes = aboutPageStyles();
+    const formRef = useRef(null);
+    return (
+        <div className={classes.blackBackground}>
+            {/* // <div> */}
+            <Container maxWidth="lg">
+                <div>
+                    <Navbar />
+                </div>
+            </Container>
+            {/* <AboutTEDxAboutPage /> */}
+            <AboutTED />
+            {/* should we keep this or nah
 			<div ref={formRef} id="mailchimpForm">
         <MailchimpForm />
       </div> */}
-      <Footer />
-    </div>
-  );
+            <Footer />
+        </div>
+    );
 };
 
 export default About;
