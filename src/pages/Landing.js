@@ -48,7 +48,7 @@ const Landing = () => {
                     fontSize: "1.25rem",
                   }}
                 >
-                  10.10.2020
+                  17.10.2020
                 </Typography>
                 <Typography
                   variant="h3"
