@@ -130,8 +130,8 @@ const Landing = () => {
         {/* <div id="join">
           <RecruitSection />
         </div> */}
-        <Speakers />
-        <Quote />
+        {/* <Speakers />
+        <Quote /> */}
         <div ref={formRef} id="register">
           <MailchimpForm />
         </div>
