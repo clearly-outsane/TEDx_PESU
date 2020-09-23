@@ -1,5 +1,5 @@
 import React from "react";
-import { responsiveFontSizes, Typography } from "@material-ui/core";
+import {Container, responsiveFontSizes, Typography} from '@material-ui/core';
 import {speakerStyles} from '../styles/speakers'
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Sliders from "./Sliders";
@@ -17,7 +17,7 @@ theme = responsiveFontSizes(theme);
 const Speakers = () => {
     const classes = speakerStyles();
     return (
-        <div className={classes.root}>
+        <Container className={classes.root}>
             <ThemeProvider theme={theme}>
                 <div className={classes.speakerHeader}>
                 <Typography className={classes.heading} align="left" variant="h3">
@@ -30,7 +30,7 @@ const Speakers = () => {
                 <Sliders />
 
             </ThemeProvider>
-        </div>
+        </Container>
     );
 };
 

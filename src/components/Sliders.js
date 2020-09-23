@@ -8,7 +8,7 @@ import SwiperCore, {
 } from "swiper";
 import {sliderParams} from '../styles/speakers';
 import speakerImage1 from "../assets/images/speakerImages/speaker1.jpg";
-import speakerImage2 from "../assets/images/speakerImages/speaker2.jpeg";
+import speakerImage2 from "../assets/images/speakerImages/speaker2.jpg"
 import speakerImage3 from "../assets/images/speakerImages/speaker3.jpg";
 import "swiper/swiper-bundle.css";
 import '../styles/slider.css'
@@ -43,23 +43,7 @@ const Sliders = () => {
                 <Typography className={classes.name}>Speakers name</Typography>
                 <Typography>Environmantalists</Typography>
             </div>
-        </SwiperSlide>,
-        <SwiperSlide key={1}>
-            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-            <img src={speakerImage2} alt="image1" />
-            <div style={{ background: "#eee" }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
-            </div>
-        </SwiperSlide>,
-        <SwiperSlide key={1}>
-            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-            <img src={speakerImage3} alt="image1" />
-            <div style={{ background: "#eee" }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
-            </div>
-        </SwiperSlide>,
+        </SwiperSlide>
     ];
 
     return (

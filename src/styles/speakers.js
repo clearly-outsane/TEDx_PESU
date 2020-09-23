@@ -1,27 +1,17 @@
 import {makeStyles} from "@material-ui/core/styles";
 
 const speakerStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
+    Container: {
         boxSizing:'border-box',
-        marginLeft:'auto',
-        marginRight:'auto',
-        paddingLeft:"16px",
-        paddingRight:"16px",
+        minHeight: "100vh",
     },
     speakerHeader:{
-        margin:"0 auto",
         paddingTop:50,
     },
     heading: {
-        fontFamily: "Raleway",
         fontStyle: "normal",
         fontWeight: "bold",
         transition: "0.5s",
-    },
-    details: {
-        fontFamily: "Raleway",
-        fontStyle: "normal",
     },
 
 }));
@@ -41,24 +31,20 @@ const sliderParams = {
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
-        depth: 100,
-        modifier: 1,
     },
     grabCursor: true,
-    slidesPerView: "auto",
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets: true,
     },
     breakpoints: {
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 40,
         },
         768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 30,
         },
         640: {
