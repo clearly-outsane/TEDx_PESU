@@ -1,12 +1,34 @@
-import React from 'react'
-import Grid from '@material-ui/core/Grid'
+import React from "react";
+import { responsiveFontSizes, Typography } from "@material-ui/core";
+import {speakerStyles} from '../styles/speakers'
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import Sliders from "./Sliders";
+
+
+
+let theme = createMuiTheme({
+    typography: {
+        fontFamily: "Raleway",
+    },
+});
+
+theme = responsiveFontSizes(theme);
 
 const Speakers = () => {
+    const classes = speakerStyles();
     return (
-        <div style={{height:'100vh'}}>
-            Speakers
+        <div className={classes.root}>
+            <ThemeProvider theme={theme}>
+                <Typography className={classes.heading} align="left" variant="h3">
+                    Meet the event
+                </Typography>
+                <Typography className={classes.heading} align="left" variant="h3">
+                    speakers
+                </Typography>
+                <Sliders />
+            </ThemeProvider>
         </div>
-    )
-}
+    );
+};
 
-export default Speakers
+export default Speakers;
