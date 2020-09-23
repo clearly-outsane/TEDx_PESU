@@ -3,7 +3,15 @@ import {makeStyles} from "@material-ui/core/styles";
 const speakerStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        padding: 50,
+        boxSizing:'border-box',
+        marginLeft:'auto',
+        marginRight:'auto',
+        paddingLeft:"16px",
+        paddingRight:"16px",
+    },
+    speakerHeader:{
+        margin:"0 auto",
+        paddingTop:50,
     },
     heading: {
         fontFamily: "Raleway",
@@ -15,6 +23,7 @@ const speakerStyles = makeStyles((theme) => ({
         fontFamily: "Raleway",
         fontStyle: "normal",
     },
+
 }));
 
 const sliderStyles = makeStyles((theme) => ({
@@ -56,7 +65,7 @@ const sliderParams = {
             slidesPerView: 2,
             spaceBetween: 20,
         },
-        320: {
+        360: {
             slidesPerView: 1,
             spaceBetween: 10,
         },

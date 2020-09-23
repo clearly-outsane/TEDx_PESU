@@ -19,13 +19,16 @@ const Speakers = () => {
     return (
         <div className={classes.root}>
             <ThemeProvider theme={theme}>
+                <div className={classes.speakerHeader}>
                 <Typography className={classes.heading} align="left" variant="h3">
                     Meet the event
                 </Typography>
                 <Typography className={classes.heading} align="left" variant="h3">
                     speakers
                 </Typography>
+                </div>
                 <Sliders />
+
             </ThemeProvider>
         </div>
     );
