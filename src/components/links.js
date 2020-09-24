@@ -5,30 +5,9 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import imagex from "../assets/images/speakerImages/imagex.png";
 import "../styles/links.css";
-import Box from "@material-ui/core/Box";
 import Hidden from "@material-ui/core/Hidden";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-
-let theme = createMuiTheme({
-  typography: {
-    fontFamily: "Raleway",
-  },
-});
-
-theme = responsiveFontSizes(theme);
-
 const LinksPage = () => {
-  const classes = useStyles();
   return (
     <Grid
       container
@@ -40,40 +19,37 @@ const LinksPage = () => {
         </Grid>
       </Hidden>
       <Grid
-        container
         justify="center"
         xs={12}
         md={6}
         style={{ padding: "0 30px", transition: "0.3s" }}
       >
-        <Grid item xs={12} style={{ height: "20vh", marginTop: "100px" }}>
+        <Grid item xs={12} style={{ marginTop: "100px", marginBottom: "30px" }}>
           <Typography style={{ maxWidth: "75%" }} variant="h3" gutterBottom>
             Everything in one place for your convinience
           </Typography>
         </Grid>
-        <Grid container xs={12} style={{ height: "40vh" }}>
+        <Grid
+          container
+          xs={12}
+          style={{ height: "40vh" }}
+          alignContent="space-around"
+        >
           <Grid container item xs={12}>
             <Grid item xs={6} md={6}>
               <Typography
                 display="inline"
                 style={{
                   color: "rgba(0,0,0,0.48)",
+                  fontWeight: "600",
                   marginRight: "10px",
                 }}
-              >
-                Bare Habits-CMS Collaboration
-              </Typography>
-            </Grid>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{ color: "red", marginRight: "10px" }}
               >
                 <a
                   className="link"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
                 >
-                  Submission Form
+                  Bare Habits - CMS Collaboration
                 </a>
               </Typography>
             </Grid>
@@ -84,55 +60,19 @@ const LinksPage = () => {
                 display="inline"
                 style={{
                   color: "rgba(0,0,0,0.48)",
-                  marginRight: "10px",
-                }}
-              >
-                Green Mile Ideathon-sponsored by CIE
-              </Typography>
-            </Grid>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{
-                  color: "rgba(0,0,0,0.48)",
+                  fontWeight: "600",
                   marginRight: "10px",
                 }}
               >
                 <a
                   className="link"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc4XrrZTie9mvvvBilDw9tNOCHelIh4IEAop4LlqtPQttLSog/viewform"
                 >
-                  Registration Link
+                  Green Mile Ideathon-sponsored by CIE
                 </a>
               </Typography>
             </Grid>
           </Grid>
-          {/*<Grid container item xs={12}>*/}
-          {/*  <Grid item xs={6} md={6}>*/}
-          {/*    <Typography*/}
-          {/*      display="inline"*/}
-          {/*      style={{*/}
-          {/*        color: "rgba(0,0,0,0.48)",*/}
-          {/*        marginRight: "10px",*/}
-          {/*      }}*/}
-          {/*    >*/}
-          {/*      Register to attend Countdown*/}
-          {/*    </Typography>*/}
-          {/*  </Grid>*/}
-          {/*  <Grid item xs={6} md={6}>*/}
-          {/*    <Typography*/}
-          {/*      display="inline"*/}
-          {/*      style={{*/}
-          {/*        color: "rgba(0,0,0,0.48)",*/}
-          {/*        marginRight: "10px",*/}
-          {/*      }}*/}
-          {/*    >*/}
-          {/*      <a className="link" href="www.tedxpesu.com/#register">*/}
-          {/*        Registration Link*/}
-          {/*      </a>*/}
-          {/*    </Typography>*/}
-          {/*  </Grid>*/}
-          {/*</Grid>*/}
           <Button
             style={{
               height: "40px",
@@ -144,7 +84,12 @@ const LinksPage = () => {
               fontWeight: 600,
             }}
           >
-            Register for Countdown
+            <a
+              style={{ textDecoration: "none", color: "#fff" }}
+              href="www.tedxpesu.com/#register"
+            >
+              Register for Countdown
+            </a>
           </Button>
         </Grid>
       </Grid>
