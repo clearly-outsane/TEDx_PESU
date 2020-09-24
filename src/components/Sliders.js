@@ -14,19 +14,29 @@ import 'swiper/swiper-bundle.css'
 import '../styles/slider.css'
 import { Grid, Typography } from '@material-ui/core'
 import { sliderStyles } from '../styles/speakers'
+import {makeStyles} from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, EffectFade])
 const Sliders = () => {
     const classes = sliderStyles()
     const backgroundImg = {
         backgroundSize: 'cover',
-
         backgroundRepeat: 'no-repeat',
         width: '100%',
         height: 420,
         backgroundPositionY: 0,
     }
-    const slides = [
+    const noImage = makeStyles(theme => ({
+        paper: {
+            margin: theme.spacing(8, 4),
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center'
+        }}))
+
+
+        const slides = [
         <SwiperSlide key={1}>
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
@@ -36,7 +46,7 @@ const Sliders = () => {
                     ...backgroundImg,
                     backgroundImage: `url(${speakerImage1})`,
                 }}
-            ></Grid>
+            />
             <div style={{ background: '#eee' }} className={classes.details}>
                 <Typography className={classes.name}>Sahar Mansoor</Typography>
                 <Typography>Founder, Bare Necessities Zero-Waste Pioneer</Typography>
@@ -51,7 +61,7 @@ const Sliders = () => {
                     ...backgroundImg,
                     backgroundImage: `url(${speakerImage2})`,
                 }}
-            ></Grid>
+            />
             <div style={{ background: '#eee' }} className={classes.details}>
                 <Typography className={classes.name}>Sakshi Agarwal</Typography>
                 <Typography>Co-Founder, Farm Theory</Typography>
@@ -66,7 +76,7 @@ const Sliders = () => {
                     ...backgroundImg,
                     backgroundImage: `url(${speakerImage3})`,
                 }}
-            ></Grid>
+            />
             <div
                 style={{ background: '#eee', marginBottom: 16 }}
                 className={classes.details}
@@ -75,6 +85,8 @@ const Sliders = () => {
                 <Typography>Founder and Director, Climate Trends</Typography>
             </div>
         </SwiperSlide>,
+        <SwiperSlide>
+            <div style={{backgroundColor:"#eee",color:"#222",width:"100%",height:"420px"}}><Typography style={{paddingTop:"50%",margin:"auto",fontSize:"24px",fontWeight:"Bold",textAlign:"center",paddingLeft:"10px",paddingRight:"10px"}}>More Speakers to be announced soon...</Typography></div></SwiperSlide>
     ]
 
     return (
