@@ -1,37 +1,42 @@
-import React from "react";
-import {Container, responsiveFontSizes, Typography} from '@material-ui/core';
-import {speakerStyles} from '../styles/speakers'
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import Sliders from "./Sliders";
-
-
+import React from 'react'
+import { Container, responsiveFontSizes, Typography } from '@material-ui/core'
+import { speakerStyles } from '../styles/speakers'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core'
+import Sliders from './Sliders'
 
 let theme = createMuiTheme({
     typography: {
-        fontFamily: "Raleway",
+        fontFamily: 'Raleway',
     },
-});
+})
 
-theme = responsiveFontSizes(theme);
+theme = responsiveFontSizes(theme)
 
 const Speakers = () => {
-    const classes = speakerStyles();
+    const classes = speakerStyles()
     return (
-        <Container className={classes.root}>
-            <ThemeProvider theme={theme}>
-                <div className={classes.speakerHeader}>
-                <Typography className={classes.heading} align="left" variant="h3">
+        <Container className={classes.Container}>
+            <div>
+                <Typography
+                    className={classes.heading}
+                    align='left'
+                    variant='h2'
+                    style={{ fontWeight: 400, marginTop: 124 }}
+                >
                     Meet the event
                 </Typography>
-                <Typography className={classes.heading} align="left" variant="h3">
+                <Typography
+                    className={classes.heading}
+                    align='left'
+                    variant='h2'
+                    style={{ marginBottom: 24 }}
+                >
                     speakers
                 </Typography>
-                </div>
-                <Sliders />
-
-            </ThemeProvider>
+            </div>
+            <Sliders />
         </Container>
-    );
-};
+    )
+}
 
-export default Speakers;
+export default Speakers
