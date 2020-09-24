@@ -36,7 +36,7 @@ const LinksPage = () => {
     >
       <Hidden smDown>
         <Grid className="imageBx" container xs={6}>
-          <img src={imagex} style={{ width: "100%" }} />
+          <img src={imagex} style={{ width: "100%", objectFit: "cover" }} />
         </Grid>
       </Hidden>
       <Grid
@@ -65,7 +65,7 @@ const LinksPage = () => {
                   marginRight: "10px",
                 }}
               >
-                Submit your application
+                Bare Habits-CMS Collaboration
               </Typography>
             </Grid>
             <Grid item xs={6} md={6}>
@@ -73,7 +73,12 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "red", marginRight: "10px" }}
               >
-                A link
+                <a
+                  className="link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
+                >
+                  Submission Form
+                </a>
               </Typography>
             </Grid>
           </Grid>
@@ -83,7 +88,7 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
               >
-                Submit your application
+                Green Mile Ideathon-sponsored by CIE
               </Typography>
             </Grid>
             <Grid item xs={6} md={6}>
@@ -91,7 +96,12 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
               >
-                Submit your application
+                <a
+                  className="link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
+                >
+                  Registration Link
+                </a>
               </Typography>
             </Grid>
           </Grid>
@@ -101,7 +111,7 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
               >
-                Submit your application
+                Register to attend Countdown
               </Typography>
             </Grid>
             <Grid item xs={6} md={6}>
@@ -109,7 +119,12 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
               >
-                Submit your application
+                <a
+                  className="link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
+                >
+                  Registration Form
+                </a>
               </Typography>
             </Grid>
           </Grid>
@@ -127,7 +142,12 @@ const LinksPage = () => {
                 display="inline"
                 style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
               >
-                Submit your application
+                <a
+                  className="link"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
+                >
+                  Submission Form
+                </a>{" "}
               </Typography>
             </Grid>
           </Grid>
