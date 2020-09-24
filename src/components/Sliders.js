@@ -7,7 +7,7 @@ import SwiperCore, {
     EffectFade,
 } from 'swiper'
 import { sliderParams } from '../styles/speakers'
-import speakerImage1 from '../assets/images/speakerImages/speaker1.jpg'
+import speakerImage1 from '../assets/images/speakerImages/speaker_1.JPG'
 import speakerImage2 from '../assets/images/speakerImages/speaker2.jpg'
 import speakerImage3 from '../assets/images/speakerImages/speaker3.jpg'
 import 'swiper/swiper-bundle.css'
@@ -31,7 +31,6 @@ const Sliders = () => {
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage1}
                 alt='image1'
                 style={{
                     ...backgroundImg,
@@ -47,7 +46,6 @@ const Sliders = () => {
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage1}
                 alt='image1'
                 style={{
                     ...backgroundImg,
@@ -56,14 +54,13 @@ const Sliders = () => {
             ></Grid>
             <div style={{ background: '#eee' }} className={classes.details}>
                 <Typography className={classes.name}>Sakshi Agarwal</Typography>
-                <Typography>Co-Founder Farm Theory</Typography>
+                <Typography>Co-Founder, Farm Theory</Typography>
             </div>
         </SwiperSlide>,
         <SwiperSlide key={1}>
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage3}
                 alt='image1'
                 style={{
                     ...backgroundImg,
