@@ -86,7 +86,7 @@ const LinksPage = () => {
           >
             <a
               style={{ textDecoration: "none", color: "#fff" }}
-              href="www.tedxpesu.com/#register"
+              href="/#register"
             >
               Register for Countdown
             </a>
