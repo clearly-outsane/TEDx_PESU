@@ -12,6 +12,7 @@ import Landing from './pages/Landing'
 import About from './pages/About'
 import './App.css'
 import Join from './pages/Join'
+import LinksPage from './components/links'
 
 const RedirectForm = () => {}
 
@@ -47,6 +48,7 @@ const App = () => {
                                 )
                             }
                         />
+                        <Route exact path='/links' component={LinksPage} />
                         <Route component={NotFound} />
                     </Switch>
                 </div>
