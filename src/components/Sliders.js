@@ -39,8 +39,8 @@ const Sliders = () => {
                 }}
             ></Grid>
             <div style={{ background: '#eee' }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Sahar Mansoor</Typography>
+                <Typography>Founder, Bare Necessities Zero-Waste Pioneer</Typography>
             </div>
         </SwiperSlide>,
         <SwiperSlide key={1}>
@@ -55,8 +55,8 @@ const Sliders = () => {
                 }}
             ></Grid>
             <div style={{ background: '#eee' }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Sakshi Agarwal</Typography>
+                <Typography>Co-Founder Farm Theory</Typography>
             </div>
         </SwiperSlide>,
         <SwiperSlide key={1}>
@@ -74,8 +74,8 @@ const Sliders = () => {
                 style={{ background: '#eee', marginBottom: 16 }}
                 className={classes.details}
             >
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Aarti Khosla</Typography>
+                <Typography>Founder and Director, Climate Trends</Typography>
             </div>
         </SwiperSlide>,
     ]
