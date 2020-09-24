@@ -51,7 +51,7 @@ const LinksPage = () => {
             Everything in one place for your convinience
           </Typography>
         </Grid>
-        <Grid container xs={12} style={{ height: "50vh" }}>
+        <Grid container xs={12} style={{ height: "40vh" }}>
           <Grid container item xs={12}>
             <Grid item xs={6} md={6}>
               <Typography
@@ -107,32 +107,32 @@ const LinksPage = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container item xs={12}>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{
-                  color: "rgba(0,0,0,0.48)",
-                  marginRight: "10px",
-                }}
-              >
-                Register to attend Countdown
-              </Typography>
-            </Grid>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{
-                  color: "rgba(0,0,0,0.48)",
-                  marginRight: "10px",
-                }}
-              >
-                <a className="link" href="www.tedxpesu.com/#register">
-                  Registration Link
-                </a>
-              </Typography>
-            </Grid>
-          </Grid>
+          {/*<Grid container item xs={12}>*/}
+          {/*  <Grid item xs={6} md={6}>*/}
+          {/*    <Typography*/}
+          {/*      display="inline"*/}
+          {/*      style={{*/}
+          {/*        color: "rgba(0,0,0,0.48)",*/}
+          {/*        marginRight: "10px",*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      Register to attend Countdown*/}
+          {/*    </Typography>*/}
+          {/*  </Grid>*/}
+          {/*  <Grid item xs={6} md={6}>*/}
+          {/*    <Typography*/}
+          {/*      display="inline"*/}
+          {/*      style={{*/}
+          {/*        color: "rgba(0,0,0,0.48)",*/}
+          {/*        marginRight: "10px",*/}
+          {/*      }}*/}
+          {/*    >*/}
+          {/*      <a className="link" href="www.tedxpesu.com/#register">*/}
+          {/*        Registration Link*/}
+          {/*      </a>*/}
+          {/*    </Typography>*/}
+          {/*  </Grid>*/}
+          {/*</Grid>*/}
           <Button
             style={{
               height: "40px",
