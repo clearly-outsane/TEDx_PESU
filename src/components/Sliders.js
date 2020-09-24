@@ -31,7 +31,6 @@ const Sliders = () => {
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage1}
                 alt='image1'
                 style={{
                     ...backgroundImg,
@@ -39,15 +38,14 @@ const Sliders = () => {
                 }}
             ></Grid>
             <div style={{ background: '#eee' }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Sahar</Typography>
+                <Typography>Environmantalist</Typography>
             </div>
         </SwiperSlide>,
         <SwiperSlide key={1}>
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage1}
                 alt='image1'
                 style={{
                     ...backgroundImg,
@@ -55,15 +53,14 @@ const Sliders = () => {
                 }}
             ></Grid>
             <div style={{ background: '#eee' }} className={classes.details}>
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Sakshi Agarwal</Typography>
+                <Typography>Environmantalist</Typography>
             </div>
         </SwiperSlide>,
         <SwiperSlide key={1}>
             {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
             <Grid
                 item
-                src={speakerImage3}
                 alt='image1'
                 style={{
                     ...backgroundImg,
@@ -74,8 +71,8 @@ const Sliders = () => {
                 style={{ background: '#eee', marginBottom: 16 }}
                 className={classes.details}
             >
-                <Typography className={classes.name}>Speakers name</Typography>
-                <Typography>Environmantalists</Typography>
+                <Typography className={classes.name}>Aarti Khosla</Typography>
+                <Typography>Director, Climate Trends</Typography>
             </div>
         </SwiperSlide>,
     ]
