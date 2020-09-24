@@ -35,7 +35,7 @@ const LinksPage = () => {
       style={{ height: "100vh", transition: "0.5s", overflow: "hidden" }}
     >
       <Hidden smDown>
-        <Grid className="imageBx" container xs={6}>
+        <Grid container xs={6}>
           <img src={imagex} style={{ width: "100%", objectFit: "cover" }} />
         </Grid>
       </Hidden>
@@ -47,11 +47,7 @@ const LinksPage = () => {
         style={{ padding: "0 30px", transition: "0.3s" }}
       >
         <Grid item xs={12} style={{ height: "20vh", marginTop: "100px" }}>
-          <Typography
-            style={{ fontSize: "30px", fontWeight: "500" }}
-            variant="h6"
-            gutterBottom
-          >
+          <Typography style={{ maxWidth: "75%" }} variant="h3" gutterBottom>
             Everything in one place for your convinience
           </Typography>
         </Grid>
@@ -86,7 +82,10 @@ const LinksPage = () => {
             <Grid item xs={6} md={6}>
               <Typography
                 display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
+                style={{
+                  color: "rgba(0,0,0,0.48)",
+                  marginRight: "10px",
+                }}
               >
                 Green Mile Ideathon-sponsored by CIE
               </Typography>
@@ -94,7 +93,10 @@ const LinksPage = () => {
             <Grid item xs={6} md={6}>
               <Typography
                 display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
+                style={{
+                  color: "rgba(0,0,0,0.48)",
+                  marginRight: "10px",
+                }}
               >
                 <a
                   className="link"
@@ -109,7 +111,10 @@ const LinksPage = () => {
             <Grid item xs={6} md={6}>
               <Typography
                 display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
+                style={{
+                  color: "rgba(0,0,0,0.48)",
+                  marginRight: "10px",
+                }}
               >
                 Register to attend Countdown
               </Typography>
@@ -117,37 +122,14 @@ const LinksPage = () => {
             <Grid item xs={6} md={6}>
               <Typography
                 display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
+                style={{
+                  color: "rgba(0,0,0,0.48)",
+                  marginRight: "10px",
+                }}
               >
-                <a
-                  className="link"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
-                >
-                  Registration Form
+                <a className="link" href="www.tedxpesu.com/#register">
+                  Registration Link
                 </a>
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid container item xs={12} style={{ marginBottom: "30px" }}>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
-              >
-                Submit your application
-              </Typography>
-            </Grid>
-            <Grid item xs={6} md={6}>
-              <Typography
-                display="inline"
-                style={{ color: "rgba(0,0,0,0.48)", marginRight: "10px" }}
-              >
-                <a
-                  className="link"
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSc9yCsQkdIZCtXtAUQb_Ms90ppWlF_3LkXQaYIYc2gvWstdcg/viewform"
-                >
-                  Submission Form
-                </a>{" "}
               </Typography>
             </Grid>
           </Grid>
