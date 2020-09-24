@@ -7,7 +7,7 @@ import SwiperCore, {
     EffectFade,
 } from 'swiper'
 import { sliderParams } from '../styles/speakers'
-import speakerImage1 from '../assets/images/speakerImages/speaker1.jpg'
+import speakerImage1 from '../assets/images/speakerImages/speaker_1.JPG'
 import speakerImage2 from '../assets/images/speakerImages/speaker2.jpg'
 import speakerImage3 from '../assets/images/speakerImages/speaker3.jpg'
 import 'swiper/swiper-bundle.css'
