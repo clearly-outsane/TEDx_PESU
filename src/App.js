@@ -43,6 +43,13 @@ const App = () => {
                 window.location.replace("https://forms.gle/XaTiW9e8gbK34tNb6")
               }
             />
+            <Route
+              exact
+              path="/links/jtc-upload"
+              render={({ history }) =>
+                window.location.replace("https://forms.gle/vLXhUJMLkXEcX1Hg7")
+              }
+            />
             <Route component={NotFound} />
           </Switch>
         </div>
