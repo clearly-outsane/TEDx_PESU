@@ -12,6 +12,7 @@ import Landing from "./pages/Landing";
 import About from "./pages/About";
 import "./App.css";
 import Join from "./pages/Join";
+import LinksPage from "./components/links";
 
 const RedirectForm = () => {};
 
@@ -30,6 +31,7 @@ const App = () => {
             <Route exact path="/" component={Landing} />
             <Route exact path="/about" component={About} />
             {/* <Route exact path="/join" component={Join} /> */}
+            <Route exact path="/links" component={LinksPage} />
             <Route
               path="/cms"
               render={({ history }) =>
