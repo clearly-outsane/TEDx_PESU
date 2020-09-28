@@ -32,7 +32,7 @@ const LinksPage = () => {
         <Grid
           container
           xs={12}
-          style={{ height: "50vh" }}
+          style={{ height: "40vh" }}
           alignContent="space-around"
         >
           <Grid container item xs={12}>
