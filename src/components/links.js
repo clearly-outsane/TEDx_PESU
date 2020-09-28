@@ -73,6 +73,22 @@ const LinksPage = () => {
               </Typography>
             </Grid>
           </Grid>
+          <Grid container item xs={12}>
+            <Grid item xs={6} md={6}>
+              <Typography
+                display="inline"
+                style={{
+                  color: "rgba(0,0,0,0.48)",
+                  fontWeight: "600",
+                  marginRight: "10px",
+                }}
+              >
+                <a className="link" href="/links/jtc-upload">
+                  #JoinTheCountdown Video Upload
+                </a>
+              </Typography>
+            </Grid>
+          </Grid>
           <Button
             style={{
               height: "40px",
