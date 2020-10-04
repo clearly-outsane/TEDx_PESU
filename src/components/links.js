@@ -24,7 +24,7 @@ const LinksPage = () => {
         md={6}
         style={{ padding: "0 30px", transition: "0.3s" }}
       >
-        <Grid item xs={12} style={{ marginTop: "100px", marginBottom: "30px" }}>
+        <Grid item xs={12} style={{ marginTop: "100px", marginBottom: "20px" }}>
           <Typography style={{ maxWidth: "75%" }} variant="h3" gutterBottom>
             Everything in one place for your convinience
           </Typography>
