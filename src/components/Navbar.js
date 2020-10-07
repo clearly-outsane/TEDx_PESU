@@ -14,143 +14,124 @@ import { Link } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const classes = navbarStyles();
-    const [open, setOpen] = useState(false);
+  const classes = navbarStyles();
+  const [open, setOpen] = useState(false);
 
-    useEffect(() => {
-        !!open
-            ? (document.body.style.overflow = "hidden")
-            : (document.body.style.overflow = "unset");
-        return () => (document.body.style.overflow = "unset");
-    }, [open]);
+  useEffect(() => {
+    !!open
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset");
+    return () => (document.body.style.overflow = "unset");
+  }, [open]);
 
-    return (
-        <div>
-            <Grid container style={{ height: stylingConstants.NAVBAR_HEIGHT }}>
-                <Grid container item xs alignItems="center">
-                    <Grid
-                        justify="flex-start"
-                        container
-                        item
-                        xs
-                        // style={{ backgroundImage: `url(${logo})` }}
-                    >
-                        <a href="/">
-                            <img
-                                src={logo}
-                                alt="TEDxPESU"
-                                className={classes.logo}
-                            />
-                        </a>
-                    </Grid>
+  return (
+    <div>
+      <Grid container style={{ height: stylingConstants.NAVBAR_HEIGHT }}>
+        <Grid container item xs alignItems="center">
+          <Grid
+            justify="flex-start"
+            container
+            item
+            xs
+            // style={{ backgroundImage: `url(${logo})` }}
+          >
+            <a href="/">
+              <img src={logo} alt="TEDxPESU" className={classes.logo} />
+            </a>
+          </Grid>
+        </Grid>
+        <Grid container item xs>
+          <Grid container justify="flex-end" alignItems="center">
+            <IconButton
+              color="white"
+              aria-label="open drawer"
+              edge="end"
+              onClick={() => setOpen(!open)}
+              className={clsx(open && classes.hide)}
+            >
+              <MenuIcon style={{ color: "white", fontSize: 32 }} />
+            </IconButton>
+          </Grid>
+        </Grid>
+      </Grid>
+      {!!open && (
+        <div className={classes.overlay}>
+          <Container maxWidth="lg">
+            <Grid container direction="column" className={classes.container}>
+              <Grid container item>
+                <Grid item xs></Grid>
+                <Grid
+                  item
+                  container
+                  alignItems="center"
+                  justify="flex-end"
+                  xs
+                  style={{
+                    height: stylingConstants.NAVBAR_HEIGHT,
+                  }}
+                >
+                  <IconButton
+                    color="white"
+                    aria-label="open drawer"
+                    edge="end"
+                    onClick={() => setOpen(!open)}
+                    className={clsx(open && classes.closeOverlay)}
+                  >
+                    <CloseIcon
+                      style={{
+                        color: "white",
+                        fontSize: 32,
+                      }}
+                    />
+                  </IconButton>
                 </Grid>
-                <Grid container item xs>
-                    <Grid container justify="flex-end" alignItems="center">
-                        <IconButton
-                            color="white"
-                            aria-label="open drawer"
-                            edge="end"
-                            onClick={() => setOpen(!open)}
-                            className={clsx(open && classes.hide)}
-                        >
-                            <MenuIcon
-                                style={{ color: "white", fontSize: 32 }}
-                            />
-                        </IconButton>
-                    </Grid>
-                </Grid>
+              </Grid>
+              <Grid
+                container
+                item
+                xs
+                justify="center"
+                alignItems="center"
+                direction="column"
+              >
+                <Typography variant="h3" gutterBottom>
+                  <Link href="/" className={classes.whiteText}>
+                    Home
+                  </Link>
+                </Typography>
+                <Typography variant="h3" gutterBottom>
+                  <Link href="/links" className={classes.whiteText}>
+                    Links
+                  </Link>
+                </Typography>
+                <Typography variant="h3" gutterBottom>
+                  <Link href="/about" className={classes.whiteText}>
+                    About
+                  </Link>
+                </Typography>
+                <Typography
+                  variant="h6"
+                  className={clsx(classes.whiteText)}
+                  gutterBottom
+                >
+                  More pages coming soon!
+                </Typography>
+              </Grid>
+              <Grid container item xs justify="center" alignItems="center">
+                <Typography
+                  variant="body1"
+                  className={clsx(classes.whiteText)}
+                  gutterBottom
+                >
+                  Brought to you by TEDxPESU
+                </Typography>
+              </Grid>
             </Grid>
-            {!!open && (
-                <div className={classes.overlay}>
-                    <Container maxWidth="lg">
-                        <Grid
-                            container
-                            direction="column"
-                            className={classes.container}
-                        >
-                            <Grid container item>
-                                <Grid item xs></Grid>
-                                <Grid
-                                    item
-                                    container
-                                    alignItems="center"
-                                    justify="flex-end"
-                                    xs
-                                    style={{
-                                        height: stylingConstants.NAVBAR_HEIGHT,
-                                    }}
-                                >
-                                    <IconButton
-                                        color="white"
-                                        aria-label="open drawer"
-                                        edge="end"
-                                        onClick={() => setOpen(!open)}
-                                        className={clsx(
-                                            open && classes.closeOverlay
-                                        )}
-                                    >
-                                        <CloseIcon
-                                            style={{
-                                                color: "white",
-                                                fontSize: 32,
-                                            }}
-                                        />
-                                    </IconButton>
-                                </Grid>
-                            </Grid>
-                            <Grid
-                                container
-                                item
-                                xs
-                                justify="center"
-                                alignItems="center"
-                                direction="column"
-                            >
-                                <Typography variant="h3" gutterBottom>
-                                    <Link
-                                        href="/"
-                                        className={classes.whiteText}
-                                    >
-                                        Home
-                                    </Link>
-                                </Typography>
-                                <Typography variant="h3" gutterBottom>
-                                    <Link
-                                        href="/about"
-                                        className={classes.whiteText}
-                                    >
-                                        About
-                                    </Link>
-                                </Typography>
-                                <Typography
-                                    variant="h6"
-                                    className={clsx(classes.whiteText)}
-                                    gutterBottom
-                                >
-                                    More pages coming soon!
-                                </Typography>
-                            </Grid>
-                            <Grid
-                                container
-                                item
-                                xs
-                                justify="center"
-                                alignItems="center"
-                            >
-                                <Typography
-                                    variant="body1"
-                                    className={clsx(classes.whiteText)}
-                                    gutterBottom
-                                >
-                                    Brought to you by TEDxPESU
-                                </Typography>
-                            </Grid>
-                        </Grid>
-                    </Container>
-                </div>
-            )}
+          </Container>
         </div>
-    );
+      )}
+    </div>
+  );
 };
 
 export default Navbar;
