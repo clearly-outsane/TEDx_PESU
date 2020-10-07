@@ -14,7 +14,7 @@ import speakerImage4 from "../assets/images/speakerImages/speaker-4.jpeg";
 import speakerImage5 from "../assets/images/speakerImages/speaker5.jpg";
 import speakerImage6 from "../assets/images/speakerImages/speaker6.jpg";
 import speakerImage7 from "../assets/images/speakerImages/speaker7.JPG";
-import speakerImage8 from "../assets/images/speakerImages/speaker8.jpg";
+import speakerImage8 from "../assets/images/speakerImages/speaker8.jpeg";
 import speakerImage9 from "../assets/images/speakerImages/speaker9.jpg";
 import "swiper/swiper-bundle.css";
 import "../styles/slider.css";
@@ -65,39 +65,6 @@ const Sliders = () => {
         alt="image1"
         style={{
           ...backgroundImg,
-          backgroundImage: `url(${speakerImage2})`,
-        }}
-      />
-      <div style={{ background: "#eee" }} className={classes.details}>
-        <Typography className={classes.name}>Sakshi Agarwal</Typography>
-        <Typography>Co-Founder, Farm Theory</Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={3}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt="image1"
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage3})`,
-        }}
-      />
-      <div
-        style={{ background: "#eee", marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Aarti Khosla</Typography>
-        <Typography>Founder and Director, Climate Trends</Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={4}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt="image1"
-        style={{
-          ...backgroundImg,
           backgroundImage: `url(${speakerImage4})`,
         }}
       />
@@ -111,7 +78,7 @@ const Sliders = () => {
         </Typography>
       </div>
     </SwiperSlide>,
-    <SwiperSlide key={5}>
+    <SwiperSlide key={3}>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <Grid
         item
@@ -127,6 +94,39 @@ const Sliders = () => {
       >
         <Typography className={classes.name}>Wilma Rodrigues</Typography>
         <Typography>Founder and CEO, Sahaas Zero Waste</Typography>
+      </div>
+    </SwiperSlide>,
+    <SwiperSlide key={4}>
+      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+      <Grid
+        item
+        alt="image1"
+        style={{
+          ...backgroundImg,
+          backgroundImage: `url(${speakerImage2})`,
+        }}
+      />
+      <div style={{ background: "#eee" }} className={classes.details}>
+        <Typography className={classes.name}>Sakshi Agarwal</Typography>
+        <Typography>Co-Founder, Farm Theory</Typography>
+      </div>
+    </SwiperSlide>,
+    <SwiperSlide key={5}>
+      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+      <Grid
+        item
+        alt="image1"
+        style={{
+          ...backgroundImg,
+          backgroundImage: `url(${speakerImage3})`,
+        }}
+      />
+      <div
+        style={{ background: "#eee", marginBottom: 16 }}
+        className={classes.details}
+      >
+        <Typography className={classes.name}>Aarti Khosla</Typography>
+        <Typography>Founder and Director, Climate Trends</Typography>
       </div>
     </SwiperSlide>,
     <SwiperSlide key={6}>
@@ -235,6 +235,8 @@ const Sliders = () => {
           className="swiper-pagination"
           style={{ paddingTop: 24, position: "relative" }}
         />
+        {/*<div className="swiper-button-prev" />*/}
+        {/*<div className="swiper-button-next" />*/}
       </Swiper>
     </Grid>
   );

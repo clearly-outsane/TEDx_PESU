@@ -37,6 +37,10 @@ const sliderParams = {
     el: ".swiper-pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   stretch: 0,
   breakpoints: {
     1024: {
