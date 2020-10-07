@@ -5,6 +5,7 @@
 }
 .link:hover{
     color: red;
+    transition: 0.4s;
 }
 
 .link{

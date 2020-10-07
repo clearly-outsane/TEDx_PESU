@@ -51,6 +51,15 @@ const App = () => {
                 window.location.replace("https://forms.gle/vLXhUJMLkXEcX1Hg7")
               }
             />
+            <Route
+              exact
+              path="/links/watchparty"
+              render={({ history }) =>
+                window.location.replace(
+                  "https://www.airmeet.com/e/acbff400-087c-11eb-9aa2-db9f70964def"
+                )
+              }
+            />
             <Route exact path="/links" component={LinksPage} />
             <Route component={NotFound} />
           </Switch>
