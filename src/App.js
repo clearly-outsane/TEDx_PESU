@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,6 +17,21 @@ import LinksPage from "./components/links";
 const RedirectForm = () => {};
 
 const App = () => {
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    const userAgent =
+      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+    const mobile = Boolean(
+      userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+      )
+    );
+    setMobile(mobile);
+    if (!mobile) {
+      window.location.replace("https://quizzical-ritchie-249997.netlify.app/");
+    }
+  });
+
   return (
     <>
       <CssBaseline />
