@@ -16,21 +16,22 @@ import LinksPage from "./components/links";
 
 const RedirectForm = () => {};
 
+const userAgent =
+  typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+const mobiles = Boolean(
+  userAgent.match(
+    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
+  )
+);
+
 const App = () => {
   const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    const userAgent =
-      typeof window.navigator === "undefined" ? "" : navigator.userAgent;
-    const mobile = Boolean(
-      userAgent.match(
-        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-      )
-    );
-    setMobile(mobile);
-    if (!mobile) {
-      window.location.replace("https://quizzical-ritchie-249997.netlify.app/");
-    }
-  });
+  // useEffect(() => {
+  //   setMobile(mobiles);
+  //   if (!mobile) {
+  //     window.location.replace("https://quizzical-ritchie-249997.netlify.app/");
+  //   }
+  // });
 
   return (
     <>
