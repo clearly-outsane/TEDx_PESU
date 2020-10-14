@@ -16,33 +16,25 @@ import LinksPage from './components/links';
 
 const RedirectForm = () => {};
 
+const userAgent =
+  typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+const mobiles = Boolean(
+  userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|/i)
+);
+const route = window.location.href;
+
+if (!mobiles && route.toString() === 'https://tedxpesu.com/') {
+  window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
+}
+
 const App = () => {
-  const [mobile, setMobile] = useState(false);
-  useEffect(() => {
-    const route = window.location.href;
-    const userAgent =
-      typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
-    const mobiles = Boolean(
-      userAgent.match(
-        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|/i
-      )
-    );
-    setMobile(mobiles);
-    if (!mobile && route.toString() === 'https://tedxpesu.com/') {
-      window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
-    }
-  });
+  useEffect(() => {});
 
   return (
     <>
       <CssBaseline />
       <Router>
         <div>
-          {/**
-           * Put stuff you want to always show above the Switch
-           * (for example a navbar)
-           */}
-
           <Switch>
             <Route exact path='/' component={Landing} />
             <Route exact path='/about' component={About} />
