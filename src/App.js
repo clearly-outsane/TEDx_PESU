@@ -30,7 +30,7 @@ const App = () => {
     setMobile(mobiles);
     const route = window.location.href;
     console.log('route', route);
-    if (!mobile && route === 'https://tedxpesu.com') {
+    if (!mobile && route === 'https://tedxpesu.com/') {
       window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
       console.log('mobile', mobile);
     }
