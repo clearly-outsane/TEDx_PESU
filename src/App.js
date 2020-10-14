@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   Redirect,
-} from "react-router-dom";
-import CssBaseline from "@material-ui/core/CssBaseline";
+} from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
-import Landing from "./pages/Landing";
-import About from "./pages/About";
-import "./App.css";
-import Join from "./pages/Join";
-import LinksPage from "./components/links";
+import Landing from './pages/Landing';
+import About from './pages/About';
+import './App.css';
+import Join from './pages/Join';
+import LinksPage from './components/links';
 
 const RedirectForm = () => {};
 
 const userAgent =
-  typeof window.navigator === "undefined" ? "" : navigator.userAgent;
+  typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
 const mobiles = Boolean(
   userAgent.match(
     /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
@@ -26,12 +26,18 @@ const mobiles = Boolean(
 
 const App = () => {
   const [mobile, setMobile] = useState(false);
-  // useEffect(() => {
-  //   setMobile(mobiles);
-  //   if (!mobile) {
-  //     window.location.replace("https://quizzical-ritchie-249997.netlify.app/");
-  //   }
-  // });
+  useEffect(() => {
+    setMobile(mobiles);
+    const route = window.location.href;
+    console.log('route', route);
+    if (
+      !mobile &&
+      (route === 'https://tedxpesu.com' || route === 'http://localhost:3000/')
+    ) {
+      window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
+      console.log('mobile', mobile);
+    }
+  });
 
   return (
     <>
@@ -44,39 +50,39 @@ const App = () => {
            */}
 
           <Switch>
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/about" component={About} />
+            <Route exact path='/' component={Landing} />
+            <Route exact path='/about' component={About} />
             {/* <Route exact path="/join" component={Join} /> */}
             <Route
-              path="/cms"
+              path='/cms'
               render={({ history }) =>
-                window.location.replace("https://forms.gle/nnSMNsYjedaZY6wN7")
+                window.location.replace('https://forms.gle/nnSMNsYjedaZY6wN7')
               }
             />
             <Route
               exact
-              path="/links/greenmile"
+              path='/links/greenmile'
               render={({ history }) =>
-                window.location.replace("https://forms.gle/XaTiW9e8gbK34tNb6")
+                window.location.replace('https://forms.gle/XaTiW9e8gbK34tNb6')
               }
             />
             <Route
               exact
-              path="/links/jtc-upload"
+              path='/links/jtc-upload'
               render={({ history }) =>
-                window.location.replace("https://forms.gle/vLXhUJMLkXEcX1Hg7")
+                window.location.replace('https://forms.gle/vLXhUJMLkXEcX1Hg7')
               }
             />
             <Route
               exact
-              path="/links/watchparty"
+              path='/links/watchparty'
               render={({ history }) =>
                 window.location.replace(
-                  "https://www.airmeet.com/e/acbff400-087c-11eb-9aa2-db9f70964def"
+                  'https://www.airmeet.com/e/acbff400-087c-11eb-9aa2-db9f70964def'
                 )
               }
             />
-            <Route exact path="/links" component={LinksPage} />
+            <Route exact path='/links' component={LinksPage} />
             <Route component={NotFound} />
           </Switch>
         </div>
