@@ -25,12 +25,10 @@ const ismobile = Boolean(
 console.log(ismobile);
 
 if (ismobile === false && route.toString() === 'https://tedxpesu.com/') {
-  window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
+  window.location.replace('https://desktop.tedxpesu.com/');
 }
 
 const App = () => {
-  useEffect(() => {});
-
   return (
     <>
       <CssBaseline />
