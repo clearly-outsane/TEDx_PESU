@@ -16,21 +16,18 @@ import LinksPage from './components/links';
 
 const RedirectForm = () => {};
 
-const userAgent =
-  typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
-const mobiles = Boolean(
-  userAgent.match(
-    /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
-  )
-);
-
 const App = () => {
   const [mobile, setMobile] = useState(false);
   useEffect(() => {
-    setMobile(mobiles);
     const route = window.location.href;
-    console.log('route', route);
-    console.log('mobile', mobile);
+    const userAgent =
+      typeof window.navigator === 'undefined' ? '' : navigator.userAgent;
+    const mobiles = Boolean(
+      userAgent.match(
+        /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|/i
+      )
+    );
+    setMobile(mobiles);
     if (!mobile && route.toString() === 'https://tedxpesu.com/') {
       window.location.replace('https://quizzical-ritchie-249997.netlify.app/');
     }
