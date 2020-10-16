@@ -58,12 +58,13 @@ const App = () => {
                 window.location.replace('https://forms.gle/vLXhUJMLkXEcX1Hg7')
               }
             />
+
             <Route
               exact
-              path='/links/watchparty'
+              path='/links/view'
               render={({ history }) =>
                 window.location.replace(
-                  'https://www.airmeet.com/e/acbff400-087c-11eb-9aa2-db9f70964def'
+                  'https://www.airmeet.com/e/7219b540-0fa5-11eb-a4df-0be2e439ef27'
                 )
               }
             />
