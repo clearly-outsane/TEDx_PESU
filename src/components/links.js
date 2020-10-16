@@ -122,7 +122,6 @@ const LinksPage = () => {
                 </Typography>
               </Grid>
             </Grid>
-
             <Button
               style={{
                 height: '40px',
