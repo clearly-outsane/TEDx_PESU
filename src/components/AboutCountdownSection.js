@@ -1,71 +1,70 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
-import Typography from "@material-ui/core/Typography";
-import clsx from "clsx";
+import React from 'react';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
+import clsx from 'clsx';
 
-import { aboutSection } from "../styles/Sections";
-import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
-import theme from "../styles/theme";
+import { aboutSection } from '../styles/Sections';
+import { ReactComponent as AboutSvg } from '../assets/svg/Countdown.svg';
+import theme from '../styles/theme';
 
 const AboutSection = () => {
   const classes = aboutSection();
   return (
     <>
       <div className={clsx(classes.container, classes.blackBackground)}>
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <Grid
             container
-            justify="flex-start"
-            alignItems="center"
+            justify='flex-start'
+            alignItems='center'
             style={{ marginTop: 124 }}
           >
             <Typography
-              variant="h2"
+              variant='h2'
               className={clsx(classes.whiteText)}
               gutterBottom
             >
-              What is Countdown?
+              What is TED circles?
             </Typography>
           </Grid>
         </Container>
-        <Container maxWidth="lg">
-          <Grid container justify="center" style={{ height: "100%" }}>
+        <Container maxWidth='lg'>
+          <Grid container justify='center' style={{ height: '100%' }}>
             <Grid
               container
               item
               xs={12}
               sm={7}
-              alignItems="flex-start"
+              alignItems='flex-start'
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography variant="h6" className={clsx(classes.whiteText)}>
+                <Typography variant='h6' className={clsx(classes.whiteText)}>
                   <a
-                    href="https://countdown.ted.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href='https://countdown.ted.com/'
+                    target='_blank'
+                    rel='noopener noreferrer'
                     style={{
                       color: theme.palette.secondary.main,
-                      textDecoration: "none",
+                      textDecoration: 'none',
                     }}
                   >
-                    Countdown
-                  </a>{" "}
-                  is a global initiative to champion and accelerate solutions to
-                  the climate crisis, turning ideas into action. The goal: To
-                  build a better future by cutting greenhouse gas emissions in
-                  half by 2030 in the race to a zero-carbon world – a world that
-                  is safer, cleaner and fairer for everyone.
+                    TED Circles
+                  </a>{' '}
+                  TED Circles is a community of small groups that engage in
+                  fruitful conversations encircling big ideas. It takes place
+                  virtually and helps communities stay connected, which is of
+                  the essence during the pandemic.
                 </Typography>
                 <br />
-                <Typography variant="h6" className={clsx(classes.whiteText)}>
+                {/* <Typography variant='h6' className={clsx(classes.whiteText)}>
                   We believe that change begins with each of us – that’s why
                   TEDxPESU has launched its own chapter of Countdown. We will
                   showcase the work and ideas of local thinkers and doers to
                   spark a discussion, and help you understand how you can make a
                   difference.
-                </Typography>
+                </Typography> */}
               </Grid>
             </Grid>
           </Grid>
@@ -74,11 +73,11 @@ const AboutSection = () => {
         <div className={classes.backgroundText}>
           <AboutSvg
             style={{
-              width: "100%",
-              transform: "translate(0,4vw)",
-              height: "14vw",
+              width: '100%',
+              transform: 'translate(0,4vw)',
+              height: '14vw',
             }}
-            fill="white"
+            fill='white'
           />
         </div>
       </div>

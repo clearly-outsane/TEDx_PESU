@@ -62,4 +62,36 @@ const sliderParams = {
   },
 };
 
-export { speakerStyles, sliderStyles, sliderParams };
+const performerParams = {
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+  },
+  grabCursor: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  stretch: 0,
+  breakpoints: {
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
+};
+
+export { speakerStyles, sliderStyles, sliderParams, performerParams };

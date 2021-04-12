@@ -6,7 +6,7 @@ import SwiperCore, {
   EffectCoverflow,
   EffectFade,
 } from "swiper";
-import { sliderParams } from "../styles/speakers";
+import { performerParams } from "../styles/speakers";
 import performer1 from "../assets/images/performersImages/sourcandy.jpg";
 import performer2 from "../assets/images/performersImages/bbb.png";
 import performer3 from "../assets/images/performersImages/par.jpg";
@@ -18,13 +18,12 @@ import { sliderStyles } from "../styles/speakers";
 import { makeStyles } from "@material-ui/core/styles";
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow, EffectFade]);
-const Sliders = () => {
+const PerformersSliders = () => {
   const classes = sliderStyles();
   const backgroundImg = {
     backgroundSize: "cover",
     objectFit: "cover",
     backgroundRepeat: "no-repeat",
-    width: "100%",
     height: 420,
     backgroundPositionY: 0,
   };
@@ -109,7 +108,7 @@ const Sliders = () => {
   ];
   return (
     <Grid>
-      <Swiper {...sliderParams}>
+      <Swiper {...performerParams}>
         {slides}
         <div
           className="swiper-pagination"
@@ -120,4 +119,4 @@ const Sliders = () => {
   );
 };
 
-export default Sliders;
+export default PerformersSliders;

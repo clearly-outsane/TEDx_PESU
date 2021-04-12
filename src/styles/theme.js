@@ -3,9 +3,9 @@ import {
   makeStyles,
   withStyles,
   responsiveFontSizes,
-} from "@material-ui/core/styles";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
+} from '@material-ui/core/styles';
+import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 // import HelveticaWoff2 from "../assets/fonts/Helvetica.woff2";
 
@@ -26,31 +26,31 @@ import Button from "@material-ui/core/Button";
 let theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#E62B1E",
+      main: '#E62B1E',
     },
     secondary: {
-      main: "#f1ff39",
+      main: '#f1ff39',
     },
   },
   typography: {
     fontFamily: [
-      "-apple-system",
-      "BlinkMacSystemFont",
+      '-apple-system',
+      'BlinkMacSystemFont',
       //   '"Segoe UI"',
-      "Raleway",
+      'Raleway',
       '"Helvetica Neue"',
-      "Arial",
-      "sans-serif",
+      'Arial',
+      'sans-serif',
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
-    ].join(","),
+    ].join(','),
     h4: {
-      fontSize: "2.5rem",
+      fontSize: '2.5rem',
       fontWeight: 400,
     },
-    h6: { fontWeight: 400 },
-    h5: { fontSize: "2rem" },
+    h6: { fontWeight: 400, fontSize: '24px' },
+    h5: { fontSize: '2rem' },
   },
   overrides: {
     // MuiCssBaseline: {
@@ -64,22 +64,22 @@ theme = responsiveFontSizes(theme);
 
 export const ContrastTextField = withStyles({
   root: {
-    "& label.Mui-focused": {
-      color: "white",
+    '& label.Mui-focused': {
+      color: 'white',
     },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "green",
+    '& .MuiInput-underline:after': {
+      borderBottomColor: 'green',
     },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "white",
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'white',
       },
-      "&:hover fieldset": {
-        borderColor: "#f1ff39",
+      '&:hover fieldset': {
+        borderColor: '#f1ff39',
       },
-      "&.Mui-focused fieldset": {
-        borderColor: "white",
-        outline: "none",
+      '&.Mui-focused fieldset': {
+        borderColor: 'white',
+        outline: 'none',
       },
     },
   },
@@ -87,46 +87,46 @@ export const ContrastTextField = withStyles({
 
 export const PrimaryTextField = withStyles((theme) => ({
   root: {
-    "& label.Mui-focused": {
-      color: "black",
+    '& label.Mui-focused': {
+      color: 'black',
       fontWeight: 700,
     },
 
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "black",
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: 'black',
       },
-      "&:hover fieldset": {
-        boxShadow: "0 0  18px rgba(0, 0, 0,0.1)",
-        borderColor: "black",
+      '&:hover fieldset': {
+        boxShadow: '0 0  18px rgba(0, 0, 0,0.1)',
+        borderColor: 'black',
       },
-      "&.Mui-focused fieldset": {
-        borderColor: "black",
+      '&.Mui-focused fieldset': {
+        borderColor: 'black',
       },
     },
-    borderColor: "black",
+    borderColor: 'black',
   },
 }))(TextField);
 
 export const PrimaryButton = withStyles((theme) => ({
   root: {
-    color: "white",
+    color: 'white',
     backgroundColor: theme.palette.primary.main,
-    "&:hover": {
-      boxShadow: "0 0  24px rgba(230, 43, 30,0.48)",
+    '&:hover': {
+      boxShadow: '0 0  24px rgba(230, 43, 30,0.48)',
       backgroundColor: theme.palette.primary.main,
     },
     width: 124,
-    height: "100%",
+    height: '100%',
   },
 }))(Button);
 
 export const LargePrimaryButton = withStyles((theme) => ({
   root: {
-    color: "white",
+    color: 'white',
     backgroundColor: theme.palette.primary.main,
-    "&:hover": {
-      boxShadow: "0 0  24px rgba(230, 43, 30,0.48)",
+    '&:hover': {
+      boxShadow: '0 0  24px rgba(230, 43, 30,0.48)',
       backgroundColor: theme.palette.primary.main,
     },
     width: 224,
