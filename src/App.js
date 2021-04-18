@@ -18,15 +18,15 @@ const RedirectForm = () => {};
 
 const route = window.location.href;
 
-const ismobile = Boolean(
-  navigator.userAgent.match(/(iPad)|(iPhone)|(android)|(webOS)/i)
-);
+// const ismobile = Boolean(
+//   navigator.userAgent.match(/(iPad)|(iPhone)|(android)|(webOS)/i)
+// );
 
-console.log(ismobile);
+// console.log(ismobile);
 
-if (ismobile === false && route.toString() === 'https://tedxpesu.com/') {
-  window.location.replace('https://desktop.tedxpesu.com/');
-}
+// if (ismobile === false && route.toString() === 'https://tedxpesu.com/') {
+//   window.location.replace('https://desktop.tedxpesu.com/');
+// }
 
 const App = () => {
   return (

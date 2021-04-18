@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { HashLink as Link } from 'react-router-hash-link';
-
 import Navbar from '../components/Navbar';
 import { landingStyles } from '../styles/Landing';
 import { Typography } from '@material-ui/core';
@@ -18,10 +17,16 @@ import Speakers from '../components/Speakers';
 import Performers from '../components/Performers';
 import MoreInfo from '../components/MoreInfo';
 import Benefits from '../components/Benefits';
+import circle from '../assets/gifs/tedcircle.gif';
 
 const Landing = () => {
   const classes = landingStyles();
   const formRef = useRef(null);
+
+  useEffect(() => {
+    var blocks = document.getElementById('horizontal');
+    var container = document.getElementById('horizontalcontainer');
+  });
   return (
     <>
       <div className={classes.blackBackground}>
@@ -80,7 +85,7 @@ const Landing = () => {
                 style={{ marginBottom: 18 }}
               >
                 <img
-                  src={earth}
+                  src={circle}
                   alt='Earth globe gif'
                   className={classes.gif}
                 />
@@ -114,10 +119,11 @@ const Landing = () => {
         <AboutCountdownSection />
         <MoreInfo />
         <Benefits />
+        <Speakers />
         <Quote />
-        <div ref={formRef} id='register'>
+        {/* <div ref={formRef} id='register'>
           <MailchimpForm />
-        </div>
+        </div> */}
         <Footer />
       </div>
     </>
