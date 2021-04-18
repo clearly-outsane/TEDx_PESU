@@ -18,14 +18,6 @@ import speakerImage42 from '../assets/images/speakerImages/team4/speaker2.jpg';
 import speakerImage51 from '../assets/images/speakerImages/team5/speaker1.jpg';
 import speakerImage52 from '../assets/images/speakerImages/team5/speaker2.jpg';
 
-// import speakerImage2 from '../assets/images/speakerImages/speaker2.jpg';
-// import speakerImage3 from '../assets/images/speakerImages/speaker3.jpg';
-// import speakerImage4 from '../assets/images/speakerImages/speaker-4.jpeg';
-// import speakerImage5 from '../assets/images/speakerImages/speaker5.jpg';
-// import speakerImage6 from '../assets/images/speakerImages/speaker6.jpg';
-// import speakerImage7 from '../assets/images/speakerImages/speaker7.JPG';
-// import speakerImage8 from '../assets/images/speakerImages/speaker8.jpeg';
-// import speakerImage9 from '../assets/images/speakerImages/speaker9.jpg';
 import 'swiper/swiper-bundle.css';
 import '../styles/slider.css';
 import { Grid, Typography } from '@material-ui/core';
