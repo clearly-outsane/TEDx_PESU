@@ -18,6 +18,7 @@ import Performers from '../components/Performers';
 import MoreInfo from '../components/MoreInfo';
 import Benefits from '../components/Benefits';
 import circle from '../assets/gifs/tedcircle.gif';
+import GifLoader from 'react-gif-loader';
 
 const Landing = () => {
   const classes = landingStyles();
@@ -81,13 +82,28 @@ const Landing = () => {
                 xs={12}
                 sm={6}
                 alignItems='flex-start'
+                className='gifloader'
                 justify='flex-end'
-                style={{ marginBottom: 18 }}
+                style={{
+                  marginBottom: 18,
+                  backgroundBlendMode: 'color-dodge',
+                }}
               >
-                <img
+                {/* <img
                   src={circle}
                   alt='Earth globe gif'
                   className={classes.gif}
+                  style={{ boxShadow: '0 0 4px 4px black inset' }}
+                /> */}
+                <GifLoader
+                  loading={true}
+                  imageSrc={circle}
+                  imageStyle={{
+                    width: '100%',
+                    height: 'auto',
+                    boxShadow: '0 0 8px 8px black inset',
+                  }}
+                  overlayBackground='none'
                 />
               </Grid>
             </Grid>

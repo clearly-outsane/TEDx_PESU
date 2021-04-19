@@ -18,7 +18,7 @@ const landingStyles = makeStyles((theme) => ({
   marginLeftRight32: { marginRight: 32, marginLeft: 32 },
   marginTop4: { marginTop: 36 },
   boldText: { fontWeight: '600' },
-  gif: { height: 'auto', width: '100% ' },
+  gif: { height: 'auto', width: '100%', boxShadow: '0 0 4px 4px black inset' },
   noScroll: { overflow: 'hidden' },
 }));
 
