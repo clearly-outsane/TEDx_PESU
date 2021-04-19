@@ -18,7 +18,11 @@ const MoreInfo = () => {
     <>
       <div
         className={clsx(classes.container, classes.whiteBackground)}
-        style={{ minWidth: '100%', backgroundColor: "black" }}
+        style={{
+          minWidth: '100%',
+          backgroundColor: 'black',
+          minHeight: '70vh',
+        }}
         id='horizontal'
       >
         <Container maxWidth='lg' style={{ zIndex: '1' }}>
@@ -32,14 +36,18 @@ const MoreInfo = () => {
               variant='h2'
               // className={clsx(classes.blac)}
               gutterBottom
-              style={{ color: "red", fontWeight: "bold" }}
+              style={{ color: 'red', fontWeight: 'bold' }}
             >
               How does it work?
             </Typography>
           </Grid>
         </Container>
         <Container maxWidth='lg'>
-          <Grid container justify='center' style={{ height: '60%', marginLeft: (offset * 0.015) - 40 + '%' }}>
+          <Grid
+            container
+            justify='center'
+            // style={{ height: '60%', marginLeft: offset * 0.015 - 40 + '%' }}
+          >
             <Grid
               container
               item
@@ -49,25 +57,26 @@ const MoreInfo = () => {
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography variant='h6' style={{color: "white" }}>
+                <Typography variant='h6' style={{ color: 'white' }}>
                   Every month, a group of people (could be friends, neighbors,
                   colleagues) get together and watch TED Talks which are
                   specific to the monthly theme. They then discuss their
                   takeaways and exchange their ideas and views on it. The
                   members of our club will host the Circles, which will be
                   joined by experts who are well versed with the topic! Theme of
-                  the month: Appreciating Earth.
+                  April month:
                   <a
                     // href='https://countdown.ted.com/'
                     target='_blank'
                     rel='noopener noreferrer'
                     style={{
-                      color: theme.palette.secondary.main,
+                      color: 'red',
                       textDecoration: 'none',
                       paddingLeft: '10px',
                     }}
                   >
-                  </a>{' '}
+                    Appreciating Earth.
+                  </a>
                 </Typography>
                 <br />
                 {/* <Typography variant='h6' className={clsx(classes.whiteText)}>

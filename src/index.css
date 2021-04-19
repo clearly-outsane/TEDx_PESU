@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -27,4 +28,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.swiper-pagination-bullet {
+  background: #eee !important;
 }

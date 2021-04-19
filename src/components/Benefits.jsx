@@ -18,7 +18,11 @@ const Benefits = () => {
     <>
       <div
         className={clsx(classes.container, classes.blackBackground)}
-        style={{ minWidth: '100%', backgroundColor: "black"   }}
+        style={{
+          minWidth: '100%',
+          backgroundColor: 'black',
+          minHeight: '70vh',
+        }}
         id='horizontal'
       >
         <Container maxWidth='lg'>
@@ -32,14 +36,18 @@ const Benefits = () => {
               variant='h2'
               className={clsx(classes.whiteText)}
               gutterBottom
-              style={{ color: "red", fontWeight: "bold" }}
+              style={{ color: 'red', fontWeight: 'bold' }}
             >
               What do you get out of it?
             </Typography>
           </Grid>
         </Container>
         <Container maxWidth='lg'>
-          <Grid container justify='center' style={{ height: '100%', marginLeft: (offset * 0.015) - 54 + '%' }}>
+          <Grid
+            container
+            justify='center'
+            // style={{ height: '100%', marginLeft: offset * 0.015 - 54 + '%' }}
+          >
             <Grid
               container
               item
@@ -49,7 +57,11 @@ const Benefits = () => {
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography variant='h6' className={clsx(classes.whiteText)} style={{ color: "white" }}>
+                <Typography
+                  variant='h6'
+                  className={clsx(classes.whiteText)}
+                  style={{ color: 'white' }}
+                >
                   {/* <a
                     href='https://countdown.ted.com/'
                     target='_blank'

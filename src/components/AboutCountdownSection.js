@@ -22,7 +22,11 @@ const AboutSection = () => {
         className={classes.container}
         style={{ minWidth: '100%' }}
         id='horizontal'
-        style={{ background: '#393939', minHeight: '100vh', backgroundColor: "black"  }}
+        style={{
+          // background: '#393939',
+          minHeight: '70vh',
+          backgroundColor: 'black',
+        }}
       >
         <Container maxWidth='lg'>
           <Grid
@@ -35,14 +39,18 @@ const AboutSection = () => {
               variant='h2'
               className={clsx(classes.whiteText)}
               gutterBottom
-              style={{ color: "red", fontWeight: "bold" }}
+              style={{ color: 'red', fontWeight: 'bold' }}
             >
               What is TED circles?
             </Typography>
           </Grid>
         </Container>
         <Container maxWidth='lg'>
-          <Grid container justify='center' style={{ height: '100%', marginLeft: (offset * 0.015) - 20 + '%' }}>
+          <Grid
+            container
+            justify='center'
+            // style={{ height: '100%', marginLeft: offset * 0.015 - 20 + '%' }}
+          >
             <Grid
               container
               item
@@ -64,12 +72,13 @@ const AboutSection = () => {
                       target='_blank'
                       rel='noopener noreferrer'
                       style={{
-                        color: theme.palette.secondary.main,
+                        color: 'red',
                         textDecoration: 'none',
-                        color: "white" 
+                        color: 'white',
                       }}
                     >
-                    </a>{' '}
+                      {/* TED Circles */}
+                    </a>
                     TED Circles is a community of small groups that engage in
                     fruitful conversations encircling big ideas. It takes place
                     virtually and helps communities stay connected, which is of
@@ -77,13 +86,6 @@ const AboutSection = () => {
                   </Typography>
                 </ScrollAnimation>
                 <br />
-                {/* <Typography variant='h6' className={clsx(classes.whiteText)}>
-                  We believe that change begins with each of us – that’s why
-                  TEDxPESU has launched its own chapter of Countdown. We will
-                  showcase the work and ideas of local thinkers and doers to
-                  spark a discussion, and help you understand how you can make a
-                  difference.
-                </Typography> */}
               </Grid>
             </Grid>
           </Grid>

@@ -23,10 +23,10 @@ const Landing = () => {
   const classes = landingStyles();
   const formRef = useRef(null);
 
-  useEffect(() => {
-    var blocks = document.getElementById('horizontal');
-    var container = document.getElementById('horizontalcontainer');
-  });
+  // useEffect(() => {
+  //   var blocks = document.getElementById('horizontal');
+  //   var container = document.getElementById('horizontalcontainer');
+  // });
   return (
     <>
       <div className={classes.blackBackground}>

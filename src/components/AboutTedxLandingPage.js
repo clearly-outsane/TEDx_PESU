@@ -17,27 +17,31 @@ const AboutSection = () => {
     <>
       <div
         className={classes.container}
-        className='abouttedxlanding'
-        style={{ overflow: 'hidden', backgroundColor: "black" }}
+        // className='abouttedxlanding'
+        style={{ overflow: 'hidden', backgroundColor: 'white' }}
       >
         <Container maxWidth='lg'>
           <Grid
             container
             justify='flex-start'
             alignItems='center'
-            style={{ marginTop: 40}}
+            style={{ marginTop: 40 }}
           >
-            <Typography variant='h2' gutterBottom style={{ color: "red", fontWeight: "bold" }}>
+            <Typography
+              variant='h2'
+              gutterBottom
+              style={{ color: 'red', fontWeight: 'bold' }}
+            >
               About TEDx
             </Typography>
           </Grid>
         </Container>
         <Container
           maxWidth='lg'
-          style={{
-            marginLeft: offset * 0.015 + '%',
-            width: '100%',
-          }}
+          // style={{
+          //   marginLeft: offset * 0.015 + '%',
+          //   width: '100%',
+          // }}
         >
           <Grid container justify='center' style={{ height: '100%' }}>
             <Grid
@@ -51,9 +55,17 @@ const AboutSection = () => {
               <Typography
                 variant='h6'
                 gutterBottom
-                style={{ overflow: 'hidden', color: "white" }}
+                style={{ overflow: 'hidden', color: 'black' }}
               >
-                In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our club is called TEDxPESU, where x = independently organized TED event. At our club, we aspire to combine various TED initiatives and live speakers to spark deep discussions and connections. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
+                In the spirit of ideas worth spreading, TED has created a
+                program called TEDx. TEDx is a program of local, self-organized
+                events that bring people together to share a TED-like
+                experience. Our club is called TEDxPESU, where x = independently
+                organized TED event. At our club, we aspire to combine various
+                TED initiatives and live speakers to spark deep discussions and
+                connections. The TED Conference provides general guidance for
+                the TEDx program, but individual TEDx events, including ours,
+                are self-organized.
               </Typography>
             </Grid>
           </Grid>
@@ -72,5 +84,5 @@ const AboutSection = () => {
     </>
   );
 };
-// h 
+// h
 export default AboutSection;

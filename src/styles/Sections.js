@@ -4,7 +4,7 @@ const aboutSection = makeStyles((theme) => ({
   container: {
     display: 'grid',
     gridTemplateRows: 'auto 1fr auto',
-    minHeight: '100vh',
+    minHeight: '80vh',
     maxHeight: '100%',
   },
   backgroundText: {
