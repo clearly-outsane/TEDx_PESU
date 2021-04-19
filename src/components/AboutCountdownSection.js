@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -12,32 +12,37 @@ import { Translate } from '@material-ui/icons';
 
 const AboutSection = () => {
   const classes = aboutSection();
+  const [offset, setoffset] = useState();
+
+  const handleScroll = () => setoffset(window.pageYOffset);
+  window.addEventListener('scroll', handleScroll);
   return (
     <>
       <div
         className={classes.container}
         style={{ minWidth: '100%' }}
         id='horizontal'
-        style={{ background: '#393939', minHeight: '100vh' }}
+        style={{ background: '#393939', minHeight: '100vh', backgroundColor: "black"  }}
       >
         <Container maxWidth='lg'>
           <Grid
             container
             justify='flex-start'
             alignItems='center'
-            style={{ marginTop: 124 }}
+            style={{ marginTop: 40 }}
           >
             <Typography
               variant='h2'
               className={clsx(classes.whiteText)}
               gutterBottom
+              style={{ color: "red", fontWeight: "bold" }}
             >
               What is TED circles?
             </Typography>
           </Grid>
         </Container>
         <Container maxWidth='lg'>
-          <Grid container justify='center' style={{ height: '100%' }}>
+          <Grid container justify='center' style={{ height: '100%', marginLeft: (offset * 0.015) - 20 + '%' }}>
             <Grid
               container
               item
@@ -61,9 +66,9 @@ const AboutSection = () => {
                       style={{
                         color: theme.palette.secondary.main,
                         textDecoration: 'none',
+                        color: "white" 
                       }}
                     >
-                      TED Circles
                     </a>{' '}
                     TED Circles is a community of small groups that engage in
                     fruitful conversations encircling big ideas. It takes place
@@ -84,24 +89,24 @@ const AboutSection = () => {
           </Grid>
         </Container>
 
-        <div className={classes.backgroundText}>
-          {/* <AboutCountdownImage
+        {/* <div className={classes.backgroundText}>
+          { <AboutCountdownImage
             style={{
               width: '100%',
               transform: 'translate(0,4vw)',
               height: '14vw',
             }}
             fill='white'
-          /> */}
-          <img
+          /> }
+          { <img
             src={AboutCountdownImage}
             style={{
               width: '100%',
               height: '14vw',
               transform: 'translate(0,4vw)',
             }}
-          />
-        </div>
+          /> }
+        </div> */}
       </div>
     </>
   );

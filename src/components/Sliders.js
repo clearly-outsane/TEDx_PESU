@@ -52,15 +52,107 @@ const Sliders = () => {
         alt='image1'
         style={{
           ...backgroundImg,
-          backgroundImage: `url(${speakerImage11})`,
+          backgroundImage: `url(${speakerImage51})`,
         }}
       />
-      <div style={{ background: '#eee' }} className={classes.details}>
-        <Typography className={classes.name}>Marianne Manuel</Typography>
-        <Typography>Assistant Director, Dakshin Foundation</Typography>
+      <div
+        style={{ background: '#eee', marginBottom: 16, paddingBottom: "56px" }}
+        className={classes.details}
+      >
+        <Typography className={classes.name}>Apurba Mitra</Typography>
+        <Typography>Head, Climate Program, WRI India</Typography>
       </div>
     </SwiperSlide>,
     <SwiperSlide key={2}>
+    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+    <Grid
+      item
+      alt='image1'
+      style={{
+        ...backgroundImg,
+        backgroundImage: `url(${speakerImage41})`,
+      }}
+    />
+    <div
+      style={{ background: '#eee', marginBottom: 16, paddingBottom: "56px" }}
+      className={classes.details}
+    >
+      <Typography className={classes.name}>Karthik S</Typography>
+      <Typography>Chief naturalist at Jungle Lodges Resorts</Typography>
+    </div>
+  </SwiperSlide>,
+    <SwiperSlide key={3}>
+      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+      <Grid
+        item
+        alt='image1'
+        style={{
+          ...backgroundImg,
+          backgroundImage: `url(${speakerImage11})`,
+        }}
+      />
+      <div style={{ background: '#eee', paddingBottom: "56px" }} className={classes.details}>
+        <Typography className={classes.name}>Marianne Manuel</Typography>
+        <Typography>Assistant Director at Dakshin Foundation</Typography>
+      </div>
+    </SwiperSlide>,
+    <SwiperSlide key={4}>
+    {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+    <Grid
+      item
+      alt='image1'
+      style={{
+        ...backgroundImg,
+        backgroundImage: `url(${speakerImage42})`,
+      }}
+    />
+    <div
+      style={{ background: '#eee', marginBottom: 16, paddingBottom: "56px" }}
+      className={classes.details}
+    >
+      <Typography className={classes.name}>Prof. Nandini Rajamani</Typography>
+      <Typography>Assistant Professor at IISER Tirupati</Typography>
+    </div>
+  </SwiperSlide>,
+  <SwiperSlide key={5}>
+  {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+  <Grid
+    item
+    alt='image1'
+    style={{
+      ...backgroundImg,
+      backgroundImage: `url(${speakerImage21})`,
+    }}
+  />
+  <div
+    style={{ background: '#eee', marginBottom: 16, paddingBottom: "32px" }}
+    className={classes.details}
+  >
+    <Typography className={classes.name}>Dr.NH Ravindranath </Typography>
+    <Typography>
+      Professor(retd.) at centre for Sutainable Technologies, IISc, Banglore
+    </Typography>
+  </div>
+</SwiperSlide>,
+<SwiperSlide key={6}>
+      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+      <Grid
+        item
+        alt='image1'
+        style={{
+          ...backgroundImg,
+          backgroundImage: `url(${speakerImage52})`,
+        }}
+      />
+      <div
+        style={{ background: '#eee', marginBottom: 16, paddingBottom: "56px" }}
+        className={classes.details}
+      >
+        <Typography className={classes.name}>Pranab Mukhopadhyay</Typography>
+        <Typography>Professor of Economics, Goa University</Typography>
+      </div>
+    </SwiperSlide>,
+    <SwiperSlide key={7}>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <Grid
         item
@@ -71,34 +163,15 @@ const Sliders = () => {
         }}
       />
       <div
-        style={{ background: '#eee', marginBottom: 16 }}
+        style={{ background: '#eee', marginBottom: 16, paddingBottom: "56px" }}
         className={classes.details}
       >
-        <Typography className={classes.name}>Pooja Mitra</Typography>
-        <Typography>Founder and Director, TerraConscious</Typography>
+        <Typography className={classes.name}>Puja Mitra</Typography>
+        <Typography>Founder - Director of TerraConscious</Typography>
       </div>
     </SwiperSlide>,
-    <SwiperSlide key={3}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt='image1'
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage21})`,
-        }}
-      />
-      <div
-        style={{ background: '#eee', marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Dr.NH RabindraNath </Typography>
-        <Typography>
-          Professor(retired), centre for sutainable Technologies, IISc Banglore
-        </Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={4}>
+    
+    <SwiperSlide key={8}>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <Grid
         item
@@ -108,12 +181,12 @@ const Sliders = () => {
           backgroundImage: `url(${speakerImage22})`,
         }}
       />
-      <div style={{ background: '#eee' }} className={classes.details}>
-        <Typography className={classes.name}>Reena Singh</Typography>
-        <Typography>Founder and Designer, eka core</Typography>
+      <div style={{ background: '#eee', paddingBottom: "56px" }} className={classes.details}>
+        <Typography className={classes.name}>Rina Singh</Typography>
+        <Typography>Founder and Designer, Eka, Eka Core</Typography>
       </div>
     </SwiperSlide>,
-    <SwiperSlide key={5}>
+    <SwiperSlide key={9}>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <Grid
         item
@@ -134,7 +207,7 @@ const Sliders = () => {
         </Typography>
       </div>
     </SwiperSlide>,
-    <SwiperSlide key={6}>
+    <SwiperSlide key={10}>
       {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
       <Grid
         item
@@ -145,87 +218,16 @@ const Sliders = () => {
         }}
       />
       <div
-        style={{ background: '#eee', marginBottom: 16 }}
+        style={{ background: '#eee', marginBottom: 16, paddingBottom: "32px" }}
         className={classes.details}
       >
-        <Typography className={classes.name}>Sheema Jain</Typography>
+        <Typography className={classes.name}>Yashima Jain</Typography>
         <Typography>
           Works with the Green Business Certification Institute (GBCI)
         </Typography>
       </div>
     </SwiperSlide>,
-    <SwiperSlide key={7}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt='image1'
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage41})`,
-        }}
-      />
-      <div
-        style={{ background: '#eee', marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Karthikeyan S</Typography>
-        <Typography>Chief naturalist at jungle lodges resorts</Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={8}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt='image1'
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage42})`,
-        }}
-      />
-      <div
-        style={{ background: '#eee', marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Prof. Nandini Rajamani</Typography>
-        <Typography>Assistant Professor at IISER Tirupati</Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={9}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt='image1'
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage51})`,
-        }}
-      />
-      <div
-        style={{ background: '#eee', marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Apurba Mitra</Typography>
-        <Typography>Head, Climate Program, WRI India</Typography>
-      </div>
-    </SwiperSlide>,
-    <SwiperSlide key={10}>
-      {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
-      <Grid
-        item
-        alt='image1'
-        style={{
-          ...backgroundImg,
-          backgroundImage: `url(${speakerImage52})`,
-        }}
-      />
-      <div
-        style={{ background: '#eee', marginBottom: 16 }}
-        className={classes.details}
-      >
-        <Typography className={classes.name}>Pranab Mukhopadhyay</Typography>
-        <Typography>Professor of Economics, Goa University</Typography>
-      </div>
-    </SwiperSlide>,
+    
     // <SwiperSlide>
     //   {/*  <div*/}
     //   {/*    style={{*/}

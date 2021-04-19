@@ -20,8 +20,9 @@ const Quote = () => {
           gutterBottom
           style={{ color: "white" }}
         >
-          We are the first generation to feel the effect of climate change and
-          the last generation who can do something about it.
+          The climate crisis has already been solved.
+          We already have the facts and solutions.
+          All we have to do is wake up and change.
         </Typography>
         <Typography
           variant="h6"
@@ -29,7 +30,7 @@ const Quote = () => {
           gutterBottom
           style={{ color: "white", marginTop: 48 }}
         >
-          - Barack Obama, Former US President
+          - Greta Thunberg, Environmental Activist
         </Typography>
       </Container>
     </div>

@@ -99,23 +99,23 @@ const Navbar = () => {
                     Home
                   </Link>
                 </Typography>
-                <Typography variant="h3" gutterBottom>
+                {/* <Typography variant="h3" gutterBottom>
                   <Link href="/links" className={classes.whiteText}>
                     Links
                   </Link>
-                </Typography>
+                </Typography> */}
                 <Typography variant="h3" gutterBottom>
                   <Link href="/about" className={classes.whiteText}>
                     About
                   </Link>
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="h6"
                   className={clsx(classes.whiteText)}
                   gutterBottom
                 >
                   More pages coming soon!
-                </Typography>
+                </Typography> */}
               </Grid>
               <Grid container item xs justify="center" alignItems="center">
                 <Typography

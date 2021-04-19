@@ -13,22 +13,21 @@ const AboutSection = () => {
 
   const handleScroll = () => setoffset(window.pageYOffset);
   window.addEventListener('scroll', handleScroll);
-
   return (
     <>
       <div
         className={classes.container}
         className='abouttedxlanding'
-        style={{ overflow: 'hidden' }}
+        style={{ overflow: 'hidden', backgroundColor: "black" }}
       >
         <Container maxWidth='lg'>
           <Grid
             container
             justify='flex-start'
             alignItems='center'
-            style={{ marginTop: 124 }}
+            style={{ marginTop: 40}}
           >
-            <Typography variant='h2' gutterBottom>
+            <Typography variant='h2' gutterBottom style={{ color: "red", fontWeight: "bold" }}>
               About TEDx
             </Typography>
           </Grid>
@@ -52,23 +51,15 @@ const AboutSection = () => {
               <Typography
                 variant='h6'
                 gutterBottom
-                style={{ overflow: 'hidden' }}
+                style={{ overflow: 'hidden', color: "white" }}
               >
-                In the spirit of ideas worth spreading, TED has created a
-                program called TEDx. TEDx is a program of local, self-organized
-                events that bring people together to share a TED-like
-                experience. Our event is called TEDxPESU, where x =
-                independently organized TED event. At our TEDxPESU event, TED
-                Talks video and live speakers will combine to spark deep
-                discussion and connection in a small group. The TED Conference
-                provides general guidance for the TEDx program, but individual
-                TEDx events, including ours, are self-organized.
+                In the spirit of ideas worth spreading, TED has created a program called TEDx. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. Our club is called TEDxPESU, where x = independently organized TED event. At our club, we aspire to combine various TED initiatives and live speakers to spark deep discussions and connections. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.
               </Typography>
             </Grid>
           </Grid>
         </Container>
 
-        <div className={classes.backgroundText}>
+        {/* <div className={classes.backgroundText}>
           <AboutSvg
             style={{
               width: '100%',
@@ -76,10 +67,10 @@ const AboutSection = () => {
               height: '22vw',
             }}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
 };
-
+// h 
 export default AboutSection;

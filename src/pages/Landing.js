@@ -68,11 +68,11 @@ const Landing = () => {
                   virtually and helps communities stay connected, which is of
                   the essence during the pandemic.
                 </Typography>
-                <Link smooth to='/#register' style={{ textDecoration: 'none' }}>
+                {/* <Link smooth to='/#register' style={{ textDecoration: 'none' }}>
                   <PrimaryButton style={{ marginBottom: 8 }} size='large'>
                     Register
                   </PrimaryButton>
-                </Link>
+                </Link> */}
               </Grid>
 
               <Grid

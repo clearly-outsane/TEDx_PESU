@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
@@ -10,11 +10,15 @@ import theme from '../styles/theme';
 
 const MoreInfo = () => {
   const classes = aboutPageStyles();
+  const [offset, setoffset] = useState();
+
+  const handleScroll = () => setoffset(window.pageYOffset);
+  window.addEventListener('scroll', handleScroll);
   return (
     <>
       <div
         className={clsx(classes.container, classes.whiteBackground)}
-        style={{ minWidth: '100%' }}
+        style={{ minWidth: '100%', backgroundColor: "black" }}
         id='horizontal'
       >
         <Container maxWidth='lg' style={{ zIndex: '1' }}>
@@ -22,19 +26,20 @@ const MoreInfo = () => {
             container
             justify='flex-start'
             alignItems='center'
-            style={{ marginTop: 124 }}
+            style={{ marginTop: 40, paddingBottom: -80 }}
           >
             <Typography
               variant='h2'
               // className={clsx(classes.blac)}
               gutterBottom
+              style={{ color: "red", fontWeight: "bold" }}
             >
               How does it work?
             </Typography>
           </Grid>
         </Container>
         <Container maxWidth='lg'>
-          <Grid container justify='center' style={{ height: '100%' }}>
+          <Grid container justify='center' style={{ height: '60%', marginLeft: (offset * 0.015) - 40 + '%' }}>
             <Grid
               container
               item
@@ -44,14 +49,14 @@ const MoreInfo = () => {
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography variant='h6'>
+                <Typography variant='h6' style={{color: "white" }}>
                   Every month, a group of people (could be friends, neighbors,
                   colleagues) get together and watch TED Talks which are
                   specific to the monthly theme. They then discuss their
                   takeaways and exchange their ideas and views on it. The
                   members of our club will host the Circles, which will be
                   joined by experts who are well versed with the topic! Theme of
-                  the month:
+                  the month: Appreciating Earth.
                   <a
                     // href='https://countdown.ted.com/'
                     target='_blank'
@@ -62,7 +67,6 @@ const MoreInfo = () => {
                       paddingLeft: '10px',
                     }}
                   >
-                    Appreciating Earth
                   </a>{' '}
                 </Typography>
                 <br />
@@ -78,7 +82,7 @@ const MoreInfo = () => {
           </Grid>
         </Container>
 
-        <div className={classes.backgroundTextMore}>
+        {/* <div className={classes.backgroundTextMore}>
           <AboutSvg
             style={{
               width: '100%',
@@ -89,7 +93,7 @@ const MoreInfo = () => {
               // background: '#222',
             }}
           />
-        </div>
+        </div> */}
       </div>
     </>
   );

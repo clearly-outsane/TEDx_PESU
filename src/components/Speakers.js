@@ -15,27 +15,30 @@ theme = responsiveFontSizes(theme)
 const Speakers = () => {
     const classes = speakerStyles()
     return (
+        <div style={{backgroundColor: "black" , margin: "-125px"}}>
         <Container className={classes.Container}>
             <div>
                 <Typography
                     className={classes.heading}
                     align='left'
                     variant='h2'
-                    style={{ fontWeight: 400, marginTop: 124 }}
+                    style={{ fontWeight: 400, marginTop: 124, color: "red" }}
                 >
+                    
                     Meet the event
                 </Typography>
                 <Typography
                     className={classes.heading}
                     align='left'
                     variant='h2'
-                    style={{ marginBottom: 24 }}
+                    style={{ marginBottom: 24, color: "red" }}
                 >
                     speakers
                 </Typography>
             </div>
             <Sliders />
         </Container>
+        </div>
     )
 }
 
