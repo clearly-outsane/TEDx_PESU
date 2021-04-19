@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 import { aboutSection } from '../styles/Sections';
 import { ReactComponent as AboutSvg } from '../assets/svg/Countdown.svg';
 import theme from '../styles/theme';
@@ -57,30 +57,26 @@ const Benefits = () => {
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography
-                  variant='h6'
-                  className={clsx(classes.whiteText)}
-                  style={{ color: 'white' }}
+                <ScrollAnimation
+                  animateIn='bounceInRight'
+                  animateOut='bounceOutLeft'
+                  // duration='2s'
+                  // scrollableParentSelector='#scrolly-div'
                 >
-                  {/* <a
-                    href='https://countdown.ted.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    style={{
-                      color: theme.palette.secondary.main,
-                      textDecoration: 'none',
-                    }}
+                  <Typography
+                    variant='h6'
+                    className={clsx(classes.whiteText)}
+                    style={{ color: 'white' }}
                   >
-                    TED Circles
-                  </a>{' '} */}
-                  By engaging in constructive conversations, you gain a
-                  different perspective on things, which helps expand your
-                  horizons and grow your mind. The power of ideas and
-                  conversation positively impacts you, the community, and the
-                  world. Additionally, interacting with people who are experts
-                  in their field is not an opportunity you would want to miss
-                  out on!
-                </Typography>
+                    By engaging in constructive conversations, you gain a
+                    different perspective on things, which helps expand your
+                    horizons and grow your mind. The power of ideas and
+                    conversation positively impacts you, the community, and the
+                    world. Additionally, interacting with people who are experts
+                    in their field is not an opportunity you would want to miss
+                    out on!
+                  </Typography>
+                </ScrollAnimation>
                 <br />
                 {/* <Typography variant='h6' className={clsx(classes.whiteText)}>
                   We believe that change begins with each of us – that’s why

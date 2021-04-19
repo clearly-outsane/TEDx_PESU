@@ -90,25 +90,6 @@ const AboutSection = () => {
             </Grid>
           </Grid>
         </Container>
-
-        {/* <div className={classes.backgroundText}>
-          { <AboutCountdownImage
-            style={{
-              width: '100%',
-              transform: 'translate(0,4vw)',
-              height: '14vw',
-            }}
-            fill='white'
-          /> }
-          { <img
-            src={AboutCountdownImage}
-            style={{
-              width: '100%',
-              height: '14vw',
-              transform: 'translate(0,4vw)',
-            }}
-          /> }
-        </div> */}
       </div>
     </>
   );

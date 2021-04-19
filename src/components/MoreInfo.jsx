@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import clsx from 'clsx';
-
+import ScrollAnimation from 'react-animate-on-scroll';
 import { aboutSection, aboutPageStyles } from '../styles/Sections';
 import { ReactComponent as AboutSvg } from '../assets/svg/Countdown.svg';
 import theme from '../styles/theme';
@@ -57,27 +57,34 @@ const MoreInfo = () => {
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
-                <Typography variant='h6' style={{ color: 'white' }}>
-                  Every month, a group of people (could be friends, neighbors,
-                  colleagues) get together and watch TED Talks which are
-                  specific to the monthly theme. They then discuss their
-                  takeaways and exchange their ideas and views on it. The
-                  members of our club will host the Circles, which will be
-                  joined by experts who are well versed with the topic! Theme of
-                  April month:
-                  <a
-                    // href='https://countdown.ted.com/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    style={{
-                      color: 'red',
-                      textDecoration: 'none',
-                      paddingLeft: '10px',
-                    }}
-                  >
-                    Appreciating Earth.
-                  </a>
-                </Typography>
+                <ScrollAnimation
+                  animateIn='bounceInRight'
+                  animateOut='bounceOutLeft'
+                  // duration='2s'
+                  // scrollableParentSelector='#scrolly-div'
+                >
+                  <Typography variant='h6' style={{ color: 'white' }}>
+                    Every month, a group of people (could be friends, neighbors,
+                    colleagues) get together and watch TED Talks which are
+                    specific to the monthly theme. They then discuss their
+                    takeaways and exchange their ideas and views on it. The
+                    members of our club will host the Circles, which will be
+                    joined by experts who are well versed with the topic! Theme
+                    of April month:
+                    <a
+                      // href='https://countdown.ted.com/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      style={{
+                        color: 'red',
+                        textDecoration: 'none',
+                        paddingLeft: '10px',
+                      }}
+                    >
+                      Appreciating Earth.
+                    </a>
+                  </Typography>
+                </ScrollAnimation>
                 <br />
                 {/* <Typography variant='h6' className={clsx(classes.whiteText)}>
                   We believe that change begins with each of us – that’s why
