@@ -3,10 +3,10 @@ import "./circle1.css";
 
 const Takeaway2 = () => {
   return (
-    <div>
+    <div className="takeaway-background">
       <div className="takeawaytext">
         <h2>Green Economy and Sustainable Development</h2>
-        <h3>Key takeways</h3>
+        <h3>Key takeaways</h3>
         <ul>
           <li>
             A green business functions in the best interests of the local and

@@ -3,7 +3,7 @@ import "./circle1.css";
 
 const Takeaway5 = () => {
   return (
-    <div>
+    <div className="takeaway-background">
       <div className="takeawaytext">
         <h2>Put A Value On Nature</h2>
         <h3>Key takeways</h3>

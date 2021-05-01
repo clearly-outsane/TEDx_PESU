@@ -11,7 +11,6 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Landing from "./pages/Landing";
 import About from "./pages/About";
 import "./App.css";
-import Join from "./pages/Join";
 import LinksPage from "./components/links";
 import Circle1 from "./components/takeaways/Circle1";
 import Takeaway1 from "./components/takeaways/takeaway1";

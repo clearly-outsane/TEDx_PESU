@@ -3,10 +3,10 @@ import "./circle1.css";
 
 const Takeaway4 = () => {
   return (
-    <div>
+    <div className="takeaway-background">
       <div className="takeawaytext">
-        <h2>How Plants and Animals Are Evolving Cities</h2>
-        <h3>Key takeways</h3>
+        <h2>How Plants and Animals Are Evolving in Cities</h2>
+        <h3>Key takeaways</h3>
         <ul>
           <li>
             Evolution and change are terms that cannot be used interchangeably.

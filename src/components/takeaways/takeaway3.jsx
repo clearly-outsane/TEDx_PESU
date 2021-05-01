@@ -3,10 +3,10 @@ import "./circle1.css";
 
 const Takeaway3 = () => {
   return (
-    <div>
+    <div className="takeaway-background">
       <div className="takeawaytext">
         <h2>Why Renewables Cannot Save The Planet</h2>
-        <h3>Key takeways</h3>
+        <h3>Key takeaways</h3>
         <ul>
           <li>
             Currently, 4% of the electricity in the world comes from nuclear

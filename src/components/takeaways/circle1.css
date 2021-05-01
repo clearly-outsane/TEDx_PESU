@@ -128,16 +128,22 @@
   margin: 20px;
 }
 
+.takeaway-background{
+  min-height:100vh;
+  background-color:black;
+}
+
 .takeawaytext{
   /*max-width: 700px;*/
-  margin-top: 20px
+  padding-top: 20px
 }
 
 .takeawaytext h2{
   color:red;
-  font-size:2rem;
+  font-size:2.2rem;
   font-weight:800 !important;
   /*padding: 20px;*/
+  margin-top:0;
   text-transform:capitalize;
   text-align:center
 }
@@ -150,7 +156,7 @@
 }
 
 .takeawaytext ul li{
-  color:#222;
+  color:#fff;
   font-size:1.8rem;
   padding:15px;
 }

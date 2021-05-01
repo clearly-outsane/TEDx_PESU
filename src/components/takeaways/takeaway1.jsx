@@ -3,10 +3,10 @@ import "./circle1.css";
 
 const Takeaway1 = () => {
   return (
-    <div>
+    <div className="takeaway-background">
       <div className="takeawaytext">
-        <h2>Protecting the Ocean</h2>
-        <h3>Key takeways</h3>
+        <h2>Protecting the Oceans</h2>
+        <h3>Key takeaways</h3>
         <ul>
           <li>
             With regard to Ocean Conservation, the issues that occur locally in

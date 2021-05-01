@@ -25,7 +25,7 @@ const Circle1 = () => {
       <div className="takeaway-circle">
         <div className="circle1">
           <div className="content">
-            <p className="table-heading">1) Protecting the ocean</p>
+            <p className="table-heading">1) Protecting the oceans</p>
             <div className="imgBx">
               <div>
                 <img src={speaker1} />
@@ -59,11 +59,7 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2>
-                <Link
-                  style={{ color: "red" }}
-                  style={{ color: "red" }}
-                  to="/takeaway1"
-                >
+                <Link style={{ color: "red" }} to="/takeaway1">
                   click here for key takeaways
                 </Link>
               </h2>
@@ -169,7 +165,7 @@ const Circle1 = () => {
         <div className="circle4">
           <div className="content">
             <p className="table-heading">
-              4) How Plants and Animals Are Evolving Cities
+              4) How Plants and Animals Are Evolving in Cities
             </p>
             <div className="imgBx">
               <div>
