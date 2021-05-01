@@ -104,14 +104,15 @@ const Navbar = () => {
                     Links
                   </Link>
                 </Typography> */}
+
                 <Typography variant="h3" gutterBottom>
-                  <Link href="/about" className={classes.whiteText}>
-                    About
+                  <Link href="/takeaways" className={classes.whiteText}>
+                    Takeaways
                   </Link>
                 </Typography>
                 <Typography variant="h3" gutterBottom>
-                  <Link href="/circles" className={classes.whiteText}>
-                    Circles
+                  <Link href="/about" className={classes.whiteText}>
+                    About
                   </Link>
                 </Typography>
                 {/* <Typography
