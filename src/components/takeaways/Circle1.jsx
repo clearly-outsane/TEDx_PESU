@@ -209,7 +209,7 @@ const Circle1 = () => {
         </div>
       </div>
       <div className="takeaway-circle">
-        <div className="circle5">
+        <div className="circle5" style={{ overflow: "hidden" }}>
           <div className="content">
             <p className="table-heading">5) Put A Value On Nature</p>
             <div className="imgBx">
@@ -244,7 +244,7 @@ const Circle1 = () => {
               </div>
             </div>
             <div className="takeawaytext">
-              <h2>
+              <h2 style={{ marginBottom: "0" }}>
                 <Link style={{ color: "red" }} to="/takeaway5">
                   click here for key takeaways
                 </Link>

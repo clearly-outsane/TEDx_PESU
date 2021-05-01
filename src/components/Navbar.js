@@ -115,13 +115,6 @@ const Navbar = () => {
                     About
                   </Link>
                 </Typography>
-                {/* <Typography
-                  variant="h6"
-                  className={clsx(classes.whiteText)}
-                  gutterBottom
-                >
-                  More pages coming soon!
-                </Typography> */}
               </Grid>
               <Grid container item xs justify="center" alignItems="center">
                 <Typography
