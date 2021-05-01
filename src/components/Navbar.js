@@ -109,6 +109,11 @@ const Navbar = () => {
                     About
                   </Link>
                 </Typography>
+                <Typography variant="h3" gutterBottom>
+                  <Link href="/circles" className={classes.whiteText}>
+                    circles
+                  </Link>
+                </Typography>
                 {/* <Typography
                   variant="h6"
                   className={clsx(classes.whiteText)}

@@ -1,0 +1,142 @@
+
+.takeaway-circle {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 20px;
+  /*background: linear-gradient(to bottom, #423e3e, black);*/
+  background:black
+
+}
+
+.circle1:before {
+  content: 'circle1';
+  position: absolute;
+  /*background-attachment: fixed;*/
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 10vh;
+  left:50%;
+  color: rgba(49, 48, 48, 0.3);
+  opacity:0.9;
+  transform: translateX(-50%);
+}
+
+.circle2:before {
+  content: 'circle2';
+  position: absolute;
+  /*background-attachment: fixed;*/
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 10vh;
+  left:50%;
+  color: rgba(49, 48, 48, 0.3);
+  opacity:0.9;
+  transform: translateX(-50%);
+}
+
+.circle3:before {
+  content: 'circle3';
+  position: absolute;
+  /*background-attachment: fixed;*/
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 10vh;
+  left:50%;
+  color: rgba(49, 48, 48, 0.3);
+  opacity:0.9;
+  transform: translateX(-50%);
+}
+
+.circle4:before {
+  content: 'circle4';
+  position: absolute;
+  /*background-attachment: fixed;*/
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 10vh;
+  left:50%;
+  color: rgba(49, 48, 48, 0.3);
+  opacity:0.9;
+  transform: translateX(-50%);
+}
+
+.circle5:before {
+  content: 'circle5';
+  position: absolute;
+  /*background-attachment: fixed;*/
+  font-size: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  margin-top: 10vh;
+  left:50%;
+  color: rgba(49, 48, 48, 0.3);
+  opacity:0.9;
+  transform: translateX(-50%);
+}
+
+
+.content{
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.content .imgBx{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition:0.4s;
+}
+
+.content .imgBx img{
+  width: 250px;
+  height: 250px;
+  margin:20px;
+  border-radius:50%;
+  object-fit: cover;
+  background-size: cover
+}
+
+.content .imgBx div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.content .takeawaytext{
+  /*max-width: 700px;*/
+  margin-top: 20px
+}
+
+.content .takeawaytext h2{
+  color:red;
+  font-size:3rem;
+  font-weight:800 !important;
+  padding: 20px;
+  text-transform:capitalize;
+}
+
+.content .takeawaytext ul li{
+  color:#fff;
+  font-size:1.8rem;
+  padding:15px;
+}

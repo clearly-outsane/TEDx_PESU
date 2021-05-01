@@ -1,18 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   Redirect,
-} from 'react-router-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
+} from "react-router-dom";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
-import Landing from './pages/Landing';
-import About from './pages/About';
-import './App.css';
-import Join from './pages/Join';
-import LinksPage from './components/links';
+import Landing from "./pages/Landing";
+import About from "./pages/About";
+import "./App.css";
+import Join from "./pages/Join";
+import LinksPage from "./components/links";
+import Circle1 from "./components/takeaways/Circle1";
 
 const RedirectForm = () => {};
 
@@ -35,40 +36,41 @@ const App = () => {
       <Router>
         <div>
           <Switch>
-            <Route exact path='/' component={Landing} />
-            <Route exact path='/about' component={About} />
+            <Route exact path="/" component={Landing} />
+            <Route exact path="/about" component={About} />
             {/* <Route exact path="/join" component={Join} /> */}
             <Route
-              path='/cms'
+              path="/cms"
               render={({ history }) =>
-                window.location.replace('https://forms.gle/nnSMNsYjedaZY6wN7')
+                window.location.replace("https://forms.gle/nnSMNsYjedaZY6wN7")
               }
             />
             <Route
               exact
-              path='/links/greenmile'
+              path="/links/greenmile"
               render={({ history }) =>
-                window.location.replace('https://forms.gle/XaTiW9e8gbK34tNb6')
+                window.location.replace("https://forms.gle/XaTiW9e8gbK34tNb6")
               }
             />
             <Route
               exact
-              path='/links/jtc-upload'
+              path="/links/jtc-upload"
               render={({ history }) =>
-                window.location.replace('https://forms.gle/vLXhUJMLkXEcX1Hg7')
+                window.location.replace("https://forms.gle/vLXhUJMLkXEcX1Hg7")
               }
             />
 
             <Route
               exact
-              path='/links/view'
+              path="/links/view"
               render={({ history }) =>
                 window.location.replace(
-                  'https://www.airmeet.com/e/7219b540-0fa5-11eb-a4df-0be2e439ef27'
+                  "https://www.airmeet.com/e/7219b540-0fa5-11eb-a4df-0be2e439ef27"
                 )
               }
             />
-            <Route exact path='/links' component={LinksPage} />
+            <Route exact path="/circles" component={Circle1} />
+            <Route exact path="/links" component={LinksPage} />
             <Route component={NotFound} />
           </Switch>
         </div>

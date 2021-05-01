@@ -1,24 +1,24 @@
-import React, { useRef, useEffect, useState } from 'react';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
-import clsx from 'clsx';
-import { HashLink as Link } from 'react-router-hash-link';
-import Navbar from '../components/Navbar';
-import { landingStyles } from '../styles/Landing';
-import { Typography } from '@material-ui/core';
-import { ContrastTextField, PrimaryButton } from '../styles/theme';
-import earth from '../assets/gifs/earth.gif';
-import AboutTedxSection from '../components/AboutTedxLandingPage';
-import AboutCountdownSection from '../components/AboutCountdownSection';
-import MailchimpForm from '../components/MailchimpForm';
-import Footer from '../components/Footer';
-import Quote from '../components/fillers/Quote';
-import Speakers from '../components/Speakers';
-import Performers from '../components/Performers';
-import MoreInfo from '../components/MoreInfo';
-import Benefits from '../components/Benefits';
-import circle from '../assets/gifs/tedcircle.gif';
-import GifLoader from 'react-gif-loader';
+import React, { useRef, useEffect, useState } from "react";
+import Container from "@material-ui/core/Container";
+import Grid from "@material-ui/core/Grid";
+import clsx from "clsx";
+import { HashLink as Link } from "react-router-hash-link";
+import Navbar from "../components/Navbar";
+import { landingStyles } from "../styles/Landing";
+import { Typography } from "@material-ui/core";
+import { ContrastTextField, PrimaryButton } from "../styles/theme";
+import earth from "../assets/gifs/earth.gif";
+import AboutTedxSection from "../components/AboutTedxLandingPage";
+import AboutCountdownSection from "../components/AboutCountdownSection";
+import MailchimpForm from "../components/MailchimpForm";
+import Footer from "../components/Footer";
+import Quote from "../components/fillers/Quote";
+import Speakers from "../components/Speakers";
+import Performers from "../components/Performers";
+import MoreInfo from "../components/MoreInfo";
+import Benefits from "../components/Benefits";
+import circle from "../assets/gifs/tedcircle.gif";
+import GifLoader from "react-gif-loader";
 
 const Landing = () => {
   const classes = landingStyles();
@@ -31,35 +31,35 @@ const Landing = () => {
   return (
     <>
       <div className={classes.blackBackground}>
-        <Container maxWidth='lg' className={classes.container}>
+        <Container maxWidth="lg" className={classes.container}>
           <div>
             <Navbar />
           </div>
           <div>
             <Grid
               container
-              justify='center'
-              alignItems='center'
-              style={{ height: '100%' }}
+              justify="center"
+              alignItems="center"
+              style={{ height: "100%" }}
             >
               <Grid container item xs={12} sm={6}>
                 <Typography
-                  variant='body1'
+                  variant="body1"
                   className={clsx(classes.whiteText, classes.boldText)}
-                  display='inline'
+                  display="inline"
                   gutterBottom
                   style={{
                     fontWeight: 200,
                     marginBottom: 18,
-                    fontSize: '1.25rem',
+                    fontSize: "1.25rem",
                   }}
                 >
                   19.4.2021
                 </Typography>
                 <Typography
-                  variant='h6'
+                  variant="h6"
                   className={clsx(classes.whiteText)}
-                  display='inline'
+                  display="inline"
                   style={{
                     marginBottom: 24,
                   }}
@@ -81,12 +81,13 @@ const Landing = () => {
                 item
                 xs={12}
                 sm={6}
-                alignItems='flex-start'
-                className='gifloader'
-                justify='flex-end'
+                alignItems="flex-start"
+                className="gifloader"
+                justify="flex-end"
                 style={{
                   marginBottom: 18,
-                  backgroundBlendMode: 'color-dodge',
+                  backgroundBlendMode: "color-dodge",
+                  zIndex: 0,
                 }}
               >
                 {/* <img
@@ -99,11 +100,11 @@ const Landing = () => {
                   loading={true}
                   imageSrc={circle}
                   imageStyle={{
-                    width: '100%',
-                    height: 'auto',
-                    boxShadow: '0 0 8px 8px black inset',
+                    width: "100%",
+                    height: "auto",
+                    boxShadow: "0 0 8px 8px black inset",
                   }}
-                  overlayBackground='none'
+                  overlayBackground="none"
                 />
               </Grid>
             </Grid>
@@ -111,16 +112,16 @@ const Landing = () => {
           <div>
             <Grid
               container
-              justify='center'
-              alignItems='center'
+              justify="center"
+              alignItems="center"
               className={classes.marginBottom36}
             >
               {[
-                'Speaker Names',
-                'To be',
-                'Announced Soon',
-                'Stay tuned',
-                'Much wow',
+                "Speaker Names",
+                "To be",
+                "Announced Soon",
+                "Stay tuned",
+                "Much wow",
               ].map((name) => {
                 return (
                   <Grid item className={clsx(classes.marginLeftRight32)} />
