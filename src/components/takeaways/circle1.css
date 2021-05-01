@@ -11,15 +11,15 @@
 }
 
 .circle1:before {
-  content: 'circle1';
+  content: 'Circle 1';
   position: absolute;
-  /*background-attachment: fixed;*/
-  font-size: 20vw;
+  width:100%;
+  font-size: 18vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 10vh;
+  margin-top: 20vh;
   left:50%;
   color: rgba(52, 51, 51, 0.97);
   /*opacity:0.9;*/
@@ -27,15 +27,15 @@
 }
 
 .circle2:before {
-  content: 'circle2';
+  content: 'Circle 2';
   position: absolute;
-  /*background-attachment: fixed;*/
-  font-size: 20vw;
+  width:100%;
+  font-size: 18vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 10vh;
+  margin-top: 20vh;
   left:50%;
   color: rgba(52, 51, 51, 0.97);
   /*opacity:0.8;*/
@@ -43,15 +43,15 @@
 }
 
 .circle3:before {
-  content: 'circle3';
+  content: 'Circle 3';
   position: absolute;
-  /*background-attachment: fixed;*/
-  font-size: 20vw;
+  width:100%;
+  font-size: 18vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 10vh;
+  margin-top: 20vh;
   left:50%;
   color: rgba(52, 51, 51, 0.97);
   /*opacity:0.9;*/
@@ -59,15 +59,15 @@
 }
 
 .circle4:before {
-  content: 'circle4';
+  content: 'Circle 4';
   position: absolute;
-  /*background-attachment: fixed;*/
-  font-size: 20vw;
+  width:100%;
+  font-size: 18vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 10vh;
+  margin-top: 20vh;
   left:50%;
   color: rgba(52, 51, 51, 0.97);
   /*opacity:0.9;*/
@@ -75,15 +75,15 @@
 }
 
 .circle5:before {
-  content: 'circle5';
+  content: 'Circle 5';
   position: absolute;
-  /*background-attachment: fixed;*/
-  font-size: 20vw;
+  width:100%;
+  font-size: 18vw;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 900;
-  margin-top: 10vh;
+  margin-top: 20vh;
   left:50%;
   color: rgba(52, 51, 51, 0.97);
   /*opacity:0.9;*/
@@ -95,6 +95,12 @@
   position: relative;
   width: 100%;
   margin-top: 40px;
+}
+
+.content .table-heading{
+  color:#fff;
+  font-size:3rem;
+  padding-left:10%
 }
 
 .content .imgBx{
@@ -122,21 +128,29 @@
   margin: 20px;
 }
 
-.content .takeawaytext{
+.takeawaytext{
   /*max-width: 700px;*/
   margin-top: 20px
 }
 
-.content .takeawaytext h2{
+.takeawaytext h2{
   color:red;
-  font-size:3rem;
+  font-size:2rem;
   font-weight:800 !important;
-  padding: 20px;
+  /*padding: 20px;*/
   text-transform:capitalize;
+  text-align:center
 }
 
-.content .takeawaytext ul li{
-  color:#fff;
+.takeawaytext h3{
+  color:red;
+  font-size:1.5rem;
+  font-weight:500;
+  text-align:center
+}
+
+.takeawaytext ul li{
+  color:#222;
   font-size:1.8rem;
   padding:15px;
 }

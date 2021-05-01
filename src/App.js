@@ -14,6 +14,11 @@ import "./App.css";
 import Join from "./pages/Join";
 import LinksPage from "./components/links";
 import Circle1 from "./components/takeaways/Circle1";
+import Takeaway1 from "./components/takeaways/takeaway1";
+import Takeaway2 from "./components/takeaways/takeaway2";
+import Takeaway5 from "./components/takeaways/takeaway5";
+import Takeaway3 from "./components/takeaways/takeaway3";
+import Takeaway4 from "./components/takeaways/takeaway4";
 
 const RedirectForm = () => {};
 
@@ -70,6 +75,11 @@ const App = () => {
               }
             />
             <Route exact path="/circles" component={Circle1} />
+            <Route exact path="/takeaway1" component={Takeaway1} />
+            <Route exact path="/takeaway2" component={Takeaway2} />
+            <Route exact path="/takeaway3" component={Takeaway3} />
+            <Route exact path="/takeaway4" component={Takeaway4} />
+            <Route exact path="/takeaway5" component={Takeaway5} />
             <Route exact path="/links" component={LinksPage} />
             <Route component={NotFound} />
           </Switch>
