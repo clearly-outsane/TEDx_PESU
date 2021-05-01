@@ -106,7 +106,7 @@ const Navbar = () => {
                 </Typography> */}
 
                 <Typography variant="h3" gutterBottom>
-                  <Link href="/takeaways" className={classes.whiteText}>
+                  <Link href="/circles" className={classes.whiteText}>
                     Takeaways
                   </Link>
                 </Typography>
