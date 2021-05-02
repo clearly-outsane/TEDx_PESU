@@ -13,6 +13,7 @@ import "./circle1.css";
 import Navbar from "../Navbar";
 import Container from "@material-ui/core/Container";
 import { Link } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 const Circle1 = () => {
   return (
@@ -59,8 +60,18 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2>
-                <Link style={{ color: "red" }} to="/takeaway1">
-                  click here for key takeaways
+                <Link to="/takeaway1" style={{ color: "red" }}>
+                  <Button
+                    style={{
+                      background: "red",
+                      padding: "10px",
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      // color: "#fff",
+                    }}
+                  >
+                    Circle 1 takeaways
+                  </Button>
                 </Link>
               </h2>
             </div>
@@ -106,8 +117,18 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2>
-                <Link style={{ color: "red" }} to="/takeaway2">
-                  click here for key takeaways
+                <Link to="/takeaway2" style={{ color: "red" }}>
+                  <Button
+                    style={{
+                      background: "red",
+                      padding: "10px",
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      // color: "#fff",
+                    }}
+                  >
+                    Circle 2 takeaways
+                  </Button>
                 </Link>
               </h2>
             </div>
@@ -153,8 +174,18 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2>
-                <Link style={{ color: "red" }} to="/takeaway3">
-                  click here for key takeaways
+                <Link to="takeaway3" style={{ color: "red" }}>
+                  <Button
+                    style={{
+                      background: "red",
+                      padding: "10px",
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      // color: "#fff",
+                    }}
+                  >
+                    Circle 3 takeaways
+                  </Button>
                 </Link>
               </h2>
             </div>
@@ -200,8 +231,18 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2>
-                <Link style={{ color: "red" }} to="/takeaway4">
-                  click here for key takeaways
+                <Link to="/takeaway4" style={{ color: "red" }}>
+                  <Button
+                    style={{
+                      background: "red",
+                      padding: "10px",
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      // color: "#fff",
+                    }}
+                  >
+                    Circle 4 takeaways
+                  </Button>
                 </Link>
               </h2>
             </div>
@@ -245,8 +286,18 @@ const Circle1 = () => {
             </div>
             <div className="takeawaytext">
               <h2 style={{ marginBottom: "0" }}>
-                <Link style={{ color: "red" }} to="/takeaway5">
-                  click here for key takeaways
+                <Link to="/takeaway5" style={{ color: "red" }}>
+                  <Button
+                    style={{
+                      background: "red",
+                      padding: "10px",
+                      fontSize: "18px",
+                      fontWeight: "600",
+                      // color: "#fff",
+                    }}
+                  >
+                    Circle 5 takeaways
+                  </Button>
                 </Link>
               </h2>
             </div>
