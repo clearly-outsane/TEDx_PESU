@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, responsiveFontSizes, Typography } from "@material-ui/core";
 import { speakerStyles } from "../styles/speakers";
-import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import { createMuiTheme, ThemeProvider, Button } from "@material-ui/core";
 import Sliders from "./Sliders";
 import { Link } from "react-router-dom";
 
@@ -41,7 +41,18 @@ const Speakers = () => {
           style={{ textAlign: "center", fontSize: "1.5rem", marginBottom: "0" }}
         >
           <Link to="circles" style={{ color: "red" }}>
-            Intrigued to know what was discussed? Click here to know!
+            <Button
+              to="/circles"
+              style={{
+                background: "red",
+                padding: "10px",
+                fontSize: "18px",
+                fontWeight: "600",
+                // color: "#fff",
+              }}
+            >
+              key takeaways
+            </Button>
           </Link>
         </h2>
       </Container>

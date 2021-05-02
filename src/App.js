@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link,
   Redirect,
+  useLocation,
+  withRouter,
 } from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 
@@ -32,6 +34,15 @@ const route = window.location.href;
 // if (ismobile === false && route.toString() === 'https://tedxpesu.com/') {
 //   window.location.replace('https://desktop.tedxpesu.com/');
 // }
+
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children;
+}
+const ScrollToTop = withRouter(_ScrollToTop);
 
 const App = () => {
   return (
@@ -73,12 +84,14 @@ const App = () => {
                 )
               }
             />
-            <Route exact path="/circles" component={Circle1} />
-            <Route exact path="/takeaway1" component={Takeaway1} />
-            <Route exact path="/takeaway2" component={Takeaway2} />
-            <Route exact path="/takeaway3" component={Takeaway3} />
-            <Route exact path="/takeaway4" component={Takeaway4} />
-            <Route exact path="/takeaway5" component={Takeaway5} />
+            <ScrollToTop>
+              <Route exact path="/circles" component={Circle1} />
+              <Route exact path="/takeaway1" component={Takeaway1} />
+              <Route exact path="/takeaway2" component={Takeaway2} />
+              <Route exact path="/takeaway3" component={Takeaway3} />
+              <Route exact path="/takeaway4" component={Takeaway4} />
+              <Route exact path="/takeaway5" component={Takeaway5} />
+            </ScrollToTop>
             <Route exact path="/links" component={LinksPage} />
             <Route component={NotFound} />
           </Switch>
