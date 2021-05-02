@@ -41,7 +41,7 @@ const Speakers = () => {
           style={{ textAlign: "center", fontSize: "1.5rem", marginBottom: "0" }}
         >
           <Link to="circles" style={{ color: "red" }}>
-            Intrigued to know what was discussed? click here to know!
+            Intrigued to know what was discussed? Click here to know!
           </Link>
         </h2>
       </Container>
