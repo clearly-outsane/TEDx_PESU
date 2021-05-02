@@ -22,7 +22,7 @@ const Benefits = () => {
         style={{
           minWidth: "100%",
           backgroundColor: "black",
-          minHeight: "70vh",
+          minHeight: "75vh",
         }}
         id="horizontal"
       >

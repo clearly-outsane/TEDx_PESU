@@ -24,7 +24,7 @@ const AboutSection = () => {
         style={{
           // background: '#393939',
           minWidth: "100%",
-          minHeight: "70vh",
+          minHeight: "55vh",
           backgroundColor: "black",
         }}
       >

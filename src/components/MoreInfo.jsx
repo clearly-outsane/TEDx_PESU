@@ -1,51 +1,51 @@
-import React, { useState } from 'react';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import clsx from 'clsx';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { aboutSection, aboutPageStyles } from '../styles/Sections';
-import { ReactComponent as AboutSvg } from '../assets/svg/Countdown.svg';
-import theme from '../styles/theme';
+import React, { useState } from "react";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+import clsx from "clsx";
+import ScrollAnimation from "react-animate-on-scroll";
+import { aboutSection, aboutPageStyles } from "../styles/Sections";
+import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
+import theme from "../styles/theme";
 
 const MoreInfo = () => {
   const classes = aboutPageStyles();
   const [offset, setoffset] = useState();
 
   const handleScroll = () => setoffset(window.pageYOffset);
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
   return (
     <>
       <div
         className={clsx(classes.container, classes.whiteBackground)}
         style={{
-          minWidth: '100%',
-          backgroundColor: 'black',
-          minHeight: '70vh',
+          minWidth: "100%",
+          backgroundColor: "black",
+          minHeight: "65vh",
         }}
-        id='horizontal'
+        id="horizontal"
       >
-        <Container maxWidth='lg' style={{ zIndex: '1' }}>
+        <Container maxWidth="lg" style={{ zIndex: "1" }}>
           <Grid
             container
-            justify='flex-start'
-            alignItems='center'
+            justify="flex-start"
+            alignItems="center"
             style={{ marginTop: 40, paddingBottom: -80 }}
           >
             <Typography
-              variant='h2'
+              variant="h2"
               // className={clsx(classes.blac)}
               gutterBottom
-              style={{ color: 'red', fontWeight: 'bold' }}
+              style={{ color: "red", fontWeight: "bold" }}
             >
               How does it work?
             </Typography>
           </Grid>
         </Container>
-        <Container maxWidth='lg'>
+        <Container maxWidth="lg">
           <Grid
             container
-            justify='center'
+            justify="center"
             // style={{ height: '60%', marginLeft: offset * 0.015 - 40 + '%' }}
           >
             <Grid
@@ -53,17 +53,17 @@ const MoreInfo = () => {
               item
               xs={12}
               sm={7}
-              alignItems='flex-start'
+              alignItems="flex-start"
               style={{ marginTop: 48 }}
             >
               <Grid item xs={12}>
                 <ScrollAnimation
-                  animateIn='bounceInRight'
-                  animateOut='bounceOutLeft'
+                  animateIn="bounceInRight"
+                  animateOut="bounceOutLeft"
                   // duration='2s'
                   // scrollableParentSelector='#scrolly-div'
                 >
-                  <Typography variant='h6' style={{ color: 'white' }}>
+                  <Typography variant="h6" style={{ color: "white" }}>
                     Every month, a group of people (could be friends, neighbors,
                     colleagues) get together and watch TED Talks which are
                     specific to the monthly theme. They then discuss their
@@ -73,12 +73,12 @@ const MoreInfo = () => {
                     of April month:
                     <a
                       // href='https://countdown.ted.com/'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      target="_blank"
+                      rel="noopener noreferrer"
                       style={{
-                        color: 'red',
-                        textDecoration: 'none',
-                        paddingLeft: '10px',
+                        color: "red",
+                        textDecoration: "none",
+                        paddingLeft: "10px",
                       }}
                     >
                       Appreciating Earth.
