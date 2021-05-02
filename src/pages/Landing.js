@@ -90,22 +90,22 @@ const Landing = () => {
                   zIndex: 0,
                 }}
               >
-                {/* <img
+                <img
                   src={circle}
-                  alt='Earth globe gif'
+                  alt="Earth globe gif"
                   className={classes.gif}
-                  style={{ boxShadow: '0 0 4px 4px black inset' }}
-                /> */}
-                <GifLoader
-                  loading={true}
-                  imageSrc={circle}
-                  imageStyle={{
-                    width: "100%",
-                    height: "auto",
-                    boxShadow: "0 0 8px 8px black inset",
-                  }}
-                  overlayBackground="none"
+                  style={{ boxShadow: "0 0 4px 4px black inset" }}
                 />
+                {/*<GifLoader*/}
+                {/*  loading={true}*/}
+                {/*  imageSrc={circle}*/}
+                {/*  imageStyle={{*/}
+                {/*    width: "100%",*/}
+                {/*    height: "auto",*/}
+                {/*    boxShadow: "0 0 8px 8px black inset",*/}
+                {/*  }}*/}
+                {/*  overlayBackground="none"*/}
+                {/*/>*/}
               </Grid>
             </Grid>
           </div>
