@@ -2,23 +2,24 @@ import React, { useRef, useEffect, useState } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
-import { HashLink as Link } from "react-router-hash-link";
+// import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../components/Navbar";
 import { landingStyles } from "../styles/Landing";
 import { Typography } from "@material-ui/core";
-import { ContrastTextField, PrimaryButton } from "../styles/theme";
-import earth from "../assets/gifs/earth.gif";
+// import { ContrastTextField, PrimaryButton } from "../styles/theme";
+// import earth from "../assets/gifs/earth.gif";
 import AboutTedxSection from "../components/AboutTedxLandingPage";
 import AboutCountdownSection from "../components/AboutCountdownSection";
-import MailchimpForm from "../components/MailchimpForm";
+// import MailchimpForm from "../components/MailchimpForm";
 import Footer from "../components/Footer";
 import Quote from "../components/fillers/Quote";
 import Speakers from "../components/Speakers";
-import Performers from "../components/Performers";
+// import Performers from "../components/Performers";
 import MoreInfo from "../components/MoreInfo";
 import Benefits from "../components/Benefits";
 import circle from "../assets/gifs/tedcircle.gif";
-import GifLoader from "react-gif-loader";
+// import GifLoader from "react-gif-loader";
+import redcircle from "../assets/gifs/Red BG.gif";
 
 const Landing = () => {
   const classes = landingStyles();
@@ -91,7 +92,7 @@ const Landing = () => {
                 }}
               >
                 <img
-                  src={circle}
+                  src={redcircle}
                   alt="Earth globe gif"
                   className={classes.gif}
                   style={{ boxShadow: "0 0 4px 4px black inset" }}
