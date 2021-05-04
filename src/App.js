@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  Redirect,
   useLocation,
   withRouter,
 } from "react-router-dom";
@@ -74,7 +72,6 @@ const App = () => {
                 window.location.replace("https://forms.gle/vLXhUJMLkXEcX1Hg7")
               }
             />
-
             <Route
               exact
               path="/links/view"

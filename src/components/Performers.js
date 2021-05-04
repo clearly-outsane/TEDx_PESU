@@ -2,7 +2,7 @@ import React from "react";
 import { Container, responsiveFontSizes, Typography } from "@material-ui/core";
 import { speakerStyles } from "../styles/speakers";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import Sliders from "./Sliders";
+// import Sliders from "./Sliders";
 import PerformersSliders from "./PerformersSliders";
 
 let theme = createMuiTheme({

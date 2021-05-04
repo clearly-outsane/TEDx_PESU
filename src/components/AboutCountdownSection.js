@@ -5,10 +5,10 @@ import Typography from "@material-ui/core/Typography";
 import clsx from "clsx";
 import ScrollAnimation from "react-animate-on-scroll";
 import { aboutSection } from "../styles/Sections";
-import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
-import theme from "../styles/theme";
-import AboutCountdownImage from "../assets/svg/circle1.jpeg";
-import { Translate } from "@material-ui/icons";
+// import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
+// import theme from "../styles/theme";
+// import AboutCountdownImage from "../assets/svg/circle1.jpeg";
+// import { Translate } from "@material-ui/icons";
 
 const AboutSection = () => {
   const classes = aboutSection();

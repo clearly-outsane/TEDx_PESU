@@ -79,13 +79,6 @@ const Benefits = () => {
                   </Typography>
                 </ScrollAnimation>
                 <br />
-                {/* <Typography variant='h6' className={clsx(classes.whiteText)}>
-                  We believe that change begins with each of us – that’s why
-                  TEDxPESU has launched its own chapter of Countdown. We will
-                  showcase the work and ideas of local thinkers and doers to
-                  spark a discussion, and help you understand how you can make a
-                  difference.
-                </Typography> */}
               </Grid>
             </Grid>
           </Grid>

@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 import { PrimaryTextField, PrimaryButton } from "../styles/theme";
 import { mailchimpFormSection } from "../styles/Sections";

@@ -5,8 +5,8 @@ import Typography from "@material-ui/core/Typography";
 import clsx from "clsx";
 import ScrollAnimation from "react-animate-on-scroll";
 import { aboutSection, aboutPageStyles } from "../styles/Sections";
-import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
-import theme from "../styles/theme";
+// import { ReactComponent as AboutSvg } from "../assets/svg/Countdown.svg";
+// import theme from "../styles/theme";
 
 const MoreInfo = () => {
   const classes = aboutPageStyles();

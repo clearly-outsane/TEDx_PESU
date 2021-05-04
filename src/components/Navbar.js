@@ -11,7 +11,7 @@ import logo from "../assets/images/tedxLogo.png";
 import { navbarStyles } from "../styles/Navbar";
 import { stylingConstants } from "../constants";
 import { Link } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const classes = navbarStyles();

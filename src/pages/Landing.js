@@ -2,33 +2,22 @@ import React, { useRef, useEffect, useState } from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import clsx from "clsx";
-// import { HashLink as Link } from "react-router-hash-link";
 import Navbar from "../components/Navbar";
 import { landingStyles } from "../styles/Landing";
 import { Typography } from "@material-ui/core";
-// import { ContrastTextField, PrimaryButton } from "../styles/theme";
-// import earth from "../assets/gifs/earth.gif";
 import AboutTedxSection from "../components/AboutTedxLandingPage";
 import AboutCountdownSection from "../components/AboutCountdownSection";
-// import MailchimpForm from "../components/MailchimpForm";
 import Footer from "../components/Footer";
 import Quote from "../components/fillers/Quote";
 import Speakers from "../components/Speakers";
-// import Performers from "../components/Performers";
 import MoreInfo from "../components/MoreInfo";
 import Benefits from "../components/Benefits";
-import circle from "../assets/gifs/tedcircle.gif";
-// import GifLoader from "react-gif-loader";
-import redcircle from "../assets/gifs/Red BG.gif";
+import blackCircle from "../assets/gifs/BnW.gif";
 
 const Landing = () => {
   const classes = landingStyles();
   const formRef = useRef(null);
 
-  // useEffect(() => {
-  //   var blocks = document.getElementById('horizontal');
-  //   var container = document.getElementById('horizontalcontainer');
-  // });
   return (
     <>
       <div className={classes.blackBackground}>
@@ -70,11 +59,6 @@ const Landing = () => {
                   virtually and helps communities stay connected, which is of
                   the essence during the pandemic.
                 </Typography>
-                {/* <Link smooth to='/#register' style={{ textDecoration: 'none' }}>
-                  <PrimaryButton style={{ marginBottom: 8 }} size='large'>
-                    Register
-                  </PrimaryButton>
-                </Link> */}
               </Grid>
 
               <Grid
@@ -92,7 +76,7 @@ const Landing = () => {
                 }}
               >
                 <img
-                  src={redcircle}
+                  src={blackCircle}
                   alt="Earth globe gif"
                   className={classes.gif}
                   style={{ boxShadow: "0 0 4px 4px black inset" }}
@@ -101,7 +85,7 @@ const Landing = () => {
                 {/*  loading={true}*/}
                 {/*  imageSrc={circle}*/}
                 {/*  imageStyle={{*/}
-                {/*    width: "100%",*/}
+                {/*    width: "100%",*/}ss
                 {/*    height: "auto",*/}
                 {/*    boxShadow: "0 0 8px 8px black inset",*/}
                 {/*  }}*/}

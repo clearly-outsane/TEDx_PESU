@@ -1,67 +1,67 @@
-import React, { useState } from 'react';
-import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import clsx from 'clsx';
-import ScrollAnimation from 'react-animate-on-scroll';
-import { aboutSection } from '../styles/Sections';
-import { ReactComponent as AboutSvg } from '../assets/svg/About.svg';
+import React, { useState } from "react";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
+import Typography from "@material-ui/core/Typography";
+// import clsx from 'clsx';
+import ScrollAnimation from "react-animate-on-scroll";
+import { aboutSection } from "../styles/Sections";
+// import { ReactComponent as AboutSvg } from '../assets/svg/About.svg';
 
 const AboutSection = () => {
   const classes = aboutSection();
   const [offset, setoffset] = useState();
 
   const handleScroll = () => setoffset(window.pageYOffset);
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener("scroll", handleScroll);
   return (
     <>
       <div
         className={classes.container}
         // className='abouttedxlanding'
-        style={{ overflow: 'hidden', backgroundColor: 'black' }}
+        style={{ overflow: "hidden", backgroundColor: "black" }}
       >
-        <Container maxWidth='lg'>
+        <Container maxWidth="lg">
           <Grid
             container
-            justify='flex-start'
-            alignItems='center'
+            justify="flex-start"
+            alignItems="center"
             style={{ marginTop: 40 }}
           >
             <Typography
-              variant='h2'
+              variant="h2"
               gutterBottom
-              style={{ color: 'red', fontWeight: 'bold' }}
+              style={{ color: "red", fontWeight: "bold" }}
             >
               About TEDx
             </Typography>
           </Grid>
         </Container>
         <Container
-          maxWidth='lg'
+          maxWidth="lg"
           // style={{
           //   marginLeft: offset * 0.015 + '%',
           //   width: '100%',
           // }}
         >
-          <Grid container justify='center' style={{ height: '100%' }}>
+          <Grid container justify="center" style={{ height: "100%" }}>
             <Grid
               container
               item
               xs={12}
               sm={7}
-              alignItems='flex-start'
+              alignItems="flex-start"
               style={{ marginTop: 48, fontWeight: 400 }}
             >
               <ScrollAnimation
-                animateIn='bounceInRight'
-                animateOut='bounceOutLeft'
+                animateIn="bounceInRight"
+                animateOut="bounceOutLeft"
                 // duration='2s'
                 // scrollableParentSelector='#scrolly-div'
               >
                 <Typography
-                  variant='h6'
+                  variant="h6"
                   gutterBottom
-                  style={{ overflow: 'hidden', color: 'white' }}
+                  style={{ overflow: "hidden", color: "white" }}
                 >
                   In the spirit of ideas worth spreading, TED has created a
                   program called TEDx. TEDx is a program of local,
